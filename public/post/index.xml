@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on IM-LAB (BETA)</title>
+    <link>http://hakyimlab.org/post/</link>
+    <description>Recent content in Posts on IM-LAB (BETA)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Hae Kyung Im</copyright>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/post/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>lab summer photo</title>
+      <link>http://hakyimlab.org/post/lab-summer-photo/</link>
+      <pubDate>Fri, 04 Aug 2017 13:24:42 -0500</pubDate>
+      
+      <guid>http://hakyimlab.org/post/lab-summer-photo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dinner with Nancy at the GTEx meeting</title>
+      <link>http://hakyimlab.org/post/2017-06-dinner-nancy/</link>
+      <pubDate>Tue, 27 Jun 2017 17:05:51 -0500</pubDate>
+      
+      <guid>http://hakyimlab.org/post/2017-06-dinner-nancy/</guid>
+      <description>&lt;p&gt;After the last formal GTEx analysis working group&amp;rsquo;s internal meeting at Rockville, MD, the Im Lab went for dinner with Nancy Cox, Barbara Stranger, and Eric Gamazon. From left to right: Rodrigo, Milton, Jiamao, Barbara, Nancy, Eric, Haky, Scott, and Alvaro. Great French dishes with Asian influence.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

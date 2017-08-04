@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Predixcan on IM-LAB (BETA)</title>
+    <link>http://hakyimlab.org/tags/predixcan/</link>
+    <description>Recent content in Predixcan on IM-LAB (BETA)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2017 Hae Kyung Im</copyright>
+    <lastBuildDate>Fri, 07 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="/tags/predixcan/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>predictdb</title>
+      <link>http://hakyimlab.org/project/predictdb/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>http://hakyimlab.org/project/predictdb/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
