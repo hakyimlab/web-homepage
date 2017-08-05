@@ -2,12 +2,7 @@
 {{ partial "navbar.html" . }}
 <div class="pub" itemscope itemtype="http://schema.org/CreativeWork">
 
-  {{ if .Params.header.image }}
-  <div class="article-header">
-    <img src="{{ "/img/" | relURL }}/{{ .Params.header.image }}" class="article-banner" itemprop="image">
-    {{ with .Params.header.caption }}<span class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
-  </div>
-  {{end}}
+  {{ partial "header_image.html" . }}
 
   <div class="container pub-title">
     <h1 itemprop="name">{{ .Title }}</h1>
@@ -29,7 +24,7 @@
   {{end}}
 
   <h3>{{ i18n "abstract" }}</h3>
-  <p class="pub-abstract" itemprop="text">{{ .Params.abstract }}</p>
+  <p class="pub-abstract" itemprop="text">{{ .Params.abstract | markdownify }}</p>
 
   {{ if (.Params.publication_types) and (ne (index .Params.publication_types 0) "0") }}
   <div class="row">
@@ -39,7 +34,7 @@
         <div class="col-xs-12 col-sm-3 pub-row-heading">{{ i18n "publication_type" }}</div>
         <div class="col-xs-12 col-sm-9">
           {{ range $index, $pubtype := .Params.publication_types }}
-          <a href="{{ "/publication/" | relURL }}#{{ . | urlize }}">
+          <a href="{{ "/publication/" | relLangURL }}#{{ . | urlize }}">
             {{ index $.Site.Params.publication_types (int .) }}
           </a>
           {{ end }}
