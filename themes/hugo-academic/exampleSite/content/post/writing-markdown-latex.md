@@ -1,5 +1,5 @@
 +++
-date = "2016-04-20T10:00:00"
+date = 2016-04-17
 draft = false
 tags = []
 title = "Writing content with Markdown, LaTeX, and Shortcodes"
@@ -7,6 +7,8 @@ math = true
 +++
 
 Content can be written using [Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet), [LaTeX math](https://en.wikibooks.org/wiki/LaTeX/Mathematics), and [Hugo Shortcodes](http://gohugo.io/extras/shortcodes/). Additionally, HTML may be used for advanced formatting.<!--more--> This article gives an overview of the most common formatting options.
+
+{{% toc %}}
 
 ## Sub-headings
 
@@ -55,6 +57,10 @@ A numbered figure with caption:
     [A publication]({{</* ref "publication/hi.md" */>}})
     [A project]({{</* ref "project/hi.md" */>}})
     [Another section]({{</* relref "hi.md#who" */>}})
+    
+To enable linking to a file, such as a PDF, first place the file in your `static/files/` folder and then link to it using the following form:
+
+    {{%/* staticref "files/cv.pdf" */%}}Download my CV{{%/* /staticref */%}}
 
 ## Emojis
 
@@ -233,3 +239,7 @@ This will display the following *warning* block:
 {{% alert warning %}}
 Here's some important information...
 {{% /alert %}}
+
+## Table of Contents
+
+A table of contents may be particularly useful for long posts or tutorial/documentation type content. Use the `{{%/* toc */%}}` shortcode anywhere you wish within your Markdown content to automatically generate a table of contents.

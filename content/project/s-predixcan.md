@@ -13,3 +13,7 @@ title = "summary predixcan"
   image = ""
 
 +++
+
+[Find code here](https://github.com/hakyimlab/MetaXcan)
+
+[User friendly web application here](https://cloud.hakyimlab.org)

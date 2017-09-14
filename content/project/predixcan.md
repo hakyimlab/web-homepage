@@ -1,6 +1,6 @@
 +++
 date = "2017-07-08T15:37:04-05:00"
-external_link = ""
+external_link = "https://github.com/hakyimlab/PrediXcan"
 highlight = true
 image_preview = ""
 math = false
@@ -13,4 +13,3 @@ title = "predixcan"
   image = ""
 
 +++
-
