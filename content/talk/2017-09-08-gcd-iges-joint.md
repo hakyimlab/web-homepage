@@ -2,8 +2,8 @@
 abstract = ""
 abstract_short = ""
 date = "2017-09-09T20:05:28-05:00"
-event = "Big Data Analytics for Genetics in Personalised Medicine (Joint IGES/GCD Symposium)"
-event_url = ""
+event = "Keynote Talk, Big Data Analytics for Genetics in Personalised Medicine (Joint IGES/GCD Symposium)"
+event_url = "http://www.geneticepi.org/joint-symposium-big-data-analytics-for-genetics-in-personalised-medicine/"
 highlight = true
 location = "Wellcome Genome Campus, Hinxton, UK."
 math = false
