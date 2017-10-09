@@ -11,12 +11,41 @@
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>lab summer photo</title>
-      <link>http://hakyimlab.org/post/lab-summer-photo/</link>
-      <pubDate>Fri, 04 Aug 2017 13:24:42 -0500</pubDate>
+      <title>ImLab was awarded NIH Cloud Credit</title>
+      <link>http://hakyimlab.org/post/nih-cloud-credit-award/</link>
+      <pubDate>Mon, 09 Oct 2017 10:20:18 -0500</pubDate>
       
-      <guid>http://hakyimlab.org/post/lab-summer-photo/</guid>
-      <description></description>
+      <guid>http://hakyimlab.org/post/nih-cloud-credit-award/</guid>
+      <description>&lt;p&gt;We are delighted to be awarded NIH Cloud Credit that will help us fund our cloud-based web applications and databases and broadly share our tools and resources.&lt;/p&gt;
+
+&lt;p&gt;Information about Cloud Credits &lt;a href=&#34;https://commonfund.nih.gov/bd2k/cloudcredits&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>U4C Challenge Winners</title>
+      <link>http://hakyimlab.org/post/u4c-challenge-winners/</link>
+      <pubDate>Thu, 28 Sep 2017 10:19:12 -0500</pubDate>
+      
+      <guid>http://hakyimlab.org/post/u4c-challenge-winners/</guid>
+      <description>&lt;p&gt;Two out of 4 winners used PrediXcan 👍👍&lt;/p&gt;
+
+&lt;p&gt;Winners of &amp;ldquo;Up For A Challenge (U4C): Stimulating innovation in breast cancer genetic epidemiology&amp;rdquo; papers published on line &lt;a href=&#34;http://collections.plos.org/up-for-a-challenge&#34; target=&#34;_blank&#34;&gt;link here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here is our contribution in collaboration with Guimin Gao, Brandon Pierce, Funmi Olopade, and Dezheng Huo &lt;a href=&#34;http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006727&#34; target=&#34;_blank&#34;&gt;link to paper here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>S-PrediXcan (MetaXcan) in drug repositioning</title>
+      <link>http://hakyimlab.org/post/drug-repositioning-metaxcan/</link>
+      <pubDate>Mon, 14 Aug 2017 00:00:00 -0500</pubDate>
+      
+      <guid>http://hakyimlab.org/post/drug-repositioning-metaxcan/</guid>
+      <description>&lt;p&gt;So et al use S-PrediXcan to find psychiatric drug repositioning candidates.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/imlab-open/Webdata/Images/2017/so2017.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>

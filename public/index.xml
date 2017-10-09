@@ -30,6 +30,32 @@
     </item>
     
     <item>
+      <title>ImLab was awarded NIH Cloud Credit</title>
+      <link>http://hakyimlab.org/post/nih-cloud-credit-award/</link>
+      <pubDate>Mon, 09 Oct 2017 10:20:18 -0500</pubDate>
+      
+      <guid>http://hakyimlab.org/post/nih-cloud-credit-award/</guid>
+      <description>&lt;p&gt;We are delighted to be awarded NIH Cloud Credit that will help us fund our cloud-based web applications and databases and broadly share our tools and resources.&lt;/p&gt;
+
+&lt;p&gt;Information about Cloud Credits &lt;a href=&#34;https://commonfund.nih.gov/bd2k/cloudcredits&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>U4C Challenge Winners</title>
+      <link>http://hakyimlab.org/post/u4c-challenge-winners/</link>
+      <pubDate>Thu, 28 Sep 2017 10:19:12 -0500</pubDate>
+      
+      <guid>http://hakyimlab.org/post/u4c-challenge-winners/</guid>
+      <description>&lt;p&gt;Two out of 4 winners used PrediXcan 👍👍&lt;/p&gt;
+
+&lt;p&gt;Winners of &amp;ldquo;Up For A Challenge (U4C): Stimulating innovation in breast cancer genetic epidemiology&amp;rdquo; papers published on line &lt;a href=&#34;http://collections.plos.org/up-for-a-challenge&#34; target=&#34;_blank&#34;&gt;link here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Here is our contribution in collaboration with Guimin Gao, Brandon Pierce, Funmi Olopade, and Dezheng Huo &lt;a href=&#34;http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006727&#34; target=&#34;_blank&#34;&gt;link to paper here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Assessing the phenotypic consequences of every human gene...</title>
       <link>http://hakyimlab.org/talk/2017-09-13-rising-starts-data-science/</link>
       <pubDate>Wed, 13 Sep 2017 08:28:20 -0500</pubDate>
@@ -49,12 +75,15 @@
     </item>
     
     <item>
-      <title>lab summer photo</title>
-      <link>http://hakyimlab.org/post/lab-summer-photo/</link>
-      <pubDate>Fri, 04 Aug 2017 13:24:42 -0500</pubDate>
+      <title>S-PrediXcan (MetaXcan) in drug repositioning</title>
+      <link>http://hakyimlab.org/post/drug-repositioning-metaxcan/</link>
+      <pubDate>Mon, 14 Aug 2017 00:00:00 -0500</pubDate>
       
-      <guid>http://hakyimlab.org/post/lab-summer-photo/</guid>
-      <description></description>
+      <guid>http://hakyimlab.org/post/drug-repositioning-metaxcan/</guid>
+      <description>&lt;p&gt;So et al use S-PrediXcan to find psychiatric drug repositioning candidates.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/imlab-open/Webdata/Images/2017/so2017.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+</description>
     </item>
     
     <item>
@@ -132,24 +161,6 @@
       <guid>http://hakyimlab.org/post/2017-06-dinner-nancy/</guid>
       <description>&lt;p&gt;After the last formal GTEx analysis working group&amp;rsquo;s internal meeting at Rockville, MD, the Im Lab went for dinner with Nancy Cox, Barbara Stranger, and Eric Gamazon. From left to right: Rodrigo, Milton, Jiamao, Barbara, Nancy, Eric, Haky, Scott, and Alvaro. Great French dishes with Asian influence.&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>GTEx V8 Analysis Vignettes</title>
-      <link>http://hakyimlab.org/talk/2017-06-26-gtex/</link>
-      <pubDate>Mon, 26 Jun 2017 16:50:20 -0500</pubDate>
-      
-      <guid>http://hakyimlab.org/talk/2017-06-26-gtex/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Genome, Phenome, and What Happens in Between</title>
-      <link>http://hakyimlab.org/talk/2017-06-09-sages/</link>
-      <pubDate>Fri, 09 Jun 2017 16:38:53 -0500</pubDate>
-      
-      <guid>http://hakyimlab.org/talk/2017-06-09-sages/</guid>
-      <description></description>
     </item>
     
   </channel>

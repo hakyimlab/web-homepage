@@ -15,3 +15,5 @@ weight = 10
 +++
 
 We develop quantitative and computational methods and tools to sift through the vast amounts of genomic and other high dimensional data with the goal of making discoveries that can be translated to improve human health.
+
+![](https://raw.githubusercontent.com/hakyimlab/homepage/master/static/img/2017/lab-summer-2017.jpg)

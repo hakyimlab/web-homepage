@@ -188,7 +188,7 @@ defaultContentLanguageInSubdir = false
 [[menu.main]]
   name = "People"
   url = "#people"
-  weight = 60
+  weight = 15
 
 [[menu.main]]
   name = "Contact"
