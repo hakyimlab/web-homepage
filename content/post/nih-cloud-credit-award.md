@@ -18,4 +18,6 @@ caption = ""
 
 We are delighted to be awarded NIH Cloud Credit that will help us fund our cloud-based web applications and databases and broadly share our tools and resources.
 
+Thank you, Jiamao, for pushing this through :thumbsup::smiley:
+
 Information about Cloud Credits [here](https://commonfund.nih.gov/bd2k/cloudcredits)
