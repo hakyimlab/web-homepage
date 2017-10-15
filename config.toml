@@ -1,5 +1,5 @@
 baseurl = "http://hakyimlab.org/"
-title = "IM-LAB (BETA)"
+title = "IM-LAB"
 copyright = "&copy; 2017 Hae Kyung Im"
 theme = "hugo-academic"
 enableEmoji = true
