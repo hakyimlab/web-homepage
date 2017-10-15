@@ -14,3 +14,10 @@ Reminder to myself from time to time,
 - update hugo (> brew upgrade)
 - update hugo-academic theme (download https://github.com/gcushen/hugo-academic and copy to ~/Github/homepage/themes/hugo-academic
 )
+
+
+
+## todo
+need to find better location for images (not covered by template)
+for example 
+`![](https://raw.githubusercontent.com/hakyimlab/homepage/master/static/img/2017/lab-summer-2017.jpg)`
