@@ -1,5 +1,5 @@
 +++
-title = "PrediXcan association computed on UKB GWAS Results released by Neale Lab"
+title = "We are releasing all PrediXcan associations based on Neale Lab's UKB rapid GWAS results"
 date = 2017-10-15T15:38:31-04:00
 draft = false
 
@@ -11,7 +11,7 @@ categories = []
 # Featured image
 # Place your image in the `static/img/` folder and reference its filename below, e.g. `image = "example.jpg"`.
 [header]
-image = "2017/UKB-Neale-GWAS-blog.png"
+image = "2017/ukb-neale-predixcan.png"
 caption = ""
 
 +++
