@@ -4,7 +4,7 @@ external_link = "https://github.com/hakyimlab/omickriging"
 highlight = true
 image_preview = ""
 math = false
-summary = ""
+summary = "Predicting traits integrating heterogeneous sources of data"
 tags = []
 title = "Omic Kriging"
 

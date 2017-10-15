@@ -11,6 +11,25 @@
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>PrediXcan association computed on UKB GWAS Results released by Neale Lab</title>
+      <link>http://hakyimlab.org/post/ubk-neale-predixcan-release/</link>
+      <pubDate>Sun, 15 Oct 2017 15:38:31 -0400</pubDate>
+      
+      <guid>http://hakyimlab.org/post/ubk-neale-predixcan-release/</guid>
+      <description>&lt;p&gt;As many of you may know, Neale Lab made a big splash in the GWAS community by releasing the summary results of 2400+ phenotypes from the &lt;a href=&#34;http://www.nealelab.is/blog/2017/7/19/rapid-gwas-of-thousands-of-phenotypes-for-337000-samples-in-the-uk-biobank&#34; target=&#34;_blank&#34;&gt;UK Biobank&lt;/a&gt;.
+Following their lead on open science and open data sharing, we are releasing the bulk runs of PrediXcan association based on Neale Lab&amp;rsquo;s UKB results and 44 tissues models from GTEx V6p release.&lt;/p&gt;
+
+&lt;p&gt;All PrediXcan associations can be downloaded from &lt;a href=&#34;http://ukb-neale.gene2pheno.org&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;We are also generating a &amp;ldquo;meta analyzed&amp;rdquo; across tissues version, which we find much more easily interpretable. They will be uploaded within the next few days.&lt;/p&gt;
+
+&lt;p&gt;All this is work in progress, so feedback is greatly appreciated! We are trying to flag some suspicous results (likely false positives) but so please let us know if you find them.&lt;/p&gt;
+
+&lt;p&gt;A Web app for query (Shinyapp) will be rolled out shortly, so stay tuned.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>ImLab was awarded NIH Cloud Credit</title>
       <link>http://hakyimlab.org/post/nih-cloud-credit-award/</link>
       <pubDate>Mon, 09 Oct 2017 10:20:18 -0500</pubDate>
@@ -41,7 +60,7 @@
     <item>
       <title>S-PrediXcan (MetaXcan) in drug repositioning</title>
       <link>http://hakyimlab.org/post/drug-repositioning-metaxcan/</link>
-      <pubDate>Mon, 14 Aug 2017 00:00:00 -0500</pubDate>
+      <pubDate>Mon, 14 Aug 2017 00:00:00 -0400</pubDate>
       
       <guid>http://hakyimlab.org/post/drug-repositioning-metaxcan/</guid>
       <description>&lt;p&gt;So et al use S-PrediXcan to find psychiatric drug repositioning candidates.&lt;/p&gt;

@@ -4,7 +4,7 @@ external_link = "https://github.com/hakyimlab/PrediXcan"
 highlight = true
 image_preview = ""
 math = false
-summary = ""
+summary = "Mechanistically driven gene level association test"
 tags = []
 title = "predixcan"
 

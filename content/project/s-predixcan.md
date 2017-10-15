@@ -4,7 +4,7 @@ external_link = ""
 highlight = true
 image_preview = ""
 math = false
-summary = ""
+summary = "Summary extension of PrediXcan"
 tags = []
 title = "summary predixcan"
 
