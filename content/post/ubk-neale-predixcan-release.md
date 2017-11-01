@@ -15,6 +15,15 @@ image = "2017/ukb-neale-predixcan.png"
 caption = ""
 
 +++
+
+Update (11/1/2017)
+
+* Gene level results "meta analyzed" across tissues now available.
+
+* Shinyapp to directly query by gene and phenotype is [here](http://UKBBeta.gene2pheno.org) but can be slow. Stay tuned for faster version coming soon.
+
+***
+
 As many of you may know, Neale Lab made a big splash in the GWAS community by releasing the summary results of 2400+ phenotypes from the [UK Biobank](http://www.nealelab.is/blog/2017/7/19/rapid-gwas-of-thousands-of-phenotypes-for-337000-samples-in-the-uk-biobank).
 Following their lead on open science and open data sharing, we are releasing the bulk runs of PrediXcan association based on Neale Lab's UKB results and 44 tissues models from GTEx V6p release.
 
