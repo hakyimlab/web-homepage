@@ -16,12 +16,12 @@ weight = 60
 
 - Hae Kyung Im, PhD - [Bio](#about)
 
-- Jiamao Zheng, PhD
+- Jiamao Zheng, PhD - [Bio](https://github.com/jiamaozheng)
 
-- Scott Dickinson, MS
+- Scott Dickinson, MS - [Bio](https://github.com/ScottPDickinson)
 
-- Alvaro Barbeira, MS
+- Alvaro Barbeira, MS - [Bio](https://github.com/heroico)
 
-- Milton Pividori, PhD
+- Milton Pividori, PhD - [Bio](https://github.com/miltondp)
 
-- Rodrigo Bonazzola, MS
+- Rodrigo Bonazzola, MS - [Bio](https://github.com/rbonazzola)
