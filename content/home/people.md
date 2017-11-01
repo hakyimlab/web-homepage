@@ -14,7 +14,8 @@ weight = 60
 
 +++
 
-- Hae Kyung Im, PhD - [Bio](#about)
+
+- Hae Kyung Im, PhD - [Bio](#about)  
 
 - Jiamao Zheng, PhD - [Bio](https://github.com/jiamaozheng)
 
