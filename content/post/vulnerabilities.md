@@ -1,7 +1,7 @@
 +++
 title = "Vulnerabilities of the 'Vulnerabilities of transcriptome wide association studies' argument"
 date = 2017-11-01T15:35:42-05:00
-draft = false
+draft = true
 
 # Tags and categories
 # For example, use `tags = []` for no tags, or the form `tags = ["A Tag", "Another Tag"]` for one or more tags.

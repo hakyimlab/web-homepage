@@ -11,60 +11,6 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Vulnerabilities of the &#39;Vulnerabilities of transcriptome wide association studies&#39; argument</title>
-      <link>http://hakyimlab.org/post/vulnerabilities/</link>
-      <pubDate>Wed, 01 Nov 2017 15:35:42 -0500</pubDate>
-      
-      <guid>http://hakyimlab.org/post/vulnerabilities/</guid>
-      <description>&lt;p&gt;A strikingly large number of accomplished researchers seem to interpret significance of a test as proof that the hypothesis is true. Thus it is good to remind ourselves that association does not imply causation.&lt;/p&gt;
-
-&lt;p&gt;Wainberg et al’s recent preprint “Vulnerabilities of transcriptome wide association studies” describe limitations of TWAS approaches. A thoughtful response was written by Sasha Gusev (&lt;a href=&#34;http://sashagusev.github.io/2017-10/twas-vulnerabilities.html&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;).&lt;/p&gt;
-
-&lt;p&gt;Below are our responses to some of the claims of the paper (Wainberg et al claims are in indented gray text).&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;PrediXcan/TWAS associations do not imply causality&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Yes, we have explicitly stated that we do not claim causality but agree that the message needs to be emphasized.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;TWAS is vulnerable to find multiple associated genes because of co-regulation&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;Yes, when a GWAS lead SNP is associated with the expression of several local co-regulated genes, TWAS will yield multiple associated genes. In the same way it is challenging to prove causality, it is also challenging to prove that an associated gene has no causal role. A few examples where we may be relatively confident about causality or the opposite cannot be used to dismiss our approach as done in this manuscript.&lt;/p&gt;
-
-&lt;p&gt;No one would argue that a TWAS result implicating multiple local genes should be interpreted as meaning that all of those genes are likely to be contributing to the trait. But assuming that a single gene is always at the root of a GWAS or TWAS signal also seems unnecessarily restrictive.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;“TWAS exhibits instability when tissue/expression panel is changed”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;The expectation that an association found in one tissue should also be found in another one seems to be the problem. A better way to describe these results is that when a gene exhibits tissue-specific genetic regulation, we cannot be surprised to see tissue-specific phenotype associations. This is, we would argue, a feature not a bug.&lt;/p&gt;
-
-&lt;p&gt;When the regulatory mechanism is highly context specific, it is possible and likely that none of the reference transcriptome dataset has captured it. This is not a limitation of the approach, but rather of the data available for investigation. We cannot build predictive models without training data, and genes expressed in a single cell type that is poorly represented in available tissues will not be well interrogated with the method, which has been widely acknowledged in the original publications as a limitation of the method.&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;“False positive rate is high but unquantifiable”&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This sentence is internally contradictory. But more broadly, would Wainberg et al. consider traditional GWAS to have a high false positive rate due to the large number of associations attributable to LD?&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;TWAS is simply a weighted burden test&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;PrediXcan/TWAS seeks to test the mediating role of gene expression changes on complex traits. Because we are using natural variation, there are many confounders, such as co-regulation and LD-contamination (GWAs and eQTL causal variants are distinct but in LD), which need to be taken into account but the approach is more than a simple weighted burden test.&lt;/p&gt;
-
-&lt;p&gt;Our main concern about this paper is that its negative tone dismisses the utility of PrediXcan/TWAS beyond that of a burden test based on vulnerable arguments. Many groups including ourselves are working on devising ways to mitigate the known limitations of PrediXcan/TWAS but a negative message may force many to abandon this route. We welcome the critique as long as it serves as motivation to continue improving the PrediXcan/TWAS framework.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Contributed by Hae Kyung Im and Nancy J Cox&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Assessing the phenome-wide consequences of genetically regulated molecular traits</title>
       <link>http://hakyimlab.org/talk/2017-10-19-ashg/</link>
       <pubDate>Thu, 19 Oct 2017 00:00:00 +0000</pubDate>
@@ -224,6 +170,18 @@ Following their lead on open science and open data sharing, we are releasing the
       
       <guid>http://hakyimlab.org/project/predixcan/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>summary predixcan</title>
+      <link>http://hakyimlab.org/project/s-predixcan/</link>
+      <pubDate>Sat, 08 Jul 2017 15:36:58 -0500</pubDate>
+      
+      <guid>http://hakyimlab.org/project/s-predixcan/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/hakyimlab/MetaXcan&#34; target=&#34;_blank&#34;&gt;Find code here&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://cloud.hakyimlab.org&#34; target=&#34;_blank&#34;&gt;User friendly web application here&lt;/a&gt;&lt;/p&gt;
+</description>
     </item>
     
   </channel>
