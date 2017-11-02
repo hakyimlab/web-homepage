@@ -1,7 +1,7 @@
 +++
 title = "Transcriptome prediction models are robust across populations"
 date = 2017-11-01T17:19:09-05:00
-draft = true
+draft = false
 
 # Tags and categories
 # For example, use `tags = []` for no tags, or the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
@@ -19,7 +19,7 @@ caption = ""
 
 Most GWAS and eQTL studies have been performed in European samples. So how well do models trained in Europeans translate to other populations. Segal et al have shown that predictions of gene expression levels are robust across populations   
 
-[comment]: # this is a comment
+![](https://s3.amazonaws.com/imlab-open/Webdata/Images/2017/segal-population-robust.png)
 
 
 
