@@ -11,26 +11,6 @@
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Transcriptome prediction models are robust across populations</title>
-      <link>http://hakyimlab.org/post/robustnes-across-populations/</link>
-      <pubDate>Wed, 01 Nov 2017 17:19:09 -0500</pubDate>
-      
-      <guid>http://hakyimlab.org/post/robustnes-across-populations/</guid>
-      <description>&lt;p&gt;Most GWAS and eQTL studies have been performed in European samples. So how well do models trained in Europeans translate to other populations. Segal et al have shown that predictions of gene expression levels are robust across populations&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/imlab-open/Webdata/Images/2017/segal-population-robust.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
-
-&lt;!---
-
-So et al use S-PrediXcan to find psychiatric drug repositioning candidates.
-
-## to add figure
-![](https://s3.amazonaws.com/imlab-open/Webdata/Images/2017/so2017.png)
----&gt;
-</description>
-    </item>
-    
-    <item>
       <title>We are releasing all PrediXcan associations based on Neale Lab&#39;s UKB rapid GWAS results</title>
       <link>http://hakyimlab.org/post/ubk-neale-predixcan-release/</link>
       <pubDate>Sun, 15 Oct 2017 15:38:31 -0400</pubDate>
