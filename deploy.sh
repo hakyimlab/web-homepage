@@ -20,7 +20,7 @@ git push origin master
 
 # copy to aws s3
 
-aws s3 sync ~/Github/homepage/public s3://hakyimlab.org
+aws s3 sync ~/Github/homepage/public s3://hakyimlab.org --delete
 
 
 
