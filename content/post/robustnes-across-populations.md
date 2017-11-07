@@ -17,7 +17,7 @@ caption = ""
 +++
 
 
-Most GWAS and eQTL studies have been performed in European samples. So how well do models trained in Europeans translate to other populations. Segal et al have shown that predictions of gene expression levels are robust across populations   
+Most GWAS and eQTL studies have been performed in European samples. So how well do models trained in Europeans translate to other populations? Segal et al have shown that predictions of gene expression levels are robust across populations   
 
 ![](https://s3.amazonaws.com/imlab-open/Webdata/Images/2017/segal-population-robust.png)
 

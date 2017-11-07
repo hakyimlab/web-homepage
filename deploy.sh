@@ -2,9 +2,6 @@
 
 echo -e "\033[0;32mDeploying updates to Github...\033[0m"
 
-# delete public folder
-rm -rf public/*
-
 # Build the project.
 hugo
 

@@ -1,0 +1,19 @@
+---
+title: Test using blogdown
+author: Haky
+date: '2017-11-02'
+slug: test-using-blogdown
+categories: []
+tags: []
+bibliography: ["refs.bib"]
+---
+
+Citation [@heath2013] 
+
+```{r}
+
+hist(rnorm(100))
+
+```
+
+# References
