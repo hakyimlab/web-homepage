@@ -11,9 +11,39 @@
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Limitations of PrediXcan association results</title>
+      <link>http://hakyimlab.org/post/limitations-predixcan/</link>
+      <pubDate>Tue, 07 Nov 2017 15:24:42 -0500</pubDate>
+      
+      <guid>http://hakyimlab.org/post/limitations-predixcan/</guid>
+      <description>&lt;p&gt;Keep in mind that significant associations shown here do not imply causality. That said, given that PrediXcan is seeking to test the role of gene expression variation on traits and we and others have shown that significant PrediXcan genes are enriched in causal genes, these results should be useful to delve into the mechanisms underlying gene to phenotype associations.&lt;/p&gt;
+
+&lt;p&gt;False positives can arise because of several factors&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;LD contamination&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;By computing the probability of LD contamination, we try to reduce false positives due to LD rather than genuine colocalization of trait and expression causal variants. Filtering out genes with high probability of independent signals (P3&amp;gt;0.5) would reduce the number of hits due to LD contamination.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Co regulation&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Many loci show regulation of multiple genes. PrediXcan is not able to distinguish between truly causal and co-regulation but non causal genes.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Mismatched LD between study, reference, and training sets&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Misspecified LD can lead to false positives (for example if LD in the study population is much higher than in the reference population, highly correlated modestly significant SNPs may be considered to be independent evidence of association, leading to highly significant gene-level association). They are also needed for combining results across multiple tissues, or to run conditional analysis.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Vulnerabilities of the &#39;Vulnerabilities of transcriptome wide association studies&#39; argument</title>
       <link>http://hakyimlab.org/post/vulnerabilities/</link>
-      <pubDate>Tue, 07 Nov 2017 15:35:42 -0500</pubDate>
+      <pubDate>Tue, 07 Nov 2017 13:24:42 -0500</pubDate>
       
       <guid>http://hakyimlab.org/post/vulnerabilities/</guid>
       <description>&lt;p&gt;PrediXcan and other transcriptome wide association study (TWAS) methods discover and prioritize genes based on a functional mechanism &amp;ndash;regulation of gene expression. We agree that we have to temper over-enthusiasm, but Wainberg et al&amp;rsquo;s paper could represent a backlash to the enthusiasm that the community has for this approach, which we believe is well placed.&lt;/p&gt;

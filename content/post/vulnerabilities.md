@@ -1,6 +1,6 @@
 +++
 title = "Vulnerabilities of the 'Vulnerabilities of transcriptome wide association studies' argument"
-date = 2017-11-07T15:35:42-05:00
+date = 2017-11-07T13:24:42-05:00
 draft = false
 
 # Tags and categories

@@ -52,11 +52,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://hakyimlab.org/post/vulnerabilities/">
+  <link rel="canonical" href="http://hakyimlab.org/post/limitations-predixcan/">
 
   
 
-  <title>Vulnerabilities of the &#39;Vulnerabilities of transcriptome wide association studies&#39; argument | IM-LAB</title>
+  <title>Limitations of PrediXcan association results | IM-LAB</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -181,14 +181,14 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">Vulnerabilities of the &#39;Vulnerabilities of transcriptome wide association studies&#39; argument</h1>
+    <h1 itemprop="name">Limitations of PrediXcan association results</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-11-07 13:24:42 -0500 -0500" itemprop="datePublished">
+    <time datetime="2017-11-07 15:24:42 -0500 -0500" itemprop="datePublished">
       Tue, Nov 7, 2017
     </time>
   </span>
@@ -209,35 +209,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fhakyimlab.org%2fpost%2fvulnerabilities%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fhakyimlab.org%2fpost%2flimitations-predixcan%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=Vulnerabilities%20of%20the%20%27Vulnerabilities%20of%20transcriptome%20wide%20association%20studies%27%20argument&amp;url=http%3a%2f%2fhakyimlab.org%2fpost%2fvulnerabilities%2f"
+         href="https://twitter.com/intent/tweet?text=Limitations%20of%20PrediXcan%20association%20results&amp;url=http%3a%2f%2fhakyimlab.org%2fpost%2flimitations-predixcan%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fhakyimlab.org%2fpost%2fvulnerabilities%2f&amp;title=Vulnerabilities%20of%20the%20%27Vulnerabilities%20of%20transcriptome%20wide%20association%20studies%27%20argument"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fhakyimlab.org%2fpost%2flimitations-predixcan%2f&amp;title=Limitations%20of%20PrediXcan%20association%20results"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fhakyimlab.org%2fpost%2fvulnerabilities%2f&amp;title=Vulnerabilities%20of%20the%20%27Vulnerabilities%20of%20transcriptome%20wide%20association%20studies%27%20argument"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fhakyimlab.org%2fpost%2flimitations-predixcan%2f&amp;title=Limitations%20of%20PrediXcan%20association%20results"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=Vulnerabilities%20of%20the%20%27Vulnerabilities%20of%20transcriptome%20wide%20association%20studies%27%20argument&amp;body=http%3a%2f%2fhakyimlab.org%2fpost%2fvulnerabilities%2f">
+         href="mailto:?subject=Limitations%20of%20PrediXcan%20association%20results&amp;body=http%3a%2f%2fhakyimlab.org%2fpost%2flimitations-predixcan%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -250,52 +250,27 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      <p>PrediXcan and other transcriptome wide association study (TWAS) methods discover and prioritize genes based on a functional mechanism &ndash;regulation of gene expression. We agree that we have to temper over-enthusiasm, but Wainberg et al&rsquo;s paper could represent a backlash to the enthusiasm that the community has for this approach, which we believe is well placed.</p>
+      <p>Keep in mind that significant associations shown here do not imply causality. That said, given that PrediXcan is seeking to test the role of gene expression variation on traits and we and others have shown that significant PrediXcan genes are enriched in causal genes, these results should be useful to delve into the mechanisms underlying gene to phenotype associations.</p>
 
-<p>Below are our responses to some of the statements of the paper.</p>
+<p>False positives can arise because of several factors</p>
 
-<blockquote>
-<p>PrediXcan/TWAS associations do not imply causality</p>
-</blockquote>
+<ul>
+<li>LD contamination</li>
+</ul>
 
-<p>Yes, we have explicitly stated that we do not claim causality but agree that the message needs to be emphasized. However, the over-interpretation of TWAS results as causal (which itself seems overstated by Wainberg et al), is precisely because of the exciting aspect of TWAS as association testing ‘through a lens’ of a particular functional mechanism that we believe is very important, namely, regulation of gene expression.</p>
+<p>By computing the probability of LD contamination, we try to reduce false positives due to LD rather than genuine colocalization of trait and expression causal variants. Filtering out genes with high probability of independent signals (P3&gt;0.5) would reduce the number of hits due to LD contamination.</p>
 
-<blockquote>
-<p>TWAS is vulnerable to find multiple associated genes because of co-regulation</p>
-</blockquote>
+<ul>
+<li>Co regulation</li>
+</ul>
 
-<p>Yes, when a GWAS lead SNP is associated with the expression of several local co-regulated genes, TWAS will yield multiple associated genes. No one would argue that a TWAS result implicating multiple local genes should be interpreted as meaning that all of those genes are likely to be contributing to the trait. But assuming that a single gene is always at the root of a GWAS or TWAS signal also seems unnecessarily restrictive. Molecular biology and model organism genetics would suggest that allelic heterogeneity should be the norm. Although admittedly we don’t see huge evidence for it in complex trait GWAS, we do see it in eQTL data and arguably this is a reason why TWAS discovers new genes.</p>
+<p>Many loci show regulation of multiple genes. PrediXcan is not able to distinguish between truly causal and co-regulation but non causal genes.</p>
 
-<p>A different source of false positive associations (not considered by Wainberg et al) is LD contamination. This phenomenon occurs, for example, when a variant alters expression of a gene but a different variant is causing changes in the phenotype but both variants are in LD. Unlike the coregulation confounding, which can only be teased out via wet lab experiments, LD contamination may be quantified and corrected. As for GWAS loci, fine mapping and conditional analysis may be used to addressed this issue.</p>
+<ul>
+<li>Mismatched LD between study, reference, and training sets</li>
+</ul>
 
-<blockquote>
-<p>“TWAS exhibits instability when tissue/expression panel is changed”</p>
-</blockquote>
-
-<p>The expectation that an association found in one tissue should also be found in another one seems to be the problem. A better way to describe these results is that when a gene exhibits tissue-specific genetic regulation, we cannot be surprised to see tissue-specific phenotype associations. This is, we would argue, a feature not a bug.</p>
-
-<p>When the regulatory mechanism is highly context specific, it is possible and likely that none of the reference transcriptome dataset has captured it. This is not a limitation of the approach, but rather of the data available for investigation. We cannot build predictive models without training data, and genes expressed in a single cell type that is poorly represented in available tissues will not be well interrogated with the method, which has been widely acknowledged in the original publications as a limitation of the method.</p>
-
-<blockquote>
-<p>“False positive rate is high but unquantifiable”</p>
-</blockquote>
-
-<p>Would Wainberg et al. consider traditional GWAS to have a high false positive rate due to the large number of associations attributable to LD?</p>
-
-<blockquote>
-<p>TWAS is simply a weighted burden test</p>
-</blockquote>
-
-<p>We agree that it is a weighted burden test analytically, but of course the weights have meaning, and that is the effect of the variants on gene expression. Therefore, this weighted burden test is exactly what it purports to be: an association test of a trait with genetically regulated expression.</p>
-
-<p>This post is the results of discussions among (in alphabetic order)
-Nancy Cox,
-Eric Gamazon,
-Laura Huckins,
-Hae Kyung Im,
-Douglas  Ruderfer,
-Pamela Sklar, and
-Eli Stahl.</p>
+<p>Misspecified LD can lead to false positives (for example if LD in the study population is much higher than in the reference population, highly correlated modestly significant SNPs may be considered to be independent evidence of association, leading to highly significant gene-level association). They are also needed for combining results across multiple tissues, or to run conditional analysis.</p>
 
     </div>
   </div>
@@ -309,13 +284,10 @@ Eli Stahl.</p>
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://hakyimlab.org/post/ubk-neale-predixcan-release/"><span
-      aria-hidden="true">&larr;</span> We are releasing all PrediXcan associations based on Neale Lab&#39;s UKB rapid GWAS results</a></li>
+    <li class="previous"><a href="http://hakyimlab.org/post/vulnerabilities/"><span
+      aria-hidden="true">&larr;</span> Vulnerabilities of the &#39;Vulnerabilities of transcriptome wide association studies&#39; argument</a></li>
     
 
-    
-    <li class="next"><a href="http://hakyimlab.org/post/limitations-predixcan/">Limitations of PrediXcan association results <span
-      aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
 </nav>
