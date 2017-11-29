@@ -11,6 +11,20 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Gene Correlation Across Tissues</title>
+      <link>http://hakyimlab.org/project/gene-correlation-across-tissues/</link>
+      <pubDate>Tue, 28 Nov 2017 18:36:31 -0600</pubDate>
+      
+      <guid>http://hakyimlab.org/project/gene-correlation-across-tissues/</guid>
+      <description>&lt;p&gt;This app plots the correlation of predicted expression levels in different tissues. The prediction was computed using GTEx v6p prediction models  and 1000G genotypes.&lt;/p&gt;
+
+&lt;p&gt;[code link will be posted here shortly]&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://imlab.shinyapps.io/GeneExpressionCorr_v6p_HapMap/&#34; target=&#34;_blank&#34;&gt;User friendly web application here&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Limitations of PrediXcan association results</title>
       <link>http://hakyimlab.org/post/limitations-predixcan/</link>
       <pubDate>Tue, 07 Nov 2017 15:24:42 -0500</pubDate>
@@ -237,15 +251,6 @@ Following their lead on open science and open data sharing, we are releasing the
       <guid>http://hakyimlab.org/publication/google-scholar/</guid>
       <description>&lt;p&gt;Check &lt;a href=&#34;https://scholar.google.com/citations?user=1QD4sIcAAAAJ&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;Google Scholar List&lt;/a&gt; while we prepare publication page&lt;/p&gt;
 </description>
-    </item>
-    
-    <item>
-      <title>Survey of the Heritability and Sparse Architecture of Gene Expression Traits across Human Tissues</title>
-      <link>http://hakyimlab.org/publication/survey-genex-architecture/</link>
-      <pubDate>Thu, 13 Jul 2017 15:06:36 -0500</pubDate>
-      
-      <guid>http://hakyimlab.org/publication/survey-genex-architecture/</guid>
-      <description></description>
     </item>
     
   </channel>
