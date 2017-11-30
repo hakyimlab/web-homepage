@@ -11,6 +11,20 @@
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Bidding Farewell to Scott</title>
+      <link>http://hakyimlab.org/post/scott-farewell/</link>
+      <pubDate>Thu, 30 Nov 2017 13:52:17 -0600</pubDate>
+      
+      <guid>http://hakyimlab.org/post/scott-farewell/</guid>
+      <description>&lt;p&gt;After two years in the Lab, Scott has decided to join the well paid workforce. Scott is a wonderful colleague to all of us and has made important contributions to our team. Thank you and best of lucks, Scott 🍀🍀🍀&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://s3.amazonaws.com/imlab-open/Webdata/Images/2017/scott-farewell.jpg&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Also thank you, Wenndy, for organizing and buying the present for Scott.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Limitations of PrediXcan association results</title>
       <link>http://hakyimlab.org/post/limitations-predixcan/</link>
       <pubDate>Tue, 07 Nov 2017 15:24:42 -0500</pubDate>
@@ -92,6 +106,37 @@ Hae Kyung Im,
 Douglas  Ruderfer,
 Pamela Sklar, and
 Eli Stahl.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Transcriptome prediction models are robust across populations</title>
+      <link>http://hakyimlab.org/post/robustnes-across-populations/</link>
+      <pubDate>Wed, 01 Nov 2017 17:19:09 -0500</pubDate>
+      
+      <guid>http://hakyimlab.org/post/robustnes-across-populations/</guid>
+      <description>&lt;p&gt;Most GWAS and eQTL studies have been performed in European samples. So how well do models trained in Europeans translate to other populations? Segal et al have shown that predictions of gene expression levels are robust across populations (&lt;a href=&#34;http://dx.plos.org/10.1371/journal.pgen.1003396&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;)&lt;/p&gt;
+
+&lt;p&gt;The following figure shows the p-value of the correlation between predicted and observed expression levels in European and African samples from the 1000 Genomes set (GEUVADIS RNA-seq) using model trained in GTEx with majority European individuals. As expected performance decreases (blue is more significant than red) when we apply to African samples but the correlation is still quite significant.
+&lt;img src=&#34;https://s3.amazonaws.com/imlab-open/Webdata/Images/2017/geuvadis-performance-EUR-AFR.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;!---
+
+So et al use S-PrediXcan to find psychiatric drug repositioning candidates.
+
+## to add figure
+![](https://s3.amazonaws.com/imlab-open/Webdata/Images/2017/so2017.png)
+---&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Congratulations, Alvaro</title>
+      <link>http://hakyimlab.org/post/alvaros-baby/</link>
+      <pubDate>Thu, 26 Oct 2017 14:51:10 -0600</pubDate>
+      
+      <guid>http://hakyimlab.org/post/alvaros-baby/</guid>
+      <description>&lt;p&gt;We are happy to announce the birth of Alvaro&amp;rsquo;s baby girl 👶. Congratulations, Alvaro!&lt;/p&gt;
 </description>
     </item>
     

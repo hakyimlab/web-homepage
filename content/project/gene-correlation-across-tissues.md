@@ -11,7 +11,7 @@ tags = []
 summary = "Gene correlation across tissues"
 
 # Optional image to display on homepage.
-image_preview = ""
+image_preview = "headers/gene-correlation.png"
 
 # Optional external URL for project (replaces project detail page).
 external_link = ""
