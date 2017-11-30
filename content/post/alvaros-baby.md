@@ -1,6 +1,6 @@
 +++
 title = "Congratulations, Alvaro"
-date = 2017-10-26T14:51:10-06:00
+date = 2017-10-22T14:51:10-06:00
 draft = false
 
 # Tags and categories
@@ -15,4 +15,4 @@ image = ""
 caption = ""
 
 +++
-We are happy to announce the birth of Alvaro's baby girl :baby:. Congratulations, Alvaro! 
+We are happy to announce the birth of Alvaro's baby girl :baby:. Congratulations, Alvaro!
