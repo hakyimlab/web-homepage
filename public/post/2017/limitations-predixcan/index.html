@@ -52,11 +52,11 @@
   <link rel="icon" type="image/png" href="/img/icon.png">
   <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
 
-  <link rel="canonical" href="http://hakyimlab.org/post/lab-summer-photo/">
+  <link rel="canonical" href="http://hakyimlab.org/post/2017/limitations-predixcan/">
 
   
 
-  <title>lab summer photo | IM-LAB</title>
+  <title>Limitations of PrediXcan association results | IM-LAB</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
@@ -178,26 +178,24 @@
 <article class="article" itemscope itemtype="http://schema.org/Article">
 
   
-<div class="article-header">
-  <img src="/img/2017/lab-summer-2017.jpg" class="article-banner" itemprop="image">
-  
-</div>
-
 
 
   <div class="article-container">
-    <h1 itemprop="name">lab summer photo</h1>
+    <h1 itemprop="name">Limitations of PrediXcan association results</h1>
     
 
 <div class="article-metadata">
 
   <span class="article-date">
     
-    <time datetime="2017-08-04 13:24:42 -0500 CDT" itemprop="datePublished">
-      Fri, Aug 4, 2017
+    <time datetime="2017-11-07 15:24:42 -0500 -0500" itemprop="datePublished">
+      Tue, Nov 7, 2017
     </time>
   </span>
 
+  
+  
+  
   
 
   
@@ -211,35 +209,35 @@
   <ul class="share">
     <li>
       <a class="facebook"
-         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fhakyimlab.org%2fpost%2flab-summer-photo%2f"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fhakyimlab.org%2fpost%2f2017%2flimitations-predixcan%2f"
          target="_blank">
         <i class="fa fa-facebook"></i>
       </a>
     </li>
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=lab%20summer%20photo&amp;url=http%3a%2f%2fhakyimlab.org%2fpost%2flab-summer-photo%2f"
+         href="https://twitter.com/intent/tweet?text=Limitations%20of%20PrediXcan%20association%20results&amp;url=http%3a%2f%2fhakyimlab.org%2fpost%2f2017%2flimitations-predixcan%2f"
          target="_blank">
         <i class="fa fa-twitter"></i>
       </a>
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fhakyimlab.org%2fpost%2flab-summer-photo%2f&amp;title=lab%20summer%20photo"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fhakyimlab.org%2fpost%2f2017%2flimitations-predixcan%2f&amp;title=Limitations%20of%20PrediXcan%20association%20results"
          target="_blank">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fhakyimlab.org%2fpost%2flab-summer-photo%2f&amp;title=lab%20summer%20photo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fhakyimlab.org%2fpost%2f2017%2flimitations-predixcan%2f&amp;title=Limitations%20of%20PrediXcan%20association%20results"
          target="_blank">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=lab%20summer%20photo&amp;body=http%3a%2f%2fhakyimlab.org%2fpost%2flab-summer-photo%2f">
+         href="mailto:?subject=Limitations%20of%20PrediXcan%20association%20results&amp;body=http%3a%2f%2fhakyimlab.org%2fpost%2f2017%2flimitations-predixcan%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -252,7 +250,28 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      
+      <p>Keep in mind that significant associations shown here do not imply causality. That said, given that PrediXcan is seeking to test the role of gene expression variation on traits and we and others have shown that significant PrediXcan genes are enriched in causal genes, these results should be useful to delve into the mechanisms underlying gene to phenotype associations.</p>
+
+<p>False positives can arise because of several factors</p>
+
+<ul>
+<li>LD contamination</li>
+</ul>
+
+<p>By computing the probability of LD contamination, we try to reduce false positives due to LD rather than genuine colocalization of trait and expression causal variants. Filtering out genes with high probability of independent signals (P3&gt;0.5) would reduce the number of hits due to LD contamination.</p>
+
+<ul>
+<li>Co regulation</li>
+</ul>
+
+<p>Many loci show regulation of multiple genes. PrediXcan is not able to distinguish between truly causal and co-regulation but non causal genes.</p>
+
+<ul>
+<li>Mismatched LD between study, reference, and training sets</li>
+</ul>
+
+<p>Misspecified LD can lead to false positives (for example if LD in the study population is much higher than in the reference population, highly correlated modestly significant SNPs may be considered to be independent evidence of association, leading to highly significant gene-level association). They are also needed for combining results across multiple tissues, or to run conditional analysis.</p>
+
     </div>
   </div>
 
@@ -265,12 +284,12 @@
   <nav>
   <ul class="pager">
     
-    <li class="previous"><a href="http://hakyimlab.org/post/2017-06-dinner-nancy/"><span
-      aria-hidden="true">&larr;</span> Dinner with Nancy at the GTEx meeting</a></li>
+    <li class="previous"><a href="http://hakyimlab.org/post/2017/vulnerabilities/"><span
+      aria-hidden="true">&larr;</span> Vulnerabilities of the &#39;Vulnerabilities of transcriptome wide association studies&#39; argument</a></li>
     
 
     
-    <li class="next"><a href="http://hakyimlab.org/post/drug-repositioning-metaxcan/">S-PrediXcan (MetaXcan) in drug repositioning <span
+    <li class="next"><a href="http://hakyimlab.org/post/2017/scott-farewell/">Bidding Farewell to Scott <span
       aria-hidden="true">&rarr;</span></a></li>
     
   </ul>
