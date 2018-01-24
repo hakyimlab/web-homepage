@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.27.1" />
+  <meta name="author" content="Hae Kyung Im">
+  <meta name="description" content="Assistant Professor - Genetic Medicine - ">
+
+  
+  
+  
+    
+  
+  
+    
+    
+    <link rel="stylesheet" href="/css/highlight.min.css">
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather%7CRoboto+Mono">
+  <link rel="stylesheet" href="/css/hugo-academic.css">
+  
+
+  
+    <script>
+      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+      ga('create', 'UA-61894206-7', 'auto');
+      ga('require', 'eventTracker');
+      ga('require', 'outboundLinkTracker');
+      ga('require', 'urlChangeTracker');
+      ga('send', 'pageview');
+    </script>
+    <script async src="//www.google-analytics.com/analytics.js"></script>
+    
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/autotrack/2.4.1/autotrack.js" integrity="sha512-HUmooslVKj4m6OBu0OgzjXXr+QuFYy/k7eLI5jdeEy/F4RSgMn6XRWRGkFi5IFaFgy7uFTkegp3Z0XnJf3Jq+g==" crossorigin="anonymous"></script>
+    
+  
+
+  <link rel="alternate" href="http://hakyimlab.org/index.xml" type="application/rss+xml" title="IM-LAB">
+  <link rel="feed" href="http://hakyimlab.org/index.xml" type="application/rss+xml" title="IM-LAB">
+
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/apple-touch-icon.png">
+
+  <link rel="canonical" href="http://hakyimlab.org/post/2017/open-access-gene2pheno-dbs/">
+
+  
+
+  <title>How to Query our gene2pheno Database directly | IM-LAB</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#navbar-main" data-offset="71">
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">IM-LAB</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#home">
+            
+            <span>Home</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#people">
+            
+            <span>People</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>News</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#publications">
+            
+            <span>Publications</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#talks">
+            
+            <span>Talks</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Software</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+          </a>
+        </li>
+
+        
+        
+
+        
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <h1 itemprop="name">How to Query our gene2pheno Database directly</h1>
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2018-01-24 10:43:10 -0600 CST" itemprop="datePublished">
+      Wed, Jan 24, 2018
+    </time>
+  </span>
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=http%3a%2f%2fhakyimlab.org%2fpost%2f2017%2fopen-access-gene2pheno-dbs%2f"
+         target="_blank">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=How%20to%20Query%20our%20gene2pheno%20Database%20directly&amp;url=http%3a%2f%2fhakyimlab.org%2fpost%2f2017%2fopen-access-gene2pheno-dbs%2f"
+         target="_blank">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3a%2f%2fhakyimlab.org%2fpost%2f2017%2fopen-access-gene2pheno-dbs%2f&amp;title=How%20to%20Query%20our%20gene2pheno%20Database%20directly"
+         target="_blank">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=http%3a%2f%2fhakyimlab.org%2fpost%2f2017%2fopen-access-gene2pheno-dbs%2f&amp;title=How%20to%20Query%20our%20gene2pheno%20Database%20directly"
+         target="_blank">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=How%20to%20Query%20our%20gene2pheno%20Database%20directly&amp;body=http%3a%2f%2fhakyimlab.org%2fpost%2f2017%2fopen-access-gene2pheno-dbs%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+    <div class="article-style" itemprop="articleBody">
+      
+
+<p>We have opened direct access to the gene2pheno database, where we are hosting the PrediXcan results of close to 3000 phenotypes (from public GWAS meta analysis results and UKBiobank results from <a href="http://www.nealelab.is/blog/2017/7/19/rapid-gwas-of-thousands-of-phenotypes-for-337000-samples-in-the-uk-biobank" target="_blank">Ben Neale/HAIL team</a>).</p>
+
+<p>Below are R functions that will allow you access and query the database. These results are based on GTEx V6p models and details of the analysis can be found in our preprint <a href="https://doi.org/10.1101/045260" target="_blank">link to preprint</a> in press now in Nature Communications.</p>
+
+<p>Usual disclaimers apply. This is provided for your convenience and with the hope of being useful. We provide no guarantee of accuracy etc&hellip;</p>
+
+<hr />
+
+<h3 id="via-postgresql">Via PostgreSQL</h3>
+
+<p>The code below may not be completely self explanatory. We are working on the documentation.</p>
+
+<pre><code class="language-R">## First run the preliminary command further down
+
+## this will fetch all associations for Schizophrenia
+data = query.pheno(&quot;pgc_scz&quot;)
+
+## this will fetch all associations for FTO
+data = query.gene(&quot;FTO&quot;)
+
+## these rather small tables will be handy
+
+phenotb = dbGetQuery(db,&quot;select * from pheno&quot;)
+tissuetb = dbGetQuery(db,&quot;select * from tissue&quot;)
+genetb = dbGetQuery(db,&quot;select * from gene&quot;)
+phenoinfo = phenotb %&gt;% inner_join(dbGetQuery(db, &quot;select * from pheno_info&quot;),by=c(&quot;id&quot;=&quot;pheno_id&quot;) )
+</code></pre>
+
+<p>You will need to run the following preliminary commands first</p>
+
+<pre><code class="language-R">library(tidyverse)
+
+## Connect to DB
+##install.packages('RPostgreSQL')
+library('RPostgreSQL')
+drv &lt;- dbDriver(&quot;PostgreSQL&quot;)
+db  &lt;- dbConnect(drv, host=&quot;gene2pheno.ccsriudvs1y0.us-east-1.rds.amazonaws.com&quot;, port=&quot;5432&quot;, dbname=&quot;public_gwas_v6p_hapmap_2017_12_04&quot;, user=&quot;metaxcan_ro&quot;, password=&quot;M3t4Xc4nR0&quot;)
+db.uk &lt;- dbConnect(drv, host=&quot;gene2pheno.ccsriudvs1y0.us-east-1.rds.amazonaws.com&quot;, port=&quot;5432&quot;, dbname=&quot;ukb_neale_2017_10_14&quot;, user=&quot;metaxcan_ro&quot;, password=&quot;M3t4Xc4nR0&quot;)
+
+## Query functions
+query0 = paste0(  
+    &quot;SELECT &quot;
+    ,&quot; g.gene_name&quot;
+    ,&quot;, m.zscore&quot;
+    ,&quot;, m.effect_size&quot;
+    ,&quot;, m.pval&quot;
+    ,&quot;, p.tag as phenotype&quot;
+    ,&quot;, t.tissue as tissue&quot;
+    ,&quot;, m.pred_perf_R2&quot;
+    ,&quot;, m.pred_perf_pval&quot;
+    ,&quot;, m.pred_perf_qval&quot;
+    ,&quot;, m.n_snps_used&quot;
+    ,&quot;, m.n_snps_model&quot;
+    ,&quot;, mi.p_smr&quot;
+    ,&quot;, mi.p_heidi&quot;
+    ,&quot;, mi.coloc_p0&quot;
+    ,&quot;, mi.coloc_p1&quot;
+    ,&quot;, mi.coloc_p2&quot;
+    ,&quot;, mi.coloc_p3&quot;
+    ,&quot;, mi.coloc_p4&quot;
+    ,&quot;, tr.p as twas_pvalue &quot;
+    ,&quot;, g.gene&quot;
+    ,&quot; FROM gene AS g &quot;
+    ,&quot; INNER JOIN metaxcan_result AS m ON g.id = m.gene_id &quot;
+    ,&quot; INNER JOIN tissue AS t ON t.id = m.tissue_id &quot;
+    ,&quot; INNER JOIN pheno AS p ON p.id = m.pheno_id &quot;
+    ,&quot; LEFT JOIN metaxcan_result_info as mi on m.id = mi.metaxcan_result_id &quot;
+    ,&quot; LEFT JOIN twas_relationship as trr ON m.id = trr.metaxcan_result_id &quot;
+    ,&quot; LEFT JOIN twas_result as tr ON trr.twas_result_id = tr.id &quot;    
+	)
+
+query.pheno = function(pheno,Rthres=0.,fdb=db)
+{
+  query =  paste0(query0, &quot; WHERE p.tag like '&quot; , pheno  ,&quot;%' &quot; )
+  if(Rthres&gt;0) query = paste0(query, &quot; and m.pred_perf_R2 &gt;= &quot; , Rthres)
+  dbGetQuery(fdb,query) %&gt;% arrange(pval)
+}
+
+query.tissue = function(tissue,Rthres=0.,fdb=db)
+{
+  query =  paste0(query0,&quot; WHERE t.tissue like '&quot; , tissue,  &quot;%' &quot; )
+  if(Rthres&gt;0) query = paste0(query, &quot; and m.pred_perf_R2 &gt;= &quot;, Rthres)
+  dbGetQuery(fdb,query)
+}
+
+query.gene = function(genename,Rthres=0.,fdb=db)
+{
+  query =  paste0(query0,&quot; WHERE g.gene_name like '&quot;, genename,  &quot;%' &quot; )
+  if(Rthres&gt;0) query = paste0(query, &quot; and m.pred_perf_R2 &gt;= &quot;, Rthres)
+  dbGetQuery(fdb,query) %&gt;% arrange(pval)
+}
+
+query_multi_tissue_base &lt;- paste0( &quot;SELECT &quot;,
+  &quot; p.tag as phenotype,&quot;,
+  &quot; g.gene,&quot;,
+  &quot; g.gene_name,&quot;,
+  &quot; mt.pvalue,&quot;,
+  &quot; mt.n,&quot;,
+  &quot; mt.n_indep,&quot;,
+  &quot; mt.p_i_best,&quot;,
+  &quot; mt.p_i_worst,&quot;,
+  &quot; mt.eigen_max,&quot;,
+  &quot; mt.eigen_min&quot;,
+  &quot; FROM gene AS g &quot;,
+  &quot; INNER JOIN multi_tissue_result AS mt ON g.id = mt.gene_id &quot;,
+  &quot; INNER JOIN pheno AS p ON p.id = mt.pheno_id &quot; )
+
+query.pheno.mult = function(pheno,fdb=db)
+{
+  query =  paste0(query_multi_tissue_base, &quot; WHERE p.tag like '&quot; , pheno  ,&quot;%' &quot; )
+  dbGetQuery(fdb,query) %&gt;% arrange(pvalue)
+}
+
+query.gene.mult = function(genename,Rthres=0.,fdb=db)
+{
+  query =   paste0(query_multi_tissue_base,&quot; WHERE g.gene_name like '&quot;, genename,  &quot;%' &quot; )
+  dbGetQuery(fdb,query) %&gt;% arrange(pvalue)
+}
+</code></pre>
+
+<hr />
+
+<h3 id="via-bigquery">Via BigQuery</h3>
+
+<p>If you have a Google Cloud Platform account (you can get a free account with a small credit included in Google Cloud) you can query directly from the webpages</p>
+
+<ul>
+<li><a href="https://bigquery.cloud.google.com/table/still-entity-123716:ukb_neale_gene2pheno.ukb_neale_gene2pheno_table?tab=details" target="_blank">PrediXcan Association UKBiobank</a></li>
+<li><a href="https://bigquery.cloud.google.com/queries/predictdb-187320" target="_blank">Predictdb prediction models</a></li>
+<li><a href="https://bigquery.cloud.google.com/dataset/gen-arch:genarch" target="_blank">Heritability Estimates</a> from this <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423" target="_blank">paper</a></li>
+</ul>
+
+<p>If you find our resources useful please cite our papers so that we can continue maintaining them.</p>
+
+<h2 id="reference">Reference</h2>
+
+<ul>
+<li><p>Gamazon ER†, Wheeler HE†, Shah KP†, Mozaffari SV, Aquino-Michaels K,
+Carroll RJ, Eyler AE, Denny JC, Nicolae DL, Cox NJ, Im HK. (2015)
+<strong>A gene-based association method for mapping traits using reference
+transcriptome data</strong>. Nat Genet. doi:10.1038/ng.3367.
+(<a href="http://www.nature.com/ng/journal/v47/n9/full/ng.3367.html" target="_blank">Link to paper</a>,
+<a href="http://biorxiv.org/content/early/2015/06/17/020164" target="_blank">Link to Preprint on BioRxiv</a>)</p></li>
+
+<li><p>Alvaro Barbeira, Kaanan P Shah, Jason M Torres, Heather E Wheeler,
+Eric S Torstenson, Todd Edwards, Tzintzuni Garcia, Graeme I Bell,
+Dan Nicolae, Nancy J Cox, Hae Kyung Im. (2016) <strong>MetaXcan: Summary
+Statistics Based Gene-Level Association Method Infers Accurate PrediXcan
+Results</strong> <a href="http://dx.doi.org/10.1101/045260" target="_blank">link to preprint</a></p></li>
+
+<li><p>Heather E Wheeler, Kaanan P Shah, Jonathon Brenner, Tzintzuni Garcia,
+Keston Aquino-Michaels, GTEx Consortium, Nancy J Cox, Dan L Nicolae, Hae
+Kyung Im. (2016) <strong>Survey of the Heritability and Sparsity of Gene
+Expression Traits Across Human Tissues</strong>.
+<a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423" target="_blank">link to paper</a></p></li>
+</ul>
+
+<hr />
+
+<p><strong>Disclaimer:</strong> the models are provided &ldquo;as is&rdquo;, with the hope that they may be of use, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the models or the use or other dealings in the models.</p>
+
+    </div>
+  </div>
+
+</article>
+
+
+
+
+<div class="container">
+  <nav>
+  <ul class="pager">
+    
+    <li class="previous"><a href="http://hakyimlab.org/post/2017/v7-v6p-analysis/"><span
+      aria-hidden="true">&larr;</span> GTEx V7 Prediction Model Release Announcement</a></li>
+    
+
+    
+  </ul>
+</nav>
+
+</div>
+
+<div class="article-container">
+  
+<section id="comments">
+  <div id="disqus_thread"></div>
+<script>
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "HakyImLab" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2017 Hae Kyung Im &middot; 
+
+      Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
+      theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js" integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.2/imagesloaded.pkgd.min.js" integrity="sha512-iHzEu7GbSc705hE2skyH6/AlTpOfBmkx7nUqTLGzPYR+C1tRaItbRlJ7hT/D3YQ9SV0fqLKzp4XY9wKulTBGTw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js" integrity="sha512-Z5heTz36xTemt1TbtbfXtTq5lMfYnOkXM2/eWcTTiLU01+Sw4ku1i7vScDc8fWhrP2abz9GQzgKH5NGBLoYlAw==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/ScrollToPlugin.min.js" integrity="sha512-CDeU7pRtkPX6XJtF/gcFWlEwyaX7mcAp5sO3VIu/ylsdR74wEw4wmBpD5yYTrmMAiAboi9thyBUr1vXRPA7t0Q==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+
+  </body>
+</html>
+

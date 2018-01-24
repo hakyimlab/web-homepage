@@ -17,7 +17,7 @@ caption = ""
 +++
 We are releasing prediction models trained on GTEx Version 7 data. Download from [here](http://predictdb.org). We have updated our processing pipeline, and restricted to individuals of European ancestry to obtain more reliable LD data. This reduces false positive associations in the Summary Version of PrediXcan. Because of this choice, the gain in sample size relative to V6p is modest (ranging from -18 to 89), with whole blood, LCLs and fibroblasts experiencing reduced sample size. We developed new criteria to assess model performance. We have also decided to include prediction models for both pseudogenes and lincRNAs.
 
-While preparing GTEx V7 prediction models, we identified a few issues in the way prediction performance was estimated in the previous release (2016-09-08 release). In aggregate, these caused the prediction model performance to be overestimated. Reassuringly, predicted expression levels and the downstream associations with phenotypes remain mostly unchanged, even though prediction weights vary slightly. However, some gene/tissue pairs are no longer considered reliable.
+While preparing GTEx V7 prediction models, we identified a few issues in the way prediction performance was estimated in the previous release (2016-09-08 release). In aggregate, these caused the prediction model performance to be overestimated. Reassuringly, predicted expression levels and the downstream associations with phenotypes remain mostly unchanged, even though prediction weights vary slightly. However, some gene/tissue pairs are no longer considered reliable ([link to list](https://s3.amazonaws.com/predictdb2/deprecated/flags.txt)).
 
 Detailed description of the pipeline update and the effect in prediction models performance and downstream S-PrediXcan association can be found below.
 
@@ -97,6 +97,6 @@ Figure 4 shows that in general, V7 has better performance measures (larger neste
 
 #### Workaround for manuscripts/analysis in advanced stage
 
-For those of you in advanced stages of analysis/manuscript preparation, we have put together a table with three levels of reliability for each gene/tissue pair and recommend to use the following guidelines.
+For those of you in advanced stages of analysis/manuscript preparation, we have put together a table with three levels of reliability ([link to list](https://s3.amazonaws.com/predictdb2/deprecated/flags.txt)) for each gene/tissue pair and recommend to use the following guidelines.
 
 If your top gene/tissue pairs are in the green list, no action is needed. If they fall in the red list, they should be dropped. Given the sharing across tissues of regulation, it is possible that even after dropping a gene/tissue pair, the gene is still significant and reliable in other tissues. Gene/tissue pairs in the yellow list should be considered with caution.

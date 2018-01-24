@@ -11,6 +11,177 @@
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>How to Query our gene2pheno Database directly</title>
+      <link>http://hakyimlab.org/post/2017/open-access-gene2pheno-dbs/</link>
+      <pubDate>Wed, 24 Jan 2018 10:43:10 -0600</pubDate>
+      
+      <guid>http://hakyimlab.org/post/2017/open-access-gene2pheno-dbs/</guid>
+      <description>
+
+&lt;p&gt;We have opened direct access to the gene2pheno database, where we are hosting the PrediXcan results of close to 3000 phenotypes (from public GWAS meta analysis results and UKBiobank results from &lt;a href=&#34;http://www.nealelab.is/blog/2017/7/19/rapid-gwas-of-thousands-of-phenotypes-for-337000-samples-in-the-uk-biobank&#34; target=&#34;_blank&#34;&gt;Ben Neale/HAIL team&lt;/a&gt;).&lt;/p&gt;
+
+&lt;p&gt;Below are R functions that will allow you access and query the database. These results are based on GTEx V6p models and details of the analysis can be found in our preprint &lt;a href=&#34;https://doi.org/10.1101/045260&#34; target=&#34;_blank&#34;&gt;link to preprint&lt;/a&gt; in press now in Nature Communications.&lt;/p&gt;
+
+&lt;p&gt;Usual disclaimers apply. This is provided for your convenience and with the hope of being useful. We provide no guarantee of accuracy etc&amp;hellip;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;via-postgresql&#34;&gt;Via PostgreSQL&lt;/h3&gt;
+
+&lt;p&gt;The code below may not be completely self explanatory. We are working on the documentation.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;## First run the preliminary command further down
+
+## this will fetch all associations for Schizophrenia
+data = query.pheno(&amp;quot;pgc_scz&amp;quot;)
+
+## this will fetch all associations for FTO
+data = query.gene(&amp;quot;FTO&amp;quot;)
+
+## these rather small tables will be handy
+
+phenotb = dbGetQuery(db,&amp;quot;select * from pheno&amp;quot;)
+tissuetb = dbGetQuery(db,&amp;quot;select * from tissue&amp;quot;)
+genetb = dbGetQuery(db,&amp;quot;select * from gene&amp;quot;)
+phenoinfo = phenotb %&amp;gt;% inner_join(dbGetQuery(db, &amp;quot;select * from pheno_info&amp;quot;),by=c(&amp;quot;id&amp;quot;=&amp;quot;pheno_id&amp;quot;) )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You will need to run the following preliminary commands first&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-R&#34;&gt;library(tidyverse)
+
+## Connect to DB
+##install.packages(&#39;RPostgreSQL&#39;)
+library(&#39;RPostgreSQL&#39;)
+drv &amp;lt;- dbDriver(&amp;quot;PostgreSQL&amp;quot;)
+db  &amp;lt;- dbConnect(drv, host=&amp;quot;gene2pheno.ccsriudvs1y0.us-east-1.rds.amazonaws.com&amp;quot;, port=&amp;quot;5432&amp;quot;, dbname=&amp;quot;public_gwas_v6p_hapmap_2017_12_04&amp;quot;, user=&amp;quot;metaxcan_ro&amp;quot;, password=&amp;quot;M3t4Xc4nR0&amp;quot;)
+db.uk &amp;lt;- dbConnect(drv, host=&amp;quot;gene2pheno.ccsriudvs1y0.us-east-1.rds.amazonaws.com&amp;quot;, port=&amp;quot;5432&amp;quot;, dbname=&amp;quot;ukb_neale_2017_10_14&amp;quot;, user=&amp;quot;metaxcan_ro&amp;quot;, password=&amp;quot;M3t4Xc4nR0&amp;quot;)
+
+## Query functions
+query0 = paste0(  
+    &amp;quot;SELECT &amp;quot;
+    ,&amp;quot; g.gene_name&amp;quot;
+    ,&amp;quot;, m.zscore&amp;quot;
+    ,&amp;quot;, m.effect_size&amp;quot;
+    ,&amp;quot;, m.pval&amp;quot;
+    ,&amp;quot;, p.tag as phenotype&amp;quot;
+    ,&amp;quot;, t.tissue as tissue&amp;quot;
+    ,&amp;quot;, m.pred_perf_R2&amp;quot;
+    ,&amp;quot;, m.pred_perf_pval&amp;quot;
+    ,&amp;quot;, m.pred_perf_qval&amp;quot;
+    ,&amp;quot;, m.n_snps_used&amp;quot;
+    ,&amp;quot;, m.n_snps_model&amp;quot;
+    ,&amp;quot;, mi.p_smr&amp;quot;
+    ,&amp;quot;, mi.p_heidi&amp;quot;
+    ,&amp;quot;, mi.coloc_p0&amp;quot;
+    ,&amp;quot;, mi.coloc_p1&amp;quot;
+    ,&amp;quot;, mi.coloc_p2&amp;quot;
+    ,&amp;quot;, mi.coloc_p3&amp;quot;
+    ,&amp;quot;, mi.coloc_p4&amp;quot;
+    ,&amp;quot;, tr.p as twas_pvalue &amp;quot;
+    ,&amp;quot;, g.gene&amp;quot;
+    ,&amp;quot; FROM gene AS g &amp;quot;
+    ,&amp;quot; INNER JOIN metaxcan_result AS m ON g.id = m.gene_id &amp;quot;
+    ,&amp;quot; INNER JOIN tissue AS t ON t.id = m.tissue_id &amp;quot;
+    ,&amp;quot; INNER JOIN pheno AS p ON p.id = m.pheno_id &amp;quot;
+    ,&amp;quot; LEFT JOIN metaxcan_result_info as mi on m.id = mi.metaxcan_result_id &amp;quot;
+    ,&amp;quot; LEFT JOIN twas_relationship as trr ON m.id = trr.metaxcan_result_id &amp;quot;
+    ,&amp;quot; LEFT JOIN twas_result as tr ON trr.twas_result_id = tr.id &amp;quot;    
+	)
+
+query.pheno = function(pheno,Rthres=0.,fdb=db)
+{
+  query =  paste0(query0, &amp;quot; WHERE p.tag like &#39;&amp;quot; , pheno  ,&amp;quot;%&#39; &amp;quot; )
+  if(Rthres&amp;gt;0) query = paste0(query, &amp;quot; and m.pred_perf_R2 &amp;gt;= &amp;quot; , Rthres)
+  dbGetQuery(fdb,query) %&amp;gt;% arrange(pval)
+}
+
+query.tissue = function(tissue,Rthres=0.,fdb=db)
+{
+  query =  paste0(query0,&amp;quot; WHERE t.tissue like &#39;&amp;quot; , tissue,  &amp;quot;%&#39; &amp;quot; )
+  if(Rthres&amp;gt;0) query = paste0(query, &amp;quot; and m.pred_perf_R2 &amp;gt;= &amp;quot;, Rthres)
+  dbGetQuery(fdb,query)
+}
+
+query.gene = function(genename,Rthres=0.,fdb=db)
+{
+  query =  paste0(query0,&amp;quot; WHERE g.gene_name like &#39;&amp;quot;, genename,  &amp;quot;%&#39; &amp;quot; )
+  if(Rthres&amp;gt;0) query = paste0(query, &amp;quot; and m.pred_perf_R2 &amp;gt;= &amp;quot;, Rthres)
+  dbGetQuery(fdb,query) %&amp;gt;% arrange(pval)
+}
+
+query_multi_tissue_base &amp;lt;- paste0( &amp;quot;SELECT &amp;quot;,
+  &amp;quot; p.tag as phenotype,&amp;quot;,
+  &amp;quot; g.gene,&amp;quot;,
+  &amp;quot; g.gene_name,&amp;quot;,
+  &amp;quot; mt.pvalue,&amp;quot;,
+  &amp;quot; mt.n,&amp;quot;,
+  &amp;quot; mt.n_indep,&amp;quot;,
+  &amp;quot; mt.p_i_best,&amp;quot;,
+  &amp;quot; mt.p_i_worst,&amp;quot;,
+  &amp;quot; mt.eigen_max,&amp;quot;,
+  &amp;quot; mt.eigen_min&amp;quot;,
+  &amp;quot; FROM gene AS g &amp;quot;,
+  &amp;quot; INNER JOIN multi_tissue_result AS mt ON g.id = mt.gene_id &amp;quot;,
+  &amp;quot; INNER JOIN pheno AS p ON p.id = mt.pheno_id &amp;quot; )
+
+query.pheno.mult = function(pheno,fdb=db)
+{
+  query =  paste0(query_multi_tissue_base, &amp;quot; WHERE p.tag like &#39;&amp;quot; , pheno  ,&amp;quot;%&#39; &amp;quot; )
+  dbGetQuery(fdb,query) %&amp;gt;% arrange(pvalue)
+}
+
+query.gene.mult = function(genename,Rthres=0.,fdb=db)
+{
+  query =   paste0(query_multi_tissue_base,&amp;quot; WHERE g.gene_name like &#39;&amp;quot;, genename,  &amp;quot;%&#39; &amp;quot; )
+  dbGetQuery(fdb,query) %&amp;gt;% arrange(pvalue)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;via-bigquery&#34;&gt;Via BigQuery&lt;/h3&gt;
+
+&lt;p&gt;If you have a Google Cloud Platform account (you can get a free account with a small credit included in Google Cloud) you can query directly from the webpages&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://bigquery.cloud.google.com/table/still-entity-123716:ukb_neale_gene2pheno.ukb_neale_gene2pheno_table?tab=details&#34; target=&#34;_blank&#34;&gt;PrediXcan Association UKBiobank&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bigquery.cloud.google.com/queries/predictdb-187320&#34; target=&#34;_blank&#34;&gt;Predictdb prediction models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bigquery.cloud.google.com/dataset/gen-arch:genarch&#34; target=&#34;_blank&#34;&gt;Heritability Estimates&lt;/a&gt; from this &lt;a href=&#34;http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423&#34; target=&#34;_blank&#34;&gt;paper&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you find our resources useful please cite our papers so that we can continue maintaining them.&lt;/p&gt;
+
+&lt;h2 id=&#34;reference&#34;&gt;Reference&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Gamazon ER†, Wheeler HE†, Shah KP†, Mozaffari SV, Aquino-Michaels K,
+Carroll RJ, Eyler AE, Denny JC, Nicolae DL, Cox NJ, Im HK. (2015)
+&lt;strong&gt;A gene-based association method for mapping traits using reference
+transcriptome data&lt;/strong&gt;. Nat Genet. doi:10.1038/ng.3367.
+(&lt;a href=&#34;http://www.nature.com/ng/journal/v47/n9/full/ng.3367.html&#34; target=&#34;_blank&#34;&gt;Link to paper&lt;/a&gt;,
+&lt;a href=&#34;http://biorxiv.org/content/early/2015/06/17/020164&#34; target=&#34;_blank&#34;&gt;Link to Preprint on BioRxiv&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Alvaro Barbeira, Kaanan P Shah, Jason M Torres, Heather E Wheeler,
+Eric S Torstenson, Todd Edwards, Tzintzuni Garcia, Graeme I Bell,
+Dan Nicolae, Nancy J Cox, Hae Kyung Im. (2016) &lt;strong&gt;MetaXcan: Summary
+Statistics Based Gene-Level Association Method Infers Accurate PrediXcan
+Results&lt;/strong&gt; &lt;a href=&#34;http://dx.doi.org/10.1101/045260&#34; target=&#34;_blank&#34;&gt;link to preprint&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Heather E Wheeler, Kaanan P Shah, Jonathon Brenner, Tzintzuni Garcia,
+Keston Aquino-Michaels, GTEx Consortium, Nancy J Cox, Dan L Nicolae, Hae
+Kyung Im. (2016) &lt;strong&gt;Survey of the Heritability and Sparsity of Gene
+Expression Traits Across Human Tissues&lt;/strong&gt;.
+&lt;a href=&#34;http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423&#34; target=&#34;_blank&#34;&gt;link to paper&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;strong&gt;Disclaimer:&lt;/strong&gt; the models are provided &amp;ldquo;as is&amp;rdquo;, with the hope that they may be of use, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the models or the use or other dealings in the models.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>GTEx V7 Prediction Model Release Announcement</title>
       <link>http://hakyimlab.org/post/2017/v7-v6p-analysis/</link>
       <pubDate>Mon, 08 Jan 2018 00:00:00 -0600</pubDate>
@@ -20,7 +191,7 @@
 
 &lt;p&gt;We are releasing prediction models trained on GTEx Version 7 data. Download from &lt;a href=&#34;http://predictdb.org&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;. We have updated our processing pipeline, and restricted to individuals of European ancestry to obtain more reliable LD data. This reduces false positive associations in the Summary Version of PrediXcan. Because of this choice, the gain in sample size relative to V6p is modest (ranging from -18 to 89), with whole blood, LCLs and fibroblasts experiencing reduced sample size. We developed new criteria to assess model performance. We have also decided to include prediction models for both pseudogenes and lincRNAs.&lt;/p&gt;
 
-&lt;p&gt;While preparing GTEx V7 prediction models, we identified a few issues in the way prediction performance was estimated in the previous release (2016-09-08 release). In aggregate, these caused the prediction model performance to be overestimated. Reassuringly, predicted expression levels and the downstream associations with phenotypes remain mostly unchanged, even though prediction weights vary slightly. However, some gene/tissue pairs are no longer considered reliable.&lt;/p&gt;
+&lt;p&gt;While preparing GTEx V7 prediction models, we identified a few issues in the way prediction performance was estimated in the previous release (2016-09-08 release). In aggregate, these caused the prediction model performance to be overestimated. Reassuringly, predicted expression levels and the downstream associations with phenotypes remain mostly unchanged, even though prediction weights vary slightly. However, some gene/tissue pairs are no longer considered reliable (&lt;a href=&#34;https://s3.amazonaws.com/predictdb2/deprecated/flags.txt&#34; target=&#34;_blank&#34;&gt;link to list&lt;/a&gt;).&lt;/p&gt;
 
 &lt;p&gt;Detailed description of the pipeline update and the effect in prediction models performance and downstream S-PrediXcan association can be found below.&lt;/p&gt;
 
@@ -104,7 +275,7 @@
 
 &lt;h4 id=&#34;workaround-for-manuscripts-analysis-in-advanced-stage&#34;&gt;Workaround for manuscripts/analysis in advanced stage&lt;/h4&gt;
 
-&lt;p&gt;For those of you in advanced stages of analysis/manuscript preparation, we have put together a table with three levels of reliability for each gene/tissue pair and recommend to use the following guidelines.&lt;/p&gt;
+&lt;p&gt;For those of you in advanced stages of analysis/manuscript preparation, we have put together a table with three levels of reliability (&lt;a href=&#34;https://s3.amazonaws.com/predictdb2/deprecated/flags.txt&#34; target=&#34;_blank&#34;&gt;link to list&lt;/a&gt;) for each gene/tissue pair and recommend to use the following guidelines.&lt;/p&gt;
 
 &lt;p&gt;If your top gene/tissue pairs are in the green list, no action is needed. If they fall in the red list, they should be dropped. Given the sharing across tissues of regulation, it is possible that even after dropping a gene/tissue pair, the gene is still significant and reliable in other tissues. Gene/tissue pairs in the yellow list should be considered with caution.&lt;/p&gt;
 </description>
