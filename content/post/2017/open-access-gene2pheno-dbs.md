@@ -1,5 +1,5 @@
 +++
-title = "How to Query our gene2pheno Database directly"
+title = "How to query our gene2pheno database directly"
 date = 2018-01-24T10:43:10-06:00
 draft = false
 
