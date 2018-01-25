@@ -145,8 +145,9 @@ If you have a Google Cloud Platform account (you can get a free account with a s
 - [Predictdb prediction models](https://bigquery.cloud.google.com/queries/predictdb-187320)
 - [Heritability Estimates](https://bigquery.cloud.google.com/dataset/gen-arch:genarch) from this [paper](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423)
 
-
+----
 If you find our resources useful please cite our papers so that we can continue maintaining them.
+
 ## Reference
 - Gamazon ER†, Wheeler HE†, Shah KP†, Mozaffari SV, Aquino-Michaels K,
 Carroll RJ, Eyler AE, Denny JC, Nicolae DL, Cox NJ, Im HK. (2015)

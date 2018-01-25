@@ -150,6 +150,8 @@ query.gene.mult = function(genename,Rthres=0.,fdb=db)
 &lt;li&gt;&lt;a href=&#34;https://bigquery.cloud.google.com/dataset/gen-arch:genarch&#34; target=&#34;_blank&#34;&gt;Heritability Estimates&lt;/a&gt; from this &lt;a href=&#34;http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423&#34; target=&#34;_blank&#34;&gt;paper&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;hr /&gt;
+
 &lt;p&gt;If you find our resources useful please cite our papers so that we can continue maintaining them.&lt;/p&gt;
 
 &lt;h2 id=&#34;reference&#34;&gt;Reference&lt;/h2&gt;
