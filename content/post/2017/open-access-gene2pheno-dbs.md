@@ -146,6 +146,11 @@ If you have a Google Cloud Platform account (you can get a free account with a s
 - [Heritability Estimates](https://bigquery.cloud.google.com/dataset/gen-arch:genarch) from this [paper](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423)
 
 ----
+### Via gene2pheno.org
+
+Of course you can also query using our app [link](http://gene2pheno.org)
+
+----
 If you find our resources useful please cite our papers so that we can continue maintaining them.
 
 ## Reference
