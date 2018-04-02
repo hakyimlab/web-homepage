@@ -145,10 +145,16 @@ query.gene.mult = function(genename,Rthres=0.,fdb=db)
 &lt;p&gt;If you have a Google Cloud Platform account (you can get a free account with a small credit included in Google Cloud) you can query directly from the webpages&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://bigquery.cloud.google.com/table/still-entity-123716:ukb_neale_gene2pheno.ukb_neale_gene2pheno_table?tab=details&#34; target=&#34;_blank&#34;&gt;PrediXcan Association UKBiobank&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bigquery.cloud.google.com/queries/predictdb-187320&#34; target=&#34;_blank&#34;&gt;Predictdb prediction models&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bigquery.cloud.google.com/dataset/gen-arch:genarch&#34; target=&#34;_blank&#34;&gt;Heritability Estimates&lt;/a&gt; from this &lt;a href=&#34;http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423&#34; target=&#34;_blank&#34;&gt;paper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bigquery.cloud.google.com/table/imlab_public:gene2pheno&#34; target=&#34;_blank&#34;&gt;PrediXcan Association UKBiobank&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bigquery.cloud.google.com/table/imlab_public:predictdb&#34; target=&#34;_blank&#34;&gt;Predictdb prediction models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bigquery.cloud.google.com/dataset/gene2pheno:genarch&#34; target=&#34;_blank&#34;&gt;Heritability Estimates&lt;/a&gt; from this &lt;a href=&#34;http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423&#34; target=&#34;_blank&#34;&gt;paper&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;via-gene2pheno-org&#34;&gt;Via gene2pheno.org&lt;/h3&gt;
+
+&lt;p&gt;Of course you can also query using our app &lt;a href=&#34;http://gene2pheno.org&#34; target=&#34;_blank&#34;&gt;link&lt;/a&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -164,11 +170,7 @@ transcriptome data&lt;/strong&gt;. Nat Genet. doi:10.1038/ng.3367.
 (&lt;a href=&#34;http://www.nature.com/ng/journal/v47/n9/full/ng.3367.html&#34; target=&#34;_blank&#34;&gt;Link to paper&lt;/a&gt;,
 &lt;a href=&#34;http://biorxiv.org/content/early/2015/06/17/020164&#34; target=&#34;_blank&#34;&gt;Link to Preprint on BioRxiv&lt;/a&gt;)&lt;/p&gt;&lt;/li&gt;
 
-&lt;li&gt;&lt;p&gt;Alvaro Barbeira, Kaanan P Shah, Jason M Torres, Heather E Wheeler,
-Eric S Torstenson, Todd Edwards, Tzintzuni Garcia, Graeme I Bell,
-Dan Nicolae, Nancy J Cox, Hae Kyung Im. (2016) &lt;strong&gt;MetaXcan: Summary
-Statistics Based Gene-Level Association Method Infers Accurate PrediXcan
-Results&lt;/strong&gt; &lt;a href=&#34;http://dx.doi.org/10.1101/045260&#34; target=&#34;_blank&#34;&gt;link to preprint&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Alvaro N. Barbeira, Scott P. Dickinson, Jason M. Torres, Rodrigo Bonazzola, Jiamao Zheng, Eric S. Torstenson, Heather E. Wheeler, Kaanan P. Shah, Todd Edwards, Tzintzuni Garcia, GTEx Consortium, Dan Nicolae, Nancy J. Cox, Hae Kyung Im (2017) &lt;strong&gt;Exploring the phenotypic consequences of tissue specific gene expression variation inferred from GWAS summary statistics&lt;/strong&gt; &lt;a href=&#34;http://dx.doi.org/10.1101/045260&#34; target=&#34;_blank&#34;&gt;link to preprint&lt;/a&gt; In press in Nature Communications 2018&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Heather E Wheeler, Kaanan P Shah, Jonathon Brenner, Tzintzuni Garcia,
 Keston Aquino-Michaels, GTEx Consortium, Nancy J Cox, Dan L Nicolae, Hae

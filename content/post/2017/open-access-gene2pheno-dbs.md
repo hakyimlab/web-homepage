@@ -141,9 +141,9 @@ query.gene.mult = function(genename,Rthres=0.,fdb=db)
 ### Via BigQuery
 If you have a Google Cloud Platform account (you can get a free account with a small credit included in Google Cloud) you can query directly from the webpages
 
-- [PrediXcan Association UKBiobank](https://bigquery.cloud.google.com/table/still-entity-123716:ukb_neale_gene2pheno.ukb_neale_gene2pheno_table?tab=details)
-- [Predictdb prediction models](https://bigquery.cloud.google.com/queries/predictdb-187320)
-- [Heritability Estimates](https://bigquery.cloud.google.com/dataset/gen-arch:genarch) from this [paper](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423)
+- [PrediXcan Association UKBiobank](https://bigquery.cloud.google.com/table/imlab_public:gene2pheno)
+- [Predictdb prediction models](https://bigquery.cloud.google.com/table/imlab_public:predictdb)
+- [Heritability Estimates](https://bigquery.cloud.google.com/dataset/gene2pheno:genarch) from this [paper](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423)
 
 ----
 ### Via gene2pheno.org
@@ -162,11 +162,7 @@ transcriptome data**. Nat Genet. doi:10.1038/ng.3367.
 [Link to Preprint on BioRxiv](http://biorxiv.org/content/early/2015/06/17/020164))
 
 
-- Alvaro Barbeira, Kaanan P Shah, Jason M Torres, Heather E Wheeler,
-Eric S Torstenson, Todd Edwards, Tzintzuni Garcia, Graeme I Bell,
-Dan Nicolae, Nancy J Cox, Hae Kyung Im. (2016) **MetaXcan: Summary
-Statistics Based Gene-Level Association Method Infers Accurate PrediXcan
-Results** [link to preprint](http://dx.doi.org/10.1101/045260)
+- Alvaro N. Barbeira, Scott P. Dickinson, Jason M. Torres, Rodrigo Bonazzola, Jiamao Zheng, Eric S. Torstenson, Heather E. Wheeler, Kaanan P. Shah, Todd Edwards, Tzintzuni Garcia, GTEx Consortium, Dan Nicolae, Nancy J. Cox, Hae Kyung Im (2017) **Exploring the phenotypic consequences of tissue specific gene expression variation inferred from GWAS summary statistics** [link to preprint](http://dx.doi.org/10.1101/045260) In press in Nature Communications 2018
 
 - Heather E Wheeler, Kaanan P Shah, Jonathon Brenner, Tzintzuni Garcia,
 Keston Aquino-Michaels, GTEx Consortium, Nancy J Cox, Dan L Nicolae, Hae
