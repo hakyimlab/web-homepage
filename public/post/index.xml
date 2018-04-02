@@ -147,7 +147,7 @@ query.gene.mult = function(genename,Rthres=0.,fdb=db)
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://bigquery.cloud.google.com/table/imlab_public:gene2pheno&#34; target=&#34;_blank&#34;&gt;PrediXcan Association UKBiobank&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&#34;https://bigquery.cloud.google.com/table/imlab_public:predictdb&#34; target=&#34;_blank&#34;&gt;Predictdb prediction models&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bigquery.cloud.google.com/dataset/gene2pheno:genarch&#34; target=&#34;_blank&#34;&gt;Heritability Estimates&lt;/a&gt; from this &lt;a href=&#34;http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423&#34; target=&#34;_blank&#34;&gt;paper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bigquery.cloud.google.com/dataset/imlab_public:genarch&#34; target=&#34;_blank&#34;&gt;Heritability Estimates&lt;/a&gt; from this &lt;a href=&#34;http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423&#34; target=&#34;_blank&#34;&gt;paper&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;

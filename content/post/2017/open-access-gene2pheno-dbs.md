@@ -143,7 +143,7 @@ If you have a Google Cloud Platform account (you can get a free account with a s
 
 - [PrediXcan Association UKBiobank](https://bigquery.cloud.google.com/table/imlab_public:gene2pheno)
 - [Predictdb prediction models](https://bigquery.cloud.google.com/table/imlab_public:predictdb)
-- [Heritability Estimates](https://bigquery.cloud.google.com/dataset/gene2pheno:genarch) from this [paper](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423)
+- [Heritability Estimates](https://bigquery.cloud.google.com/dataset/imlab_public:genarch) from this [paper](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423)
 
 ----
 ### Via gene2pheno.org
