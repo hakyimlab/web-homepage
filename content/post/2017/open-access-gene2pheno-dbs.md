@@ -141,9 +141,9 @@ query.gene.mult = function(genename,Rthres=0.,fdb=db)
 ### Via BigQuery
 If you have a Google Cloud Platform account (you can get a free account with a small credit included in Google Cloud) you can query directly from the webpages
 
-- [PrediXcan Association UKBiobank](https://bigquery.cloud.google.com/table/imlab_public:gene2pheno)
-- [Predictdb prediction models](https://bigquery.cloud.google.com/table/imlab_public:predictdb)
-- [Heritability Estimates](https://bigquery.cloud.google.com/dataset/imlab_public:genarch) from this [paper](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423)
+- [PrediXcan Association UKBiobank](https://bigquery.cloud.google.com/dataset/imlab-public:gene2pheno)
+- [Predictdb prediction models](https://bigquery.cloud.google.com/dataset/imlab-public:predictdb)
+- [Heritability Estimates](https://bigquery.cloud.google.com/dataset/imlab-public:genarch) from this [paper](http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423)
 
 ----
 ### Via gene2pheno.org

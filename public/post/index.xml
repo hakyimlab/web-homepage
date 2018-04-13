@@ -11,6 +11,17 @@
     <atom:link href="/post/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>Qqplot Calibration Rare Variants</title>
+      <link>http://hakyimlab.org/post/2017/qqplot-calibration-rare-variants/</link>
+      <pubDate>Fri, 13 Apr 2018 14:22:36 -0500</pubDate>
+      
+      <guid>http://hakyimlab.org/post/2017/qqplot-calibration-rare-variants/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://s3.amazonaws.com/imlab-open/Webdata/Files/2018/qqplot-calibration.pdf&#34; target=&#34;_blank&#34;&gt;In this report&lt;/a&gt; I calculate the lower bounds of p-values when using very rare variants, for which minor allele counts are in the single digits.
+This report was prepared back in 2012 for the T2D-GENES consortium that had just generated 10K whole exome sequenced data.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>How to query our gene2pheno database directly</title>
       <link>http://hakyimlab.org/post/2017/open-access-gene2pheno-dbs/</link>
       <pubDate>Wed, 24 Jan 2018 10:43:10 -0600</pubDate>
@@ -145,9 +156,9 @@ query.gene.mult = function(genename,Rthres=0.,fdb=db)
 &lt;p&gt;If you have a Google Cloud Platform account (you can get a free account with a small credit included in Google Cloud) you can query directly from the webpages&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://bigquery.cloud.google.com/table/imlab_public:gene2pheno&#34; target=&#34;_blank&#34;&gt;PrediXcan Association UKBiobank&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bigquery.cloud.google.com/table/imlab_public:predictdb&#34; target=&#34;_blank&#34;&gt;Predictdb prediction models&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://bigquery.cloud.google.com/dataset/imlab_public:genarch&#34; target=&#34;_blank&#34;&gt;Heritability Estimates&lt;/a&gt; from this &lt;a href=&#34;http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423&#34; target=&#34;_blank&#34;&gt;paper&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bigquery.cloud.google.com/dataset/imlab-public:gene2pheno&#34; target=&#34;_blank&#34;&gt;PrediXcan Association UKBiobank&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bigquery.cloud.google.com/dataset/imlab-public:predictdb&#34; target=&#34;_blank&#34;&gt;Predictdb prediction models&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://bigquery.cloud.google.com/dataset/imlab-public:genarch&#34; target=&#34;_blank&#34;&gt;Heritability Estimates&lt;/a&gt; from this &lt;a href=&#34;http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423&#34; target=&#34;_blank&#34;&gt;paper&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
