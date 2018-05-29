@@ -23,10 +23,10 @@ This report was prepared back in 2012 for the T2D-GENES consortium that had just
     
     <item>
       <title>How to query our gene2pheno database directly</title>
-      <link>http://hakyimlab.org/post/2017/open-access-gene2pheno-dbs/</link>
+      <link>http://hakyimlab.org/post/2018/open-access-gene2pheno-dbs/</link>
       <pubDate>Wed, 24 Jan 2018 10:43:10 -0600</pubDate>
       
-      <guid>http://hakyimlab.org/post/2017/open-access-gene2pheno-dbs/</guid>
+      <guid>http://hakyimlab.org/post/2018/open-access-gene2pheno-dbs/</guid>
       <description>
 
 &lt;p&gt;We have opened direct access to the gene2pheno database, where we are hosting the PrediXcan results of close to 3000 phenotypes (from public GWAS meta analysis results and UKBiobank results from &lt;a href=&#34;http://www.nealelab.is/blog/2017/7/19/rapid-gwas-of-thousands-of-phenotypes-for-337000-samples-in-the-uk-biobank&#34; target=&#34;_blank&#34;&gt;Ben Neale/HAIL team&lt;/a&gt;).&lt;/p&gt;
@@ -65,8 +65,14 @@ phenoinfo = phenotb %&amp;gt;% inner_join(dbGetQuery(db, &amp;quot;select * from
 ##install.packages(&#39;RPostgreSQL&#39;)
 library(&#39;RPostgreSQL&#39;)
 drv &amp;lt;- dbDriver(&amp;quot;PostgreSQL&amp;quot;)
-db  &amp;lt;- dbConnect(drv, host=&amp;quot;gene2pheno.ccsriudvs1y0.us-east-1.rds.amazonaws.com&amp;quot;, port=&amp;quot;5432&amp;quot;, dbname=&amp;quot;public_gwas_v6p_hapmap_2017_12_04&amp;quot;, user=&amp;quot;metaxcan_ro&amp;quot;, password=&amp;quot;M3t4Xc4nR0&amp;quot;)
-db.uk &amp;lt;- dbConnect(drv, host=&amp;quot;gene2pheno.ccsriudvs1y0.us-east-1.rds.amazonaws.com&amp;quot;, port=&amp;quot;5432&amp;quot;, dbname=&amp;quot;ukb_neale_2017_10_14&amp;quot;, user=&amp;quot;metaxcan_ro&amp;quot;, password=&amp;quot;M3t4Xc4nR0&amp;quot;)
+
+
+db  &amp;lt;-   dbConnect(drv, host=&amp;quot;gene2pheno.ccsriudvs1y0.us-east-1.rds.amazonaws.com&amp;quot;, port=&amp;quot;5432&amp;quot;, dbname=&amp;quot;release_2017_09_14&amp;quot;, user=&amp;quot;metaxcan_ro&amp;quot;, password=&amp;quot;M3t4Xc4nR0&amp;quot;)
+
+db.uk &amp;lt;- dbConnect(drv, host=&amp;quot;gene2pheno.ccsriudvs1y0.us-east-1.rds.amazonaws.com&amp;quot;, port=&amp;quot;5432&amp;quot;,
+dbname=&amp;quot;ukb_neale_2017_10_14&amp;quot;, user=&amp;quot;metaxcan_ro&amp;quot;, password=&amp;quot;M3t4Xc4nR0&amp;quot;)
+
+## Currently, gene2pheno.org is serving results based on GTEx V6p. Expanded list of phenotypes can be retrieved using this dbname=“public_gwas_v6p_hapmap_2017_12_04”
 
 ## Query functions
 query0 = paste0(  

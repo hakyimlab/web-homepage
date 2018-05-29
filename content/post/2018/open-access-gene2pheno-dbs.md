@@ -54,8 +54,14 @@ library(tidyverse)
 ##install.packages('RPostgreSQL')
 library('RPostgreSQL')
 drv <- dbDriver("PostgreSQL")
-db  <- dbConnect(drv, host="gene2pheno.ccsriudvs1y0.us-east-1.rds.amazonaws.com", port="5432", dbname="public_gwas_v6p_hapmap_2017_12_04", user="metaxcan_ro", password="M3t4Xc4nR0")
-db.uk <- dbConnect(drv, host="gene2pheno.ccsriudvs1y0.us-east-1.rds.amazonaws.com", port="5432", dbname="ukb_neale_2017_10_14", user="metaxcan_ro", password="M3t4Xc4nR0")
+
+
+db  <-   dbConnect(drv, host="gene2pheno.ccsriudvs1y0.us-east-1.rds.amazonaws.com", port="5432", dbname="release_2017_09_14", user="metaxcan_ro", password="M3t4Xc4nR0")
+
+db.uk <- dbConnect(drv, host="gene2pheno.ccsriudvs1y0.us-east-1.rds.amazonaws.com", port="5432",
+dbname="ukb_neale_2017_10_14", user="metaxcan_ro", password="M3t4Xc4nR0")
+
+## Currently, gene2pheno.org is serving results based on GTEx V6p. Expanded list of phenotypes can be retrieved using this dbname=“public_gwas_v6p_hapmap_2017_12_04”
 
 ## Query functions
 query0 = paste0(  
