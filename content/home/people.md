@@ -19,8 +19,6 @@ weight = 60
 
 - Jiamao Zheng, PhD - [Bio](https://github.com/jiamaozheng)
 
-- Scott Dickinson, MS - [Bio](https://github.com/ScottPDickinson)
-
 - Alvaro Barbeira, MS - [Bio](https://github.com/heroico)
 
 - Milton Pividori, PhD - [Bio](https://github.com/miltondp)
