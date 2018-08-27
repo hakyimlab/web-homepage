@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Hae Kyung Im</copyright>
     <lastBuildDate>Sat, 15 Aug 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/publication_types/1/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://hakyimlab.org/publication_types/1/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>A gene-based association method for mapping traits using reference transcriptome data</title>

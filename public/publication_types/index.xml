@@ -7,13 +7,15 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Hae Kyung Im</copyright>
-    <lastBuildDate>Sun, 13 Jun 2100 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/publication_types/" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 May 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://hakyimlab.org/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>0</title>
       <link>http://hakyimlab.org/publication_types/0/</link>
-      <pubDate>Sun, 13 Jun 2100 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
       <guid>http://hakyimlab.org/publication_types/0/</guid>
       <description></description>

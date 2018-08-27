@@ -17,10 +17,12 @@ weight = 60
 
 - Hae Kyung Im, PhD - [Bio](#about)  
 
-- Jiamao Zheng, PhD - [Bio](https://github.com/jiamaozheng)
-
 - Alvaro Barbeira, MS - [Bio](https://github.com/heroico)
 
 - Milton Pividori, PhD - [Bio](https://github.com/miltondp)
 
 - Rodrigo Bonazzola, MS - [Bio](https://github.com/rbonazzola)
+
+- Yanyu Liang (GGSB Grad Student) - [Bio](https://github.com/liangyy)
+
+- Padma Sheila Rajagopal, MD - [Bio](https://github.com/parajago)

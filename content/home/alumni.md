@@ -14,4 +14,6 @@ weight = 65
 
 +++
 
+- Jiamao Zheng, PhD - [Bio](https://github.com/jiamaozheng)
+
 - Scott Dickinson, MS - [Bio](https://github.com/ScottPDickinson)

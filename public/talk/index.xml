@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Hae Kyung Im</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/talk/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://hakyimlab.org/talk/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Assessing the phenome-wide consequences of genetically regulated molecular traits</title>
@@ -25,8 +27,7 @@
       <pubDate>Fri, 13 Oct 2017 18:51:23 -0500</pubDate>
       
       <guid>http://hakyimlab.org/talk/2017-10-13-wcpg/</guid>
-      <description>&lt;p&gt;Friday, October 13, 2017 from 8:00am - 3:45pm.&lt;/p&gt;
-</description>
+      <description>Friday, October 13, 2017 from 8:00am - 3:45pm.</description>
     </item>
     
     <item>
@@ -35,8 +36,7 @@
       <pubDate>Wed, 13 Sep 2017 08:28:20 -0500</pubDate>
       
       <guid>http://hakyimlab.org/talk/2017-09-13-rising-starts-data-science/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://medicine.uchicago.edu/files/2017/08/Rising_Stars_Poster_FINAL.pdf&#34; target=&#34;_blank&#34;&gt;Event Poster PDF here&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Event Poster PDF here</description>
     </item>
     
     <item>

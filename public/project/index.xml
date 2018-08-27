@@ -8,7 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Hae Kyung Im</copyright>
     <lastBuildDate>Tue, 28 Nov 2017 18:36:31 -0600</lastBuildDate>
-    <atom:link href="/project/" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://hakyimlab.org/project/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Gene Correlation Across Tissues</title>
@@ -16,12 +18,9 @@
       <pubDate>Tue, 28 Nov 2017 18:36:31 -0600</pubDate>
       
       <guid>http://hakyimlab.org/project/gene-correlation-across-tissues/</guid>
-      <description>&lt;p&gt;This app plots the correlation of predicted expression levels in different tissues. The prediction was computed using GTEx v6p prediction models  and 1000G genotypes.&lt;/p&gt;
-
-&lt;p&gt;[code link will be posted here shortly]&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://imlab.shinyapps.io/GeneExpressionCorr_v6p_HapMap/&#34; target=&#34;_blank&#34;&gt;User friendly web application here&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>This app plots the correlation of predicted expression levels in different tissues. The prediction was computed using GTEx v6p prediction models and 1000G genotypes.
+[code link will be posted here shortly]
+User friendly web application here</description>
     </item>
     
     <item>
@@ -48,10 +47,8 @@
       <pubDate>Sat, 08 Jul 2017 15:36:58 -0500</pubDate>
       
       <guid>http://hakyimlab.org/project/s-predixcan/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/hakyimlab/MetaXcan&#34; target=&#34;_blank&#34;&gt;Find code here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://cloud.hakyimlab.org&#34; target=&#34;_blank&#34;&gt;User friendly web application here&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>Find code here
+User friendly web application here</description>
     </item>
     
     <item>

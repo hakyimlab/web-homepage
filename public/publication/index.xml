@@ -8,17 +8,9 @@
     <language>en-us</language>
     <copyright>&amp;copy; 2017 Hae Kyung Im</copyright>
     <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/publication/" rel="self" type="application/rss+xml" />
     
-    <item>
-      <title>Google Scholar List</title>
-      <link>http://hakyimlab.org/publication/google-scholar/</link>
-      <pubDate>Sun, 13 Jun 2100 00:00:00 +0000</pubDate>
-      
-      <guid>http://hakyimlab.org/publication/google-scholar/</guid>
-      <description>&lt;p&gt;Check &lt;a href=&#34;https://scholar.google.com/citations?user=1QD4sIcAAAAJ&amp;amp;hl=en&#34; target=&#34;_blank&#34;&gt;Google Scholar List&lt;/a&gt; while we prepare publication page&lt;/p&gt;
-</description>
-    </item>
+	<atom:link href="http://hakyimlab.org/publication/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Exploring the phenotypic consequences of tissue specific gene expression variation inferred from GWAS summary statistics</title>
