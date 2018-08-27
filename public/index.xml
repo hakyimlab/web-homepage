@@ -11,11 +11,29 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>GTEx Jamboree</title>
+      <link>http://hakyimlab.org/talk/2018-05-08-gtex-jamboree/</link>
+      <pubDate>Tue, 08 May 2018 00:00:00 -0500</pubDate>
+      
+      <guid>http://hakyimlab.org/talk/2018-05-08-gtex-jamboree/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Exploring the phenotypic consequences of tissue specific gene expression variation inferred from GWAS summary statistics</title>
       <link>http://hakyimlab.org/publication/exploring-phenotypic-consequences/</link>
       <pubDate>Tue, 01 May 2018 00:00:00 +0000</pubDate>
       
       <guid>http://hakyimlab.org/publication/exploring-phenotypic-consequences/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Statistical methods to examine how genes affect disease risk</title>
+      <link>http://hakyimlab.org/talk/2018-04-26-uvirginia/</link>
+      <pubDate>Thu, 26 Apr 2018 00:00:00 -0500</pubDate>
+      
+      <guid>http://hakyimlab.org/talk/2018-04-26-uvirginia/</guid>
       <description></description>
     </item>
     
@@ -28,6 +46,15 @@
       <description>&lt;p&gt;&lt;a href=&#34;https://s3.amazonaws.com/imlab-open/Webdata/Files/2018/qqplot-calibration.pdf&#34; target=&#34;_blank&#34;&gt;In this report&lt;/a&gt; I calculate the lower bounds of p-values when using very rare variants, for which minor allele counts are in the single digits.
 This report was prepared back in 2012 for the T2D-GENES consortium that had just generated 10K whole exome sequenced data.&lt;/p&gt;
 </description>
+    </item>
+    
+    <item>
+      <title>Prediction and Dissection of Complex Traits</title>
+      <link>http://hakyimlab.org/talk/2018-03-01-ucla-winter-institute/</link>
+      <pubDate>Thu, 01 Mar 2018 00:00:00 -0600</pubDate>
+      
+      <guid>http://hakyimlab.org/talk/2018-03-01-ucla-winter-institute/</guid>
+      <description></description>
     </item>
     
     <item>
@@ -312,6 +339,16 @@ Expression Traits Across Human Tissues&lt;/strong&gt;.
     </item>
     
     <item>
+      <title>Exploring disease mechanisms using genetically regulated endophenotypes</title>
+      <link>http://hakyimlab.org/talk/2017-12-08-uthealth/</link>
+      <pubDate>Fri, 08 Dec 2017 00:00:00 -0600</pubDate>
+      
+      <guid>http://hakyimlab.org/talk/2017-12-08-uthealth/</guid>
+      <description>&lt;p&gt;Research seminar, “Exploring disease mechanisms using genetically regulated endophenotypes”, University of Texas Health Science Center, Houston, TX, USA (12/8/2018)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Bidding Farewell to Scott</title>
       <link>http://hakyimlab.org/post/2017/scott-farewell/</link>
       <pubDate>Thu, 30 Nov 2017 13:52:17 -0600</pubDate>
@@ -461,73 +498,6 @@ So et al use S-PrediXcan to find psychiatric drug repositioning candidates.
       
       <guid>http://hakyimlab.org/project/web-apps/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>We are releasing all PrediXcan associations based on Neale Lab&#39;s UKB rapid GWAS results</title>
-      <link>http://hakyimlab.org/post/2017/ubk-neale-predixcan-release/</link>
-      <pubDate>Sun, 15 Oct 2017 15:38:31 -0400</pubDate>
-      
-      <guid>http://hakyimlab.org/post/2017/ubk-neale-predixcan-release/</guid>
-      <description>&lt;p&gt;Update (11/1/2017)&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Gene level results &amp;ldquo;meta analyzed&amp;rdquo; across tissues now available.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Shinyapp to directly query by gene and phenotype is &lt;a href=&#34;http://UKBBeta.gene2pheno.org&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt; but can be slow. Stay tuned for faster version coming soon.&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;As many of you may know, Neale Lab made a big splash in the GWAS community by releasing the summary results of 2400+ phenotypes from the &lt;a href=&#34;http://www.nealelab.is/blog/2017/7/19/rapid-gwas-of-thousands-of-phenotypes-for-337000-samples-in-the-uk-biobank&#34; target=&#34;_blank&#34;&gt;UK Biobank&lt;/a&gt;.
-Following their lead on open science and open data sharing, we are releasing the bulk runs of PrediXcan association based on Neale Lab&amp;rsquo;s UKB results and 44 tissues models from GTEx V6p release.&lt;/p&gt;
-
-&lt;p&gt;All PrediXcan associations can be downloaded from &lt;a href=&#34;http://ukb-neale.gene2pheno.org&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;We are also generating a &amp;ldquo;meta analyzed&amp;rdquo; across tissues version, which we find much more easily interpretable. They will be uploaded within the next few days.&lt;/p&gt;
-
-&lt;p&gt;All this is work in progress, so feedback is greatly appreciated! We are trying to flag some suspicous results (likely false positives) but so please let us know if you find them.&lt;/p&gt;
-
-&lt;p&gt;A Web app for query (Shinyapp) will be rolled out shortly, so stay tuned.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Statistical methods to explore the phenotypic consequences of gene regulation</title>
-      <link>http://hakyimlab.org/talk/2017-10-13-wcpg/</link>
-      <pubDate>Fri, 13 Oct 2017 18:51:23 -0500</pubDate>
-      
-      <guid>http://hakyimlab.org/talk/2017-10-13-wcpg/</guid>
-      <description>&lt;p&gt;Friday, October 13, 2017 from 8:00am - 3:45pm.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>ImLab was awarded NIH Cloud Credit</title>
-      <link>http://hakyimlab.org/post/2017/nih-cloud-credit-award/</link>
-      <pubDate>Mon, 09 Oct 2017 10:20:18 -0500</pubDate>
-      
-      <guid>http://hakyimlab.org/post/2017/nih-cloud-credit-award/</guid>
-      <description>&lt;p&gt;We are delighted to be awarded NIH Cloud Credit that will help us fund our cloud-based web applications and databases and broadly share our tools and resources.&lt;/p&gt;
-
-&lt;p&gt;Thank you, Jiamao, for pushing this through 👍😃&lt;/p&gt;
-
-&lt;p&gt;Information about Cloud Credits &lt;a href=&#34;https://commonfund.nih.gov/bd2k/cloudcredits&#34; target=&#34;_blank&#34;&gt;here&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>U4C Challenge Winners</title>
-      <link>http://hakyimlab.org/post/2017/u4c-challenge-winners/</link>
-      <pubDate>Thu, 28 Sep 2017 10:19:12 -0500</pubDate>
-      
-      <guid>http://hakyimlab.org/post/2017/u4c-challenge-winners/</guid>
-      <description>&lt;p&gt;Two out of 4 winners used PrediXcan 👍👍&lt;/p&gt;
-
-&lt;p&gt;Winners of &amp;ldquo;Up For A Challenge (U4C): Stimulating innovation in breast cancer genetic epidemiology&amp;rdquo; papers published on line &lt;a href=&#34;http://collections.plos.org/up-for-a-challenge&#34; target=&#34;_blank&#34;&gt;link here&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Here is our contribution in collaboration with Guimin Gao, Brandon Pierce, Funmi Olopade, and Dezheng Huo &lt;a href=&#34;http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006727&#34; target=&#34;_blank&#34;&gt;link to paper here&lt;/a&gt;&lt;/p&gt;
-</description>
     </item>
     
   </channel>
