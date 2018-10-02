@@ -15,11 +15,11 @@ weight = 60
 +++
 
 
-- Hae Kyung Im, PhD - [Bio](#about)  
+- Hae Kyung Im, PhD - [Bio](#about) - [ORCID](https://orcid.org/0000-0003-0333-5685)
 
 - Alvaro Barbeira, MS - [Bio](https://github.com/heroico)
 
-- Milton Pividori, PhD - [Bio](https://github.com/miltondp)
+- Milton Pividori, PhD - [Bio](https://github.com/miltondp) - [ORCID](https://orcid.org/0000-0002-3035-4403)
 
 - Rodrigo Bonazzola, MS - [Bio](https://github.com/rbonazzola)
 
