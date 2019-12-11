@@ -13,6 +13,15 @@
     
     
     <item>
+      <title>GTEx V8 Model Release</title>
+      <link>http://hakyimlab.org/post/2019/gtex-v8-model-release/</link>
+      <pubDate>Wed, 11 Dec 2019 13:31:33 -0600</pubDate>
+      
+      <guid>http://hakyimlab.org/post/2019/gtex-v8-model-release/</guid>
+      <description>We have recently published a new set of prediction models trained on GTEx v8 data (as part of efforts detailed in this preprint). We have overhauled the model construction, incorporating posterior inclusion probabilities and global patterns of tissue sharing, while also benefiting from larger sample sizes. We cover both expression and alternate splicing mechanisms. We are very excited about these new models and the potential for new discoveries. However, these models require additional GWAS preprocessing in some public GWAS studies, which we describe here.</description>
+    </item>
+    
+    <item>
       <title>Qqplot Calibration Rare Variants</title>
       <link>http://hakyimlab.org/post/2017/qqplot-calibration-rare-variants/</link>
       <pubDate>Fri, 13 Apr 2018 14:22:36 -0500</pubDate>
