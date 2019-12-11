@@ -8,6 +8,7 @@ How to edit webpage
 - edit content (post, project, talk) [tutorial](https://sourcethemes.com/academic/#posts)
 - build static pages (run `hugo server` in the terminal)
 - git add/commit/push
+- run deploy.sh from the terminal
 
 #
 Reminder to myself from time to time,
