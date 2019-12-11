@@ -14,6 +14,8 @@ weight = 65
 
 +++
 
+- Rodrigo Bonazzola, MS - [Currently PhD Student at the University of Leeds](http://www.cistib.org/index.php/people/students/rodrigo-bonazzola) [Github](https://github.com/rbonazzola)
+
 - Jiamao Zheng, PhD - [Bio](https://github.com/jiamaozheng)
 
 - Scott Dickinson, MS - [Bio](https://github.com/ScottPDickinson)
