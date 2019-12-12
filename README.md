@@ -6,7 +6,7 @@ This is the content and resulting htm files for the Im Lab webpage [hakyimlab li
 #
 How to edit webpage
 - edit content (post, project, talk) [tutorial](https://sourcethemes.com/academic/#posts)
-- build static pages (run `hugo server` in the terminal)
+- build static pages (run `hugo server` in the terminal to see locally)
 - git add/commit/push
 - run deploy.sh from the terminal (hosted in aws s3)
 
