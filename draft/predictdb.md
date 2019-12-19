@@ -20,6 +20,9 @@ Elastic Net-based are a safe, robust alternative with decreased power.
 Expression and splicing prediction models with LD-compilations data are available in this 
 [Zenodo repository](https://zenodo.org/record/3518299).
 
+-[ ] Alvaro todo: use the specific links https://zenodo.org/record/3518299/files/mashr_eqtl.tar?download=1
+etc.
+
 Look for the following files:
 
 ```
