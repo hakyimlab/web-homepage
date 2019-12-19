@@ -22,6 +22,7 @@ Expression and splicing prediction models with LD-compilations data are availabl
 
 -[ ] Alvaro todo: use the specific links https://zenodo.org/record/3518299/files/mashr_eqtl.tar?download=1
 etc.
+-[ ] Alvaro todo:let's we ask people to cite the GWAS companion preprint, metaxcan, and predixcan papers if they find our models useful. We will add the best prediction model preprint afterwards.
 
 Look for the following files:
 
@@ -92,7 +93,7 @@ Single-tissue expression prediction models with LD-compilations data are availab
 [Zenodo repository](https://zenodo.org/record/3572815#.XfqOstl7m90). 
 The underlying algorithm is Elastic Net on MESA multi-ethnic cohort. 
  
-Models presented in [this](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007586) article.
+Models presented in [this](https://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1007586) article, please cite if you find these useful.
 
 ## CommonMind consortium
 
@@ -100,7 +101,7 @@ Single-tissue expression prediction models with LD-compilations data are availab
 [GitHub repository](https://github.com/laurahuckins/CMC_DLPFC_prediXcan).
 The underlying algorithm is Elastic Net.
 
-These models were presented in [this article](https://www.ncbi.nlm.nih.gov/pubmed/30911161).
+These models were presented in [this article](https://www.ncbi.nlm.nih.gov/pubmed/30911161), please cite if you find these useful.
 
 
 ## EpiXcan Models
@@ -109,4 +110,4 @@ Expression prediction models with LD-compilations data are available in this [we
 The models were trained on Common Mind Consortium, GTEx, and STARNET consortiums.
 The underlying algorithm is Elastic Net, informed by epigenetic data.
 
-These models were presented in [this article](https://www.nature.com/articles/s41467-019-11874-7).
+These models were presented in [this article](https://www.nature.com/articles/s41467-019-11874-7), please cite if you find these useful.
