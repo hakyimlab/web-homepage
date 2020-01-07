@@ -17,6 +17,8 @@ Reminder to myself from time to time,
 )
 
 
+# new post
+> hugo new post/2019/predictdb.md
 
 ## todo
 need to find better location for images (not covered by template)
