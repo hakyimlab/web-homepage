@@ -14,10 +14,10 @@
     
     <item>
       <title>PredictDB: Transcriptome Prediction Model Repository</title>
-      <link>http://hakyimlab.org/post/2019/predictdb/</link>
+      <link>http://hakyimlab.org/post/2020/predictdb/</link>
       <pubDate>Tue, 07 Jan 2020 09:18:21 -0600</pubDate>
       
-      <guid>http://hakyimlab.org/post/2019/predictdb/</guid>
+      <guid>http://hakyimlab.org/post/2020/predictdb/</guid>
       <description>Predictdb Here you can find transcriptome prediction models for the PrediXcan family of methods: S-PrediXcan, MultiXcan and S-MultiXcan. .db files are prediction models, usable by all methods. .txt.gz files are compilations of LD reference for summary-based methods (S- prefix). S-PrediXcan is meant to use the single-tissue LD reference files (&amp;ldquo;covariances&amp;rdquo;) appropriate to each model. S-MultiXcan uses single-tissue prediction models and a cross-tissue LD reference.
 GTEx v8 models on eQTL and sQTL We have produced different families of prediction models for sQTL and eQTL, using several prediction strategies, on GTEx v8 release data.</description>
     </item>
