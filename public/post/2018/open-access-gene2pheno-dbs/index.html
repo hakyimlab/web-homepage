@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.46" />
+  <meta name="generator" content="Hugo 0.74.3" />
   <meta name="author" content="Hae Kyung Im">
   <meta name="description" content="Assistant Professor - Genetic Medicine - ">
 
@@ -250,21 +250,13 @@
 </div>
 
     <div class="article-style" itemprop="articleBody">
-      
-
-<p>We have opened direct access to the gene2pheno database, where we are hosting the PrediXcan results of close to 3000 phenotypes (from public GWAS meta analysis results and UKBiobank results from <a href="http://www.nealelab.is/blog/2017/7/19/rapid-gwas-of-thousands-of-phenotypes-for-337000-samples-in-the-uk-biobank" target="_blank">Ben Neale/HAIL team</a>).</p>
-
-<p>Below are R functions that will allow you access and query the database. These results are based on GTEx V6p models and details of the analysis can be found in our preprint <a href="https://doi.org/10.1101/045260" target="_blank">link to preprint</a> in press now in Nature Communications.</p>
-
+      <p>We have opened direct access to the gene2pheno database, where we are hosting the PrediXcan results of close to 3000 phenotypes (from public GWAS meta analysis results and UKBiobank results from <a href="http://www.nealelab.is/blog/2017/7/19/rapid-gwas-of-thousands-of-phenotypes-for-337000-samples-in-the-uk-biobank">Ben Neale/HAIL team</a>).</p>
+<p>Below are R functions that will allow you access and query the database. These results are based on GTEx V6p models and details of the analysis can be found in our preprint <a href="https://doi.org/10.1101/045260">link to preprint</a> in press now in Nature Communications.</p>
 <p>Usual disclaimers apply. This is provided for your convenience and with the hope of being useful. We provide no guarantee of accuracy etc&hellip;</p>
-
-<hr />
-
+<hr>
 <h3 id="via-postgresql">Via PostgreSQL</h3>
-
 <p>The code below may not be completely self explanatory. We are working on the documentation.</p>
-
-<pre><code class="language-R">## First run the preliminary command further down
+<pre><code class="language-{R}" data-lang="{R}">## First run the preliminary command further down
 
 ## this will fetch all associations for Schizophrenia
 data = query.pheno(&quot;pgc_scz&quot;)
@@ -278,11 +270,8 @@ phenotb = dbGetQuery(db,&quot;select * from pheno&quot;)
 tissuetb = dbGetQuery(db,&quot;select * from tissue&quot;)
 genetb = dbGetQuery(db,&quot;select * from gene&quot;)
 phenoinfo = phenotb %&gt;% inner_join(dbGetQuery(db, &quot;select * from pheno_info&quot;),by=c(&quot;id&quot;=&quot;pheno_id&quot;) )
-</code></pre>
-
-<p>You will need to run the following preliminary commands first</p>
-
-<pre><code class="language-R">library(tidyverse)
+</code></pre><p>You will need to run the following preliminary commands first</p>
+<pre><code class="language-{R}" data-lang="{R}">library(tidyverse)
 
 ## Connect to DB
 ##install.packages('RPostgreSQL')
@@ -376,51 +365,41 @@ query.gene.mult = function(genename,Rthres=0.,fdb=db)
   query =   paste0(query_multi_tissue_base,&quot; WHERE g.gene_name like '&quot;, genename,  &quot;%' &quot; )
   dbGetQuery(fdb,query) %&gt;% arrange(pvalue)
 }
-</code></pre>
-
-<hr />
-
+</code></pre><hr>
 <h3 id="via-bigquery">Via BigQuery</h3>
-
 <p>If you have a Google Cloud Platform account (you can get a free account with a small credit included in Google Cloud) you can query directly from the webpages</p>
-
 <ul>
-<li><a href="https://bigquery.cloud.google.com/dataset/imlab-public:gene2pheno" target="_blank">PrediXcan Association UKBiobank</a></li>
-<li><a href="https://bigquery.cloud.google.com/dataset/imlab-public:predictdb" target="_blank">Predictdb prediction models</a></li>
-<li><a href="https://bigquery.cloud.google.com/dataset/imlab-public:genarch" target="_blank">Heritability Estimates</a> from this <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423" target="_blank">paper</a></li>
+<li><a href="https://bigquery.cloud.google.com/dataset/imlab-public:gene2pheno">PrediXcan Association UKBiobank</a></li>
+<li><a href="https://bigquery.cloud.google.com/dataset/imlab-public:predictdb">Predictdb prediction models</a></li>
+<li><a href="https://bigquery.cloud.google.com/dataset/imlab-public:genarch">Heritability Estimates</a> from this <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423">paper</a></li>
 </ul>
-
-<hr />
-
-<h3 id="via-gene2pheno-org">Via gene2pheno.org</h3>
-
-<p>Of course you can also query using our app <a href="http://gene2pheno.org" target="_blank">link</a></p>
-
-<hr />
-
+<hr>
+<h3 id="via-gene2phenoorg">Via gene2pheno.org</h3>
+<p>Of course you can also query using our app <a href="http://gene2pheno.org">link</a></p>
+<hr>
 <p>If you find our resources useful please cite our papers so that we can continue maintaining them.</p>
-
 <h2 id="reference">Reference</h2>
-
 <ul>
-<li><p>Gamazon ER†, Wheeler HE†, Shah KP†, Mozaffari SV, Aquino-Michaels K,
+<li>
+<p>Gamazon ER†, Wheeler HE†, Shah KP†, Mozaffari SV, Aquino-Michaels K,
 Carroll RJ, Eyler AE, Denny JC, Nicolae DL, Cox NJ, Im HK. (2015)
 <strong>A gene-based association method for mapping traits using reference
 transcriptome data</strong>. Nat Genet. doi:10.1038/ng.3367.
-(<a href="http://www.nature.com/ng/journal/v47/n9/full/ng.3367.html" target="_blank">Link to paper</a>,
-<a href="http://biorxiv.org/content/early/2015/06/17/020164" target="_blank">Link to Preprint on BioRxiv</a>)</p></li>
-
-<li><p>Alvaro N. Barbeira, Scott P. Dickinson, Jason M. Torres, Rodrigo Bonazzola, Jiamao Zheng, Eric S. Torstenson, Heather E. Wheeler, Kaanan P. Shah, Todd Edwards, Tzintzuni Garcia, GTEx Consortium, Dan Nicolae, Nancy J. Cox, Hae Kyung Im (2017) <strong>Exploring the phenotypic consequences of tissue specific gene expression variation inferred from GWAS summary statistics</strong> <a href="http://dx.doi.org/10.1101/045260" target="_blank">link to preprint</a> In press in Nature Communications 2018</p></li>
-
-<li><p>Heather E Wheeler, Kaanan P Shah, Jonathon Brenner, Tzintzuni Garcia,
+(<a href="http://www.nature.com/ng/journal/v47/n9/full/ng.3367.html">Link to paper</a>,
+<a href="http://biorxiv.org/content/early/2015/06/17/020164">Link to Preprint on BioRxiv</a>)</p>
+</li>
+<li>
+<p>Alvaro N. Barbeira, Scott P. Dickinson, Jason M. Torres, Rodrigo Bonazzola, Jiamao Zheng, Eric S. Torstenson, Heather E. Wheeler, Kaanan P. Shah, Todd Edwards, Tzintzuni Garcia, GTEx Consortium, Dan Nicolae, Nancy J. Cox, Hae Kyung Im (2017) <strong>Exploring the phenotypic consequences of tissue specific gene expression variation inferred from GWAS summary statistics</strong> <a href="http://dx.doi.org/10.1101/045260">link to preprint</a> In press in Nature Communications 2018</p>
+</li>
+<li>
+<p>Heather E Wheeler, Kaanan P Shah, Jonathon Brenner, Tzintzuni Garcia,
 Keston Aquino-Michaels, GTEx Consortium, Nancy J Cox, Dan L Nicolae, Hae
 Kyung Im. (2016) <strong>Survey of the Heritability and Sparsity of Gene
 Expression Traits Across Human Tissues</strong>.
-<a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423" target="_blank">link to paper</a></p></li>
+<a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423">link to paper</a></p>
+</li>
 </ul>
-
-<hr />
-
+<hr>
 <p><strong>Disclaimer:</strong> the models are provided &ldquo;as is&rdquo;, with the hope that they may be of use, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the models or the use or other dealings in the models.</p>
 
     </div>
@@ -452,7 +431,7 @@ Expression Traits Across Human Tissues</strong>.
   
 <section id="comments">
   <div id="disqus_thread"></div>
-<script>
+<script type="application/javascript">
     var disqus_config = function () {
     
     
@@ -480,7 +459,7 @@ Expression Traits Across Human Tissues</strong>.
   <div class="container">
     <p class="powered-by">
 
-      &copy; 2017 Hae Kyung Im &middot; 
+      © 2017 Hae Kyung Im &middot; 
 
       Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
       theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.

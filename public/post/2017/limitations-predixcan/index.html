@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="theme" content="hugo-academic">
-  <meta name="generator" content="Hugo 0.46" />
+  <meta name="generator" content="Hugo 0.74.3" />
   <meta name="author" content="Hae Kyung Im">
   <meta name="description" content="Assistant Professor - Genetic Medicine - ">
 
@@ -251,25 +251,18 @@
 
     <div class="article-style" itemprop="articleBody">
       <p>Keep in mind that significant associations shown here do not imply causality. That said, given that PrediXcan is seeking to test the role of gene expression variation on traits and we and others have shown that significant PrediXcan genes are enriched in causal genes, these results should be useful to delve into the mechanisms underlying gene to phenotype associations.</p>
-
 <p>False positives can arise because of several factors</p>
-
 <ul>
 <li>LD contamination</li>
 </ul>
-
 <p>By computing the probability of LD contamination, we try to reduce false positives due to LD rather than genuine colocalization of trait and expression causal variants. Filtering out genes with high probability of independent signals (P3&gt;0.5) would reduce the number of hits due to LD contamination.</p>
-
 <ul>
 <li>Co regulation</li>
 </ul>
-
 <p>Many loci show regulation of multiple genes. PrediXcan is not able to distinguish between truly causal and co-regulation but non causal genes.</p>
-
 <ul>
 <li>Mismatched LD between study, reference, and training sets</li>
 </ul>
-
 <p>Misspecified LD can lead to false positives (for example if LD in the study population is much higher than in the reference population, highly correlated modestly significant SNPs may be considered to be independent evidence of association, leading to highly significant gene-level association). They are also needed for combining results across multiple tissues, or to run conditional analysis.</p>
 
     </div>
@@ -301,7 +294,7 @@
   
 <section id="comments">
   <div id="disqus_thread"></div>
-<script>
+<script type="application/javascript">
     var disqus_config = function () {
     
     
@@ -329,7 +322,7 @@
   <div class="container">
     <p class="powered-by">
 
-      &copy; 2017 Hae Kyung Im &middot; 
+      © 2017 Hae Kyung Im &middot; 
 
       Powered by the <a href="https://github.com/gcushen/hugo-academic" target="_blank">Academic
       theme</a> for <a href="http://gohugo.io" target="_blank">Hugo</a>.
