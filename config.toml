@@ -1,4 +1,4 @@
-baseurl = "http://hakyimlab.org/"
+baseurl = "/"
 title = "IM-LAB"
 copyright = "&copy; 2017 Hae Kyung Im"
 theme = "hugo-academic"
