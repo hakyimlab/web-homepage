@@ -19,3 +19,13 @@ weight = 65
 - Jiamao Zheng, PhD - [Bio](https://github.com/jiamaozheng)
 
 - Scott Dickinson, MS - [Bio](https://github.com/ScottPDickinson)
+
+- Alvaro Barbeira, MS - [Bio](https://github.com/heroico)
+
+- Milton Pividori, PhD - [Bio](https://github.com/miltondp) - [ORCID](https://orcid.org/0000-0002-3035-4403)
+
+- Josh Jiang (Zhuoxun) - [Bio](https://www.linkedin.com/in/zhuoxun-jiang-63499767/)
+
+- Bayle Smith-Salzberg - [Bio](https://www.linkedin.com/in/bayle-smith-salzberg-59b033154/)
+
+- Owen Melia - [Bio](https://github.com/meliao)
