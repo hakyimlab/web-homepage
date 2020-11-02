@@ -17,9 +17,9 @@ weight = 60
 
 - Hae Kyung Im, PhD - [Bio](#about) - [ORCID](https://orcid.org/0000-0003-0333-5685)
 
-- Yanyu Liang (GGSB Grad Student) - [Bio](https://github.com/liangyy)
+- Yanyu Liang, (GGSB Grad Student) - [Bio](https://github.com/liangyy)
 
-- Festus Nyasimi (MS Bioinformatics) - [Bio](https://github.com/Fnyasimi)
+- Festus Nyasimi, (MS Bioinformatics) - [Bio](https://github.com/Fnyasimi)
 
 - Guimin Gao, (PhD) - [Bio](https://health.uchicago.edu/admin/person/guimin-gao)
 
@@ -27,7 +27,7 @@ weight = 60
 
 - Wanhao Chi, (PhD) - [Bio](https://github.com/wchi1)
 
-- Natasha Santhanam - [Bio](https://github.com/natashasanthanam)
+- Natasha Santhanam (Recent graduate) - [Bio](https://github.com/natashasanthanam)
 
 - David Gonzalez-Velez, (Undergrad) - [Bio](https://github.com/DGV98)
 
