@@ -19,8 +19,18 @@ weight = 60
 
 - Yanyu Liang (GGSB Grad Student) - [Bio](https://github.com/liangyy)
 
-- Padma Sheila Rajagopal, MD - [Bio](https://github.com/parajago)
+- Festus Nyasimi (MS Bioinformatics) - [Bio](https://github.com/Fnyasimi)
 
-- Natasha Santhanam
+- Guimin Gao, (PhD) - [Bio](https://health.uchicago.edu/admin/person/guimin-gao)
 
-- Festus Nyasimi 
+- Ian Waters, (PhD, Medical Student) - [Bio](https://github.com/watersia)
+
+- Wanhao Chi, (PhD) - [Bio](https://github.com/wchi1)
+
+- Natasha Santhanam - [Bio](https://github.com/natashasanthanam)
+
+- David Gonzalez-Velez, (Undergrad) - [Bio](https://github.com/DGV98)
+
+- Sabrina Mi, (Undergrad) - [Bio](https://github.com/sabrina-mi)
+
+- Julius Kim, (Undergrad) - [Bio](https://github.com/theMechanic23/homepage)
