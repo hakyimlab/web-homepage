@@ -14,20 +14,21 @@ weight = 60
 
 +++
 
-
 - Hae Kyung Im, PhD - [Bio](#about) - [ORCID](https://orcid.org/0000-0003-0333-5685)
 
 - Yanyu Liang, (GGSB Grad Student) - [Bio](https://github.com/liangyy)
 
 - Festus Nyasimi, (MS Bioinformatics) - [Bio](https://github.com/Fnyasimi)
 
-- Guimin Gao, (PhD) - [Bio](https://health.uchicago.edu/admin/person/guimin-gao)
+- Natasha Santhanam (Recent graduate) - [Bio](https://github.com/natashasanthanam)
+
+- Sheila Rajagopal (Fellow)
+
+## part time, interns, externs
 
 - Ian Waters, (PhD, Medical Student) - [Bio](https://github.com/watersia)
 
 - Wanhao Chi, (PhD) - [Bio](https://github.com/wchi1)
-
-- Natasha Santhanam (Recent graduate) - [Bio](https://github.com/natashasanthanam)
 
 - David Gonzalez-Velez, (Undergrad) - [Bio](https://github.com/DGV98)
 
