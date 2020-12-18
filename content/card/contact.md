@@ -8,4 +8,6 @@ weight: 80
 
 Email haky at uchicago dot edu
 
-@hakyim
+DM @hakyim
+
+Check out [the hakyimlab homepage](https://hakyimlab.org)
