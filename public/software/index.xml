@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Softwares on IM-Lab</title>
+    <link>/software/</link>
+    <description>Recent content in Softwares on IM-Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 28 Nov 2017 18:36:31 -0600</lastBuildDate><atom:link href="/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gene Correlation Across Tissues</title>
+      <link>/software/gene-correlation-across-tissues/</link>
+      <pubDate>Tue, 28 Nov 2017 18:36:31 -0600</pubDate>
+      
+      <guid>/software/gene-correlation-across-tissues/</guid>
+      <description>Gene correlation across tissues</description>
+    </item>
+    
+    <item>
+      <title>Web Apps</title>
+      <link>/software/web-apps/</link>
+      <pubDate>Sun, 15 Oct 2017 16:08:17 -0400</pubDate>
+      
+      <guid>/software/web-apps/</guid>
+      <description>Access our web applications (PrediXcan, multi tissue PrediXcan)</description>
+    </item>
+    
+    <item>
+      <title>predixcan</title>
+      <link>/software/predixcan/</link>
+      <pubDate>Sat, 08 Jul 2017 15:37:04 -0500</pubDate>
+      
+      <guid>/software/predixcan/</guid>
+      <description>Mechanistically driven gene level association test</description>
+    </item>
+    
+    <item>
+      <title>summary predixcan</title>
+      <link>/software/s-predixcan/</link>
+      <pubDate>Sat, 08 Jul 2017 15:36:58 -0500</pubDate>
+      
+      <guid>/software/s-predixcan/</guid>
+      <description>Summary extension of PrediXcan</description>
+    </item>
+    
+    <item>
+      <title>predictdb</title>
+      <link>/software/predictdb/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/software/predictdb/</guid>
+      <description>Database of Prediction models to be used with PrediXcan</description>
+    </item>
+    
+    <item>
+      <title>gene2pheno</title>
+      <link>/software/gene2pheno/</link>
+      <pubDate>Sat, 01 Jul 2017 15:56:11 -0500</pubDate>
+      
+      <guid>/software/gene2pheno/</guid>
+      <description>Catalog of gene to phenome associations</description>
+    </item>
+    
+    <item>
+      <title>Omic Kriging</title>
+      <link>/software/omickriging/</link>
+      <pubDate>Wed, 08 Jul 2015 16:04:57 -0500</pubDate>
+      
+      <guid>/software/omickriging/</guid>
+      <description>Predicting traits integrating heterogeneous sources of data</description>
+    </item>
+    
+  </channel>
+</rss>

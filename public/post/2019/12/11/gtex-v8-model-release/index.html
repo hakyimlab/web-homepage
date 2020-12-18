@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> GTEx V8 Model Release | IM-Lab</title>
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="GTEx V8 Model Release"/>
+<meta name="twitter:description" content="We have recently published a new set of prediction models trained on GTEx v8 data (as part of efforts detailed in this preprint. We have overhauled the model construction, incorporating posterior inclusion probabilities and global patterns of tissue sharing, while also benefiting from larger sample sizes. We cover both expression and alternate splicing mechanisms. We are very excited about these new models and the potential for new discoveries. However, these models require additional GWAS preprocessing in some public GWAS studies, which we describe here."/>
+
+
+  </head>
+
+  <body>
+
+    <nav class="menu">
+    <ul>
+      <li class="left">
+        <a href="/"><span>IM-Lab</span></a>
+      </li>
+      
+      <li>
+        <a href="/">Home</a>
+      </li>
+      
+      <li>
+        <a href="/project/">Research</a>
+      </li>
+      
+      <li>
+        <a href="/resource/">Resource</a>
+      </li>
+      
+      <li>
+        <a href="/sitemap/">Sitemap</a>
+      </li>
+      
+      <li id="menu-search">
+        <a href="/#">Search</a>
+      </li>
+      
+    </ul>
+    </nav>
+
+
+<div class="container single">
+<main>
+
+<div class="article-meta">
+<h1><span class="title">GTEx V8 Model Release</span></h1>
+
+<h3 class="date">2019-12-11</h3>
+<p class="terms">
+  
+  
+  
+  
+  
+</p>
+</div>
+
+<div class="article">
+<p>We have recently published a new set of prediction models trained on GTEx v8 data
+(as part of efforts detailed in this <a href="https://www.biorxiv.org/content/10.1101/814350v1">preprint</a>.
+We have overhauled the model construction,
+incorporating posterior inclusion probabilities and global patterns of tissue sharing,
+while also benefiting from larger sample sizes. We cover both expression and alternate splicing mechanisms.
+We are very excited about these new models and the potential for new discoveries.
+However, these models require additional GWAS preprocessing in some public GWAS studies, which we describe here.</p>
+<p>We are happy to announce the user-friendly tutorial and detailed documentation.</p>
+<p>Our new recommended models use fine-mapped variants (as computed by <a href="https://github.com/xqwen/dap">DAP-G</a>).
+These variants have a high probability of being causal for QTL.
+The model effect sizes are computed leveraging cross-tissue patterns with <a href="https://github.com/stephenslab/mashr">MASHR</a>.
+These new models are parsimonious, efficient, available for more genes, and have many benefits like improved rate of colocalized associations.</p>
+<p>However, the fine-mapped variants are often missing in older GWAS,
+lack an rsid, and GTEx v8 is defined on hg38 genome assembly.
+So, additional GWAS preprocessing may be required to fully exploit the new models.
+As most current GWAS are defined on older genome assemblies like hg19 or hg18, &ldquo;harmonizing&rdquo; variants between assemblies is required.
+Additionally, a particular GWAS' genotyping platform and imputation techniques might have poor intersection with GTEx v8 variants,
+so that imputation of missing variants is recommended. We have implemented a rich set of tools, documented in the following.</p>
+<p>For users interested in incorporating the latest GTEx v8 MASHR models, we provide:</p>
+<ol start="0">
+<li>
+<p>GTEx v8 MASHR PrediXcan models and S-MultiXcan support in this <a href="https://zenodo.org/record/3518299#.Xe_9ydF7m90">link</a>.
+(look for <em>mashr_eqtl.tar</em>, <em>mashr_sqtl.tar</em>, <em>gtex_v8_expression_mashr_snp_smultixcan_covariance.txt.gz</em>,
+<em>gtex_v8_splicing_mashr_snp_smultixcan_covariance.txt.gz</em> therein)</p>
+</li>
+<li>
+<p>A &ldquo;best practices&rdquo; guide summarising harmonization and (summary statistics) imputation,
+with some S-PrediXcan performance analysis on GWAS from hg17, hg18, and hg19.
+<a href="https://github.com/hakyimlab/MetaXcan/wiki/Best-practices-for-integrating-GWAS-and-GTEX-v8-transcriptome-prediction-models">Link here</a>!</p>
+</li>
+<li>
+<p>An in-depth tutorial showing all required steps to run S-PrediXcan and S-MultiXcan on a Coronary artery Disease GWAS defined on hg19.
+Tutorial <a href="https://github.com/hakyimlab/MetaXcan/wiki/Tutorial%3A-GTEx-v8-MASH-models-integration-with-a-Coronary-Artery-Disease-GWAS">here</a>.
+Complete data sample <a href="https://zenodo.org/record/3569954#.XfEhg9F7m90">here</a>.</p>
+</li>
+<li>
+<p>For users interested in individual-level PrediXcan, your input genotype files must now contain gtex ids instead of rsids.
+You should refer to the GTEx variant lookup table (from the GTEx portal: <a href="https://storage.googleapis.com/gtex_analysis_v8/reference/GTEx_Analysis_2017-06-05_v8_WholeGenomeSeq_838Indiv_Analysis_Freeze.lookup_table.txt.gz">variant lookup</a>)
+and map your variants appropriately.
+Feel free to use pre-computed mapping tables for different genome assemblies available in the tutorial from 2)</p>
+</li>
+</ol>
+<p>Finally, we also provide Elastic Net models trained on GTEx v8 data (<a href="https://zenodo.org/record/3519321#.Xe_9mtF7m90">link</a>).
+These models are provided for compatibility reasons but are suboptimal.</p>
+<p>We are hoping these new releases will prove useful in your research.
+Please let us know of any comments or improvements we can make in the documentation.</p>
+<p>Sincerely,</p>
+<p>Alvaro Barbeira on behalf of the PrediXcan Team</p>
+
+</div>
+</main>
+
+<section class="appendix">
+
+
+
+
+
+
+
+<div>
+  <div class="side side-left"><h3>Reuse</h3></div>
+  Text and figures are licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution CC BY 4.0</a>. The source code is licensed under MIT.
+</div>
+
+
+
+<div>
+  <div class="side side-left"><h3>Suggest changes</h3></div>
+  
+  
+  
+    
+    
+  
+  If you find any mistakes (including typos) or want to suggest changes,
+  please feel free to <a href="https://github.com/hakyimlab/web-homepagepost/2019/GTEx-V8-model-release.md" id="edit-link">edit
+  the source file of this page</a> on Github and create a pull request.
+</div>
+
+
+
+
+</section>
+
+
+
+<nav class="post-nav">
+  <span class="nav-next">&larr; <a href="/post/2018/04/13/qqplot-calibration-rare-variants/" title="Next post (older)">Qqplot Calibration Rare Variants</a></span>
+  &hercon;
+  <span class="nav-prev"><a href="/post/2020/01/07/predictdb-transcriptome-prediction-model-repository/" title="Previous post (newer)">PredictDB: Transcriptome Prediction Model Repository</a> &rarr;</span>
+</nav>
+
+
+
+
+<section class="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  var disqus_config = function () {
+  
+  };
+  (function() {
+    var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var disqus_js = '//hakyimlab.disqus.com/embed.js';
+    var d = document, s = d.createElement('script');
+    s.src = disqus_js; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    var t = d.getElementById('disqus_thread');
+    var b = false, l = function(scroll) {
+      if (b) return;
+      (d.head || d.body).appendChild(s); b = true;
+      if (scroll) t.scrollIntoView();
+    }
+    s.onerror = function(e) {
+      if (sessionStorage.getItem('failure-note')) return;
+      t.innerText = 'Sorry, but you cannot make comments because Disqus failed to load for some reason. It is known to be blocked in China. If you are sure it is not blocked in your region, please refresh the page. 中国大陆地区读者需要翻墙才能发表评论。';
+      t.style.border = '1px dashed';
+      t.style.padding = '.5em';
+      t.style.background = 'lightyellow';
+      sessionStorage.setItem('failure-note', true);
+    };
+    
+    if (location.hash.match(/^#comment-[0-9]+$/)) return l(true);
+    var c = function() {
+      if (b) return;
+      var rect = t.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom >= 0) l();
+    };
+    window.addEventListener('load', c);
+    d.addEventListener('scroll', c);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+</div>
+
+
+  <footer>
+  <script async src="//yihui.org/js/center-img.js"></script>
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-8SL8WKCMYZ', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+
+  <div class="footer">
+  
+  <ul class="copyright">
+    <li>© 2017 Hae Kyung Im</li>
+  </ul>
+  
+  <ul>
+    
+    <li>
+      <a href="/404.html">Contact</a>
+    </li>
+    
+    <li class="optional">
+      <a href="/categories/">Categories</a>
+    </li>
+    
+    <li class="optional">
+      <a href="/tags/">Tags</a>
+    </li>
+    
+    <li id="menu-edit">
+      <a href="#">Suggest an edit</a>
+    </li>
+    
+    <li>
+      <a href="#">Back to top</a>
+    </li>
+    
+  </ul>
+  </div>
+  
+  </footer>
+  <script async src="/js/features.js" data-page-features="[null,[&#34;&#43;sidenotes&#34;],null]"></script>
+  </body>
+</html>
+

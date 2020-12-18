@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> How to query our gene2pheno database directly | IM-Lab</title>
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to query our gene2pheno database directly"/>
+<meta name="twitter:description" content="We have opened direct access to the gene2pheno database, where we are hosting the PrediXcan results of close to 3000 phenotypes (from public GWAS meta analysis results and UKBiobank results from Ben Neale/HAIL team).
+Below are R functions that will allow you access and query the database. These results are based on GTEx V6p models and details of the analysis can be found in our preprint link to preprint in press now in Nature Communications."/>
+
+
+  </head>
+
+  <body>
+
+    <nav class="menu">
+    <ul>
+      <li class="left">
+        <a href="/"><span>IM-Lab</span></a>
+      </li>
+      
+      <li>
+        <a href="/">Home</a>
+      </li>
+      
+      <li>
+        <a href="/project/">Research</a>
+      </li>
+      
+      <li>
+        <a href="/resource/">Resource</a>
+      </li>
+      
+      <li>
+        <a href="/sitemap/">Sitemap</a>
+      </li>
+      
+      <li id="menu-search">
+        <a href="/#">Search</a>
+      </li>
+      
+    </ul>
+    </nav>
+
+
+<div class="container single">
+<main>
+
+<div class="article-meta">
+<h1><span class="title">How to query our gene2pheno database directly</span></h1>
+
+<h3 class="date">2018-01-24</h3>
+<p class="terms">
+  
+  
+  
+  
+  
+</p>
+</div>
+
+<div class="article">
+<p>We have opened direct access to the gene2pheno database, where we are hosting the PrediXcan results of close to 3000 phenotypes (from public GWAS meta analysis results and UKBiobank results from <a href="http://www.nealelab.is/blog/2017/7/19/rapid-gwas-of-thousands-of-phenotypes-for-337000-samples-in-the-uk-biobank">Ben Neale/HAIL team</a>).</p>
+<p>Below are R functions that will allow you access and query the database. These results are based on GTEx V6p models and details of the analysis can be found in our preprint <a href="https://doi.org/10.1101/045260">link to preprint</a> in press now in Nature Communications.</p>
+<p>Usual disclaimers apply. This is provided for your convenience and with the hope of being useful. We provide no guarantee of accuracy etc&hellip;</p>
+<hr>
+<h3 id="via-postgresql">Via PostgreSQL</h3>
+<p>The code below may not be completely self explanatory. We are working on the documentation.</p>
+<pre><code class="language-{R}">## First run the preliminary command further down
+
+## this will fetch all associations for Schizophrenia
+data = query.pheno(&quot;pgc_scz&quot;)
+
+## this will fetch all associations for FTO
+data = query.gene(&quot;FTO&quot;)
+
+## these rather small tables will be handy
+
+phenotb = dbGetQuery(db,&quot;select * from pheno&quot;)
+tissuetb = dbGetQuery(db,&quot;select * from tissue&quot;)
+genetb = dbGetQuery(db,&quot;select * from gene&quot;)
+phenoinfo = phenotb %&gt;% inner_join(dbGetQuery(db, &quot;select * from pheno_info&quot;),by=c(&quot;id&quot;=&quot;pheno_id&quot;) )
+</code></pre>
+<p>You will need to run the following preliminary commands first</p>
+<pre><code class="language-{R}">library(tidyverse)
+
+## Connect to DB
+##install.packages('RPostgreSQL')
+library('RPostgreSQL')
+drv &lt;- dbDriver(&quot;PostgreSQL&quot;)
+
+
+db  &lt;-   dbConnect(drv, host=&quot;gene2pheno.ccsriudvs1y0.us-east-1.rds.amazonaws.com&quot;, port=&quot;5432&quot;, dbname=&quot;release_2017_09_14&quot;, user=&quot;metaxcan_ro&quot;, password=&quot;M3t4Xc4nR0&quot;)
+
+db.uk &lt;- dbConnect(drv, host=&quot;gene2pheno.ccsriudvs1y0.us-east-1.rds.amazonaws.com&quot;, port=&quot;5432&quot;,
+dbname=&quot;ukb_neale_2017_10_14&quot;, user=&quot;metaxcan_ro&quot;, password=&quot;M3t4Xc4nR0&quot;)
+
+## Currently, gene2pheno.org is serving results based on GTEx V6p. Expanded list of phenotypes can be retrieved using this dbname=“public_gwas_v6p_hapmap_2017_12_04”
+
+## Query functions
+query0 = paste0(  
+    &quot;SELECT &quot;
+    ,&quot; g.gene_name&quot;
+    ,&quot;, m.zscore&quot;
+    ,&quot;, m.effect_size&quot;
+    ,&quot;, m.pval&quot;
+    ,&quot;, p.tag as phenotype&quot;
+    ,&quot;, t.tissue as tissue&quot;
+    ,&quot;, m.pred_perf_R2&quot;
+    ,&quot;, m.pred_perf_pval&quot;
+    ,&quot;, m.pred_perf_qval&quot;
+    ,&quot;, m.n_snps_used&quot;
+    ,&quot;, m.n_snps_model&quot;
+    ,&quot;, mi.p_smr&quot;
+    ,&quot;, mi.p_heidi&quot;
+    ,&quot;, mi.coloc_p0&quot;
+    ,&quot;, mi.coloc_p1&quot;
+    ,&quot;, mi.coloc_p2&quot;
+    ,&quot;, mi.coloc_p3&quot;
+    ,&quot;, mi.coloc_p4&quot;
+    ,&quot;, tr.p as twas_pvalue &quot;
+    ,&quot;, g.gene&quot;
+    ,&quot; FROM gene AS g &quot;
+    ,&quot; INNER JOIN metaxcan_result AS m ON g.id = m.gene_id &quot;
+    ,&quot; INNER JOIN tissue AS t ON t.id = m.tissue_id &quot;
+    ,&quot; INNER JOIN pheno AS p ON p.id = m.pheno_id &quot;
+    ,&quot; LEFT JOIN metaxcan_result_info as mi on m.id = mi.metaxcan_result_id &quot;
+    ,&quot; LEFT JOIN twas_relationship as trr ON m.id = trr.metaxcan_result_id &quot;
+    ,&quot; LEFT JOIN twas_result as tr ON trr.twas_result_id = tr.id &quot;    
+	)
+
+query.pheno = function(pheno,Rthres=0.,fdb=db)
+{
+  query =  paste0(query0, &quot; WHERE p.tag like '&quot; , pheno  ,&quot;%' &quot; )
+  if(Rthres&gt;0) query = paste0(query, &quot; and m.pred_perf_R2 &gt;= &quot; , Rthres)
+  dbGetQuery(fdb,query) %&gt;% arrange(pval)
+}
+
+query.tissue = function(tissue,Rthres=0.,fdb=db)
+{
+  query =  paste0(query0,&quot; WHERE t.tissue like '&quot; , tissue,  &quot;%' &quot; )
+  if(Rthres&gt;0) query = paste0(query, &quot; and m.pred_perf_R2 &gt;= &quot;, Rthres)
+  dbGetQuery(fdb,query)
+}
+
+query.gene = function(genename,Rthres=0.,fdb=db)
+{
+  query =  paste0(query0,&quot; WHERE g.gene_name like '&quot;, genename,  &quot;%' &quot; )
+  if(Rthres&gt;0) query = paste0(query, &quot; and m.pred_perf_R2 &gt;= &quot;, Rthres)
+  dbGetQuery(fdb,query) %&gt;% arrange(pval)
+}
+
+query_multi_tissue_base &lt;- paste0( &quot;SELECT &quot;,
+  &quot; p.tag as phenotype,&quot;,
+  &quot; g.gene,&quot;,
+  &quot; g.gene_name,&quot;,
+  &quot; mt.pvalue,&quot;,
+  &quot; mt.n,&quot;,
+  &quot; mt.n_indep,&quot;,
+  &quot; mt.p_i_best,&quot;,
+  &quot; mt.p_i_worst,&quot;,
+  &quot; mt.eigen_max,&quot;,
+  &quot; mt.eigen_min&quot;,
+  &quot; FROM gene AS g &quot;,
+  &quot; INNER JOIN multi_tissue_result AS mt ON g.id = mt.gene_id &quot;,
+  &quot; INNER JOIN pheno AS p ON p.id = mt.pheno_id &quot; )
+
+query.pheno.mult = function(pheno,fdb=db)
+{
+  query =  paste0(query_multi_tissue_base, &quot; WHERE p.tag like '&quot; , pheno  ,&quot;%' &quot; )
+  dbGetQuery(fdb,query) %&gt;% arrange(pvalue)
+}
+
+query.gene.mult = function(genename,Rthres=0.,fdb=db)
+{
+  query =   paste0(query_multi_tissue_base,&quot; WHERE g.gene_name like '&quot;, genename,  &quot;%' &quot; )
+  dbGetQuery(fdb,query) %&gt;% arrange(pvalue)
+}
+</code></pre>
+<hr>
+<h3 id="via-bigquery">Via BigQuery</h3>
+<p>If you have a Google Cloud Platform account (you can get a free account with a small credit included in Google Cloud) you can query directly from the webpages</p>
+<ul>
+<li><a href="https://bigquery.cloud.google.com/dataset/imlab-public:gene2pheno">PrediXcan Association UKBiobank</a></li>
+<li><a href="https://bigquery.cloud.google.com/dataset/imlab-public:predictdb">Predictdb prediction models</a></li>
+<li><a href="https://bigquery.cloud.google.com/dataset/imlab-public:genarch">Heritability Estimates</a> from this <a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423">paper</a></li>
+</ul>
+<hr>
+<h3 id="via-gene2phenoorg">Via gene2pheno.org</h3>
+<p>Of course you can also query using our app <a href="http://gene2pheno.org">link</a></p>
+<hr>
+<p>If you find our resources useful please cite our papers so that we can continue maintaining them.</p>
+<h2 id="reference">Reference</h2>
+<ul>
+<li>
+<p>Gamazon ER†, Wheeler HE†, Shah KP†, Mozaffari SV, Aquino-Michaels K,
+Carroll RJ, Eyler AE, Denny JC, Nicolae DL, Cox NJ, Im HK. (2015)
+<strong>A gene-based association method for mapping traits using reference
+transcriptome data</strong>. Nat Genet. doi:10.1038/ng.3367.
+(<a href="http://www.nature.com/ng/journal/v47/n9/full/ng.3367.html">Link to paper</a>,
+<a href="http://biorxiv.org/content/early/2015/06/17/020164">Link to Preprint on BioRxiv</a>)</p>
+</li>
+<li>
+<p>Alvaro N. Barbeira, Scott P. Dickinson, Jason M. Torres, Rodrigo Bonazzola, Jiamao Zheng, Eric S. Torstenson, Heather E. Wheeler, Kaanan P. Shah, Todd Edwards, Tzintzuni Garcia, GTEx Consortium, Dan Nicolae, Nancy J. Cox, Hae Kyung Im (2017) <strong>Exploring the phenotypic consequences of tissue specific gene expression variation inferred from GWAS summary statistics</strong> <a href="http://dx.doi.org/10.1101/045260">link to preprint</a> In press in Nature Communications 2018</p>
+</li>
+<li>
+<p>Heather E Wheeler, Kaanan P Shah, Jonathon Brenner, Tzintzuni Garcia,
+Keston Aquino-Michaels, GTEx Consortium, Nancy J Cox, Dan L Nicolae, Hae
+Kyung Im. (2016) <strong>Survey of the Heritability and Sparsity of Gene
+Expression Traits Across Human Tissues</strong>.
+<a href="http://journals.plos.org/plosgenetics/article?id=10.1371/journal.pgen.1006423">link to paper</a></p>
+</li>
+</ul>
+<hr>
+<p><strong>Disclaimer:</strong> the models are provided &ldquo;as is&rdquo;, with the hope that they may be of use, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. in no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the models or the use or other dealings in the models.</p>
+
+</div>
+</main>
+
+<section class="appendix">
+
+
+
+
+
+
+
+<div>
+  <div class="side side-left"><h3>Reuse</h3></div>
+  Text and figures are licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution CC BY 4.0</a>. The source code is licensed under MIT.
+</div>
+
+
+
+<div>
+  <div class="side side-left"><h3>Suggest changes</h3></div>
+  
+  
+  
+    
+    
+  
+  If you find any mistakes (including typos) or want to suggest changes,
+  please feel free to <a href="https://github.com/hakyimlab/web-homepagepost/2018/open-access-gene2pheno-dbs.md" id="edit-link">edit
+  the source file of this page</a> on Github and create a pull request.
+</div>
+
+
+
+
+</section>
+
+
+
+<nav class="post-nav">
+  <span class="nav-next">&larr; <a href="/post/2018/01/08/gtex-v7-prediction-model-release-announcement/" title="Next post (older)">GTEx V7 Prediction Model Release Announcement</a></span>
+  &hercon;
+  <span class="nav-prev"><a href="/post/2018/04/13/qqplot-calibration-rare-variants/" title="Previous post (newer)">Qqplot Calibration Rare Variants</a> &rarr;</span>
+</nav>
+
+
+
+
+<section class="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  var disqus_config = function () {
+  
+  };
+  (function() {
+    var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var disqus_js = '//hakyimlab.disqus.com/embed.js';
+    var d = document, s = d.createElement('script');
+    s.src = disqus_js; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    var t = d.getElementById('disqus_thread');
+    var b = false, l = function(scroll) {
+      if (b) return;
+      (d.head || d.body).appendChild(s); b = true;
+      if (scroll) t.scrollIntoView();
+    }
+    s.onerror = function(e) {
+      if (sessionStorage.getItem('failure-note')) return;
+      t.innerText = 'Sorry, but you cannot make comments because Disqus failed to load for some reason. It is known to be blocked in China. If you are sure it is not blocked in your region, please refresh the page. 中国大陆地区读者需要翻墙才能发表评论。';
+      t.style.border = '1px dashed';
+      t.style.padding = '.5em';
+      t.style.background = 'lightyellow';
+      sessionStorage.setItem('failure-note', true);
+    };
+    
+    if (location.hash.match(/^#comment-[0-9]+$/)) return l(true);
+    var c = function() {
+      if (b) return;
+      var rect = t.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom >= 0) l();
+    };
+    window.addEventListener('load', c);
+    d.addEventListener('scroll', c);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+</div>
+
+
+  <footer>
+  <script async src="//yihui.org/js/center-img.js"></script>
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-8SL8WKCMYZ', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>
+hljs.configure({languages: []});
+hljs.initHighlightingOnLoad();
+</script>
+
+
+  <div class="footer">
+  
+  <ul class="copyright">
+    <li>© 2017 Hae Kyung Im</li>
+  </ul>
+  
+  <ul>
+    
+    <li>
+      <a href="/404.html">Contact</a>
+    </li>
+    
+    <li class="optional">
+      <a href="/categories/">Categories</a>
+    </li>
+    
+    <li class="optional">
+      <a href="/tags/">Tags</a>
+    </li>
+    
+    <li id="menu-edit">
+      <a href="#">Suggest an edit</a>
+    </li>
+    
+    <li>
+      <a href="#">Back to top</a>
+    </li>
+    
+  </ul>
+  </div>
+  
+  </footer>
+  <script async src="/js/features.js" data-page-features="[null,[&#34;&#43;sidenotes&#34;],null]"></script>
+  </body>
+</html>
+

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on IM-Lab</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on IM-Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Dec 2020 00:00:00 +0000</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>job opening</title>
+      <link>/tags/job-opening/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/job-opening/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PrediXcan</title>
+      <link>/tags/predixcan/</link>
+      <pubDate>Fri, 07 Jul 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/predixcan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GTEx</title>
+      <link>/tags/gtex/</link>
+      <pubDate>Tue, 27 Jun 2017 17:05:51 -0500</pubDate>
+      
+      <guid>/tags/gtex/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nancy</title>
+      <link>/tags/nancy/</link>
+      <pubDate>Tue, 27 Jun 2017 17:05:51 -0500</pubDate>
+      
+      <guid>/tags/nancy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plot</title>
+      <link>/tags/plot/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/tags/plot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R Markdown</title>
+      <link>/tags/r-markdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/tags/r-markdown/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>regression</title>
+      <link>/tags/regression/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/tags/regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>appendix</title>
+      <link>/tags/appendix/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/appendix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>citation</title>
+      <link>/tags/citation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/citation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>menu</title>
+      <link>/tags/menu/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/menu/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>numbered section</title>
+      <link>/tags/numbered-section/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/numbered-section/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>research</title>
+      <link>/tags/research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/research/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sidenote</title>
+      <link>/tags/sidenote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/sidenote/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TOC</title>
+      <link>/tags/toc/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/toc/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

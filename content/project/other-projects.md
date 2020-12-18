@@ -1,0 +1,15 @@
+---
+title: 'Other Published Research'
+date: ''
+categories: []
+tags: [research]
+weight: 30
+---
+
+## Other projects
+
+### Genomic Privacy
+Genomic privacy and data sharing are issues of relevance for the whole scientific community. Protecting the privacy of individuals who participate in a study has always been a top priority and it has been widely assumed that publishing summary results did not jeopardize privacy. In 2008, Homer et al found that in the case of genome wide association studies (GWAS), summary results such as allele frequencies for a large number of genetic variants can reveal whether a person participated in a study and the disease status of the individual. These results forced the NIH to withdraw most of the public access to GWAS study results. We were interested in sharing results from quantitative traits such as gene expression phenotypes, which provide critical information on the regulatory role of genetic variants. The question here was whether publishing regression coefficients from GWAS would also allow re-identification. Dr. Im proved mathematically that re-identification based on regression coefficients was possible, provided an explicit method and computed its theoretical power as a function of sample size, number of markers, and false positive rate. In fact, She found that even the sign of the regression coefficients was enough to reveal a person’s participation. This is exemplary publication #1, which was published in American Journal of Human Genetics (Im et al, 2012). Given its wide public relevance, this paper was featured on the University of Chicago Hospitals Science [blog - click here](http://sciencelife.uchospitals.edu/2012/05/29/a-crack-in-the-safe-of-genomic-studies) and has been routinely cited by papers on genomic privacy.
+
+### Poly-Omic Prediction of Complex Traits.
+Prediction of disease risk or treatment response is one of the pillars of personalized medicine. Although genome-wide association studies have discovered thousands of well-replicated polymorphisms associated with a broad spectrum of complex traits, the combined predictive power of these associations for any given trait is generally too low to be of clinical relevance. To address these issues, We proposed a systems approach to complex trait prediction, which leverages and integrates similarity in genetic and other high throughput molecular traits (omic data). The approach translates the omic similarity into phenotypic similarity using a method called Kriging, commonly used in Geostatistics. My method called OmicKriging emphasizes the use of a wide variety of systems-level data, such as those increasingly made available by comprehensive surveys of the genome, transcriptome and epigenome, for complex trait prediction. Application to clinical and cellular phenotypes shows the advantages of integrating multiple omic data in a collective manner. This was published in Genetic Epidemiology (Wheeler et al 2014). This paper has been chosen for the Robert C. Elston Best Paper Award by the International Genetic Epidemiology Society (IGES) to be awarded at the IGES meeting in October 2015.

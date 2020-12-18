@@ -1,0 +1,49 @@
+- name: "Yihui Xie"
+  bio: >
+    Yihui Xie (https://yihui.org) is a software engineer at [RStudio](https://www.rstudio.com).
+    He earned his PhD from the Department of Statistics, Iowa State University.
+    He has authored several R packages, such as **knitr**, **bookdown**, **blogdown**,
+    **xaringan**, **DT**, and **tinytex**. He also co-authored a few other R packages,
+    including **shiny**, **rmarkdown**, and **leaflet**.
+    He has published a number of books, including _Dynamic Documents with R and knitr_,
+    _bookdown: Authoring Books and Technical Documents with R Markdown_,
+    _blogdown: Creating Websites with R Markdown_, _R Markdown: The Definitive Guide_,
+    and _R Markdown Cookbook_. He is the founder of the Capital of Statistics (https://cosx.org).
+    He initiated the Chinese R conference in 2008.
+
+- name: "Lucius Annaeus Seneca"
+  bio: >
+    Lucius Annaeus Seneca was a Hispano-Roman Stoic philosopher, statesman, dramatist,
+    and—in one work—satirist from the Silver Age of Latin literature.
+
+- name: "Hae Kyung Im"
+  bio: >
+    Hae Kyung Im is a statistician developing quantitative and computational methods
+    to uncover hidden patterns in data, which can be translated to benefit people.
+    After trying out physics, manufacturing, information security, and finance,
+    she found a home in academia in the intersection of statistics, genomics, medicine,
+    and big data analytics.
+
+- name: "Haky Im"
+  bio: >
+    Hae Kyung Im develops quantitative and computational methods
+    to uncover hidden patterns in data, which can be translated to benefit people.
+    After trying out physics, manufacturing, information security, and finance,
+    she found a home in academia in the intersection of statistics, genomics, medicine,
+    and big data analytics. She is currently an Assistant Professor in the Section of Medicine,
+    Department of Medicine at the University of Chicago.
+
+- name: "Yanyu Liang"
+  bio: >
+    Yanyu is a graduate student in the Genetics Genomics and Systems Biology Committee at the University of Chicago.
+    She is currently interested in method development for Statistical Genetics and Computational Biology.
+    Prior the graduate school, she majored in Chemistry at Tsinghua University in China.
+    Outside the lab, she likes to spend time with her cats and play pingpong.
+
+- name: "Wanhao Chi"
+  bio: >
+    Wanhao is a postdoctoral fellow in Dr. Xiaoxi Zhuang's lab at the University of Chicago.
+    She received a PhD in Genetics under Dr. Xiaoxi Zhuang.
+    Her research focuses on understanding the role of dopamine in reward, foraging decision-making, and fitness.
+    She is also interested in exploring other genetic factors that may affect the decision-making process in a
+    foraging environment.

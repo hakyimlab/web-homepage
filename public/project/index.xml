@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Research on IM-Lab</title>
+    <link>/project/</link>
+    <description>Recent content in Research on IM-Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Published Research</title>
+      <link>/project/other-projects/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project/other-projects/</guid>
+      <description>Other projects Genomic Privacy Genomic privacy and data sharing are issues of relevance for the whole scientific community. Protecting the privacy of individuals who participate in a study has always been a top priority and it has been widely assumed that publishing summary results did not jeopardize privacy. In 2008, Homer et al found that in the case of genome wide association studies (GWAS), summary results such as allele frequencies for a large number of genetic variants can reveal whether a person participated in a study and the disease status of the individual.</description>
+    </item>
+    
+    <item>
+      <title>Published Research</title>
+      <link>/project/published-research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project/published-research/</guid>
+      <description>Published research PrediXcan, a regulatory mechanism driven gene discovery tool Although investments in genomic studies of complex diseases made possible the discovery of thousands of variants robustly associated with these traits, the translation of these discoveries into actionable targets has been hampered by the lack of a mechanistic understanding on how genome variation relates to phenotype. Moreover, it has been widely shown that a substantial portion of the genetic control of complex traits is exerted through the regulation of gene expression traits, but effective methods to fully harness this mechanism were not available.</description>
+    </item>
+    
+    <item>
+      <title>Ongoing Research</title>
+      <link>/project/ongoing-research/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/project/ongoing-research/</guid>
+      <description>Ongoing research Enhancing PrediXcan to improve power and specificity PrediXcan method has proven to be successful and widely adopted. However there are several aspects that can be improved to increase detection and reduce false discoveries. A substantial portion of my effort will be devoted to developing methods to achieve this goal.
+Reducing spurious results due to LD contamination Linkage disequilibrium (LD, correlation of genetic variation within proximal genomic regions) can lead to associated genes and phenotypes even when the underlying causal variants are distinct.</description>
+    </item>
+    
+  </channel>
+</rss>

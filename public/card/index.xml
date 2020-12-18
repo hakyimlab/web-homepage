@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cards on IM-Lab</title>
+    <link>/card/</link>
+    <description>Recent content in Cards on IM-Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Dec 2020 16:00:00 +0000</lastBuildDate><atom:link href="/card/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>/card/research/</link>
+      <pubDate>Wed, 16 Dec 2020 16:00:00 +0000</pubDate>
+      
+      <guid>/card/research/</guid>
+      <description>Research The overarching goal of our research program is to develop computationally efficient and statistically sound methods to sift through the vast amounts of genomic and other high dimensional data with the goal of making discoveries that can be translated to improve human health.
+To achieve this goal, we build and maintain an analytic infrastructure, i.e. a dry lab. This includes statistical and computational methods, pipelines and workflows, streamlined access to big data, and a research software engineering, bioinformatic and analysis team.</description>
+    </item>
+    
+    <item>
+      <title>The Team</title>
+      <link>/card/people/</link>
+      <pubDate>Wed, 16 Dec 2020 16:00:00 +0000</pubDate>
+      
+      <guid>/card/people/</guid>
+      <description>The Team   Hae Kyung Im, PhD - Bio - ORCID
+  Yanyu Liang, (GGSB Grad Student) - Bio
+  Festus Nyasimi, (MS Bioinformatics) - Bio
+  Natasha Santhanam (Recent graduate) - Bio
+  Sheila Rajagopal (Fellow)
+  part time, interns, externs   Ian Waters, (PhD, Medical Student) - Bio
+  Wanhao Chi, (PhD) - Bio
+  David Gonzalez-Velez, (Undergrad) - Bio</description>
+    </item>
+    
+    <item>
+      <title>Publications</title>
+      <link>/card/publication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/card/publication/</guid>
+      <description>Publications Find the full list of our publications courtesy of Google Scholar following this link here</description>
+    </item>
+    
+    <item>
+      <title>Alumni</title>
+      <link>/card/alumni/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/card/alumni/</guid>
+      <description>Rodrigo Bonazzola, MS - Currently PhD Student at the University of Leeds Github
+  Jiamao Zheng, PhD - Bio
+  Scott Dickinson, MS - Bio
+  Padma Sheila Rajagopal, MD - Bio
+  Josh Jiang (Zhuoxun) - Bio
+  Bayle Smith-Salzberg - Bio
+  Owen Melia - Bio
+  Alvaro Barbeira, MS - Bio
+  Milton Pividori, PhD - Bio - ORCID</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/card/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/card/contact/</guid>
+      <description>Contact Email haky at uchicago dot edu
+@hakyim</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on IM-Lab</title>
+    <link>/post/</link>
+    <description>Recent content in Posts on IM-Lab</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Jan 2017 00:00:00 +0000</lastBuildDate><atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Genomic Data Scientist Opening</title>
+      <link>/post/2020/12/17/genomic-data-scientist-opening/</link>
+      <pubDate>Thu, 17 Dec 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/12/17/genomic-data-scientist-opening/</guid>
+      <description>Genomic Data Scientist / Scientific Programmer Position We are looking to hire a life-long learner interested in developing statistical and computational tools to sift through large amounts of data with the ultimate goal of making discoveries that can make a difference in the health of people. Methods and resources created in our lab are being used by researchers around the globe. We continue innovating and providing user-friendly and statistically efficient tools to get the most out of the ever-increasing amount of data.</description>
+    </item>
+    
+    <item>
+      <title>R Markdown Demo</title>
+      <link>/post/2020/11/10/r-markdown-demo/</link>
+      <pubDate>Tue, 10 Nov 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/11/10/r-markdown-demo/</guid>
+      <description>Floats Full-width figures Use a fenced Div with the class fullwidth, e.g.,
+::: {.fullwidth} Any Markdown content or code blocks here. ```{r, echo=FALSE, fig.dim=c(14, 4)} plot(sunspots) ``` :::  Figure 1: Monthly mean relative sunspot numbers from 1749 to 1983. Collected at Swiss Federal Observatory, Zurich until 1960, then Tokyo Astronomical Observatory.   If you add the class fullscroll to the Div, the figure will be scrollable, e.</description>
+    </item>
+    
+    <item>
+      <title>PredictDB: Transcriptome Prediction Model Repository</title>
+      <link>/post/2020/01/07/predictdb-transcriptome-prediction-model-repository/</link>
+      <pubDate>Tue, 07 Jan 2020 09:18:21 -0600</pubDate>
+      
+      <guid>/post/2020/01/07/predictdb-transcriptome-prediction-model-repository/</guid>
+      <description>Predictdb Here you can find transcriptome prediction models for the PrediXcan family of methods: S-PrediXcan, MultiXcan and S-MultiXcan. .db files are prediction models, usable by all methods. .txt.gz files are compilations of LD reference for summary-based methods (S- prefix). S-PrediXcan is meant to use the single-tissue LD reference files (&amp;ldquo;covariances&amp;rdquo;) appropriate to each model. S-MultiXcan uses single-tissue prediction models and a cross-tissue LD reference.
+GTEx v8 models on eQTL and sQTL We have produced different families of prediction models for sQTL and eQTL, using several prediction strategies, on GTEx v8 release data.</description>
+    </item>
+    
+    <item>
+      <title>GTEx V8 Model Release</title>
+      <link>/post/2019/12/11/gtex-v8-model-release/</link>
+      <pubDate>Wed, 11 Dec 2019 13:31:33 -0600</pubDate>
+      
+      <guid>/post/2019/12/11/gtex-v8-model-release/</guid>
+      <description>We have recently published a new set of prediction models trained on GTEx v8 data (as part of efforts detailed in this preprint. We have overhauled the model construction, incorporating posterior inclusion probabilities and global patterns of tissue sharing, while also benefiting from larger sample sizes. We cover both expression and alternate splicing mechanisms. We are very excited about these new models and the potential for new discoveries. However, these models require additional GWAS preprocessing in some public GWAS studies, which we describe here.</description>
+    </item>
+    
+    <item>
+      <title>Qqplot Calibration Rare Variants</title>
+      <link>/post/2018/04/13/qqplot-calibration-rare-variants/</link>
+      <pubDate>Fri, 13 Apr 2018 14:22:36 -0500</pubDate>
+      
+      <guid>/post/2018/04/13/qqplot-calibration-rare-variants/</guid>
+      <description>[In this report] (https://s3.amazonaws.com/imlab-open/Webdata/Files/2018/qqplot-calibration.pdf) I calculate the lower bounds of p-values when using very rare variants, for which minor allele counts are in the single digits. This report was prepared back in 2012 for the T2D-GENES consortium that had just generated 10K whole exome sequenced data.</description>
+    </item>
+    
+    <item>
+      <title>How to query our gene2pheno database directly</title>
+      <link>/post/2018/01/24/how-to-query-our-gene2pheno-database-directly/</link>
+      <pubDate>Wed, 24 Jan 2018 10:43:10 -0600</pubDate>
+      
+      <guid>/post/2018/01/24/how-to-query-our-gene2pheno-database-directly/</guid>
+      <description>We have opened direct access to the gene2pheno database, where we are hosting the PrediXcan results of close to 3000 phenotypes (from public GWAS meta analysis results and UKBiobank results from Ben Neale/HAIL team).
+Below are R functions that will allow you access and query the database. These results are based on GTEx V6p models and details of the analysis can be found in our preprint link to preprint in press now in Nature Communications.</description>
+    </item>
+    
+    <item>
+      <title>GTEx V7 Prediction Model Release Announcement</title>
+      <link>/post/2018/01/08/gtex-v7-prediction-model-release-announcement/</link>
+      <pubDate>Mon, 08 Jan 2018 00:00:00 -0600</pubDate>
+      
+      <guid>/post/2018/01/08/gtex-v7-prediction-model-release-announcement/</guid>
+      <description>We are releasing prediction models trained on GTEx Version 7 data. Download from here. We have updated our processing pipeline, and restricted to individuals of European ancestry to obtain more reliable LD data. This reduces false positive associations in the Summary Version of PrediXcan. Because of this choice, the gain in sample size relative to V6p is modest (ranging from -18 to 89), with whole blood, LCLs and fibroblasts experiencing reduced sample size.</description>
+    </item>
+    
+    <item>
+      <title>Bidding Farewell to Scott</title>
+      <link>/post/2017/11/30/bidding-farewell-to-scott/</link>
+      <pubDate>Thu, 30 Nov 2017 13:52:17 -0600</pubDate>
+      
+      <guid>/post/2017/11/30/bidding-farewell-to-scott/</guid>
+      <description>After two years in the Lab, Scott has decided to join the well paid workforce. Scott is a wonderful colleague to all of us and has made important contributions to our team. Thank you and best of lucks, Scott :four_leaf_clover::four_leaf_clover::four_leaf_clover:
+Also thank you, Wenndy, for organizing and buying the present for Scott.</description>
+    </item>
+    
+    <item>
+      <title>Limitations of PrediXcan association results</title>
+      <link>/post/2017/11/07/limitations-of-predixcan-association-results/</link>
+      <pubDate>Tue, 07 Nov 2017 15:24:42 -0500</pubDate>
+      
+      <guid>/post/2017/11/07/limitations-of-predixcan-association-results/</guid>
+      <description>Keep in mind that significant associations shown here do not imply causality. That said, given that PrediXcan is seeking to test the role of gene expression variation on traits and we and others have shown that significant PrediXcan genes are enriched in causal genes, these results should be useful to delve into the mechanisms underlying gene to phenotype associations.
+False positives can arise because of several factors
+ LD contamination  By computing the probability of LD contamination, we try to reduce false positives due to LD rather than genuine colocalization of trait and expression causal variants.</description>
+    </item>
+    
+    <item>
+      <title>Vulnerabilities of the &#39;Vulnerabilities of transcriptome wide association studies&#39; argument</title>
+      <link>/post/2017/11/07/vulnerabilities-of-the-vulnerabilities-of-transcriptome-wide-association-studies-argument/</link>
+      <pubDate>Tue, 07 Nov 2017 13:24:42 -0500</pubDate>
+      
+      <guid>/post/2017/11/07/vulnerabilities-of-the-vulnerabilities-of-transcriptome-wide-association-studies-argument/</guid>
+      <description>PrediXcan and other transcriptome wide association study (TWAS) methods discover and prioritize genes based on a functional mechanism &amp;ndash;regulation of gene expression. We agree that we have to temper over-enthusiasm, but Wainberg et al&amp;rsquo;s paper could represent a backlash to the enthusiasm that the community has for this approach, which we believe is well placed.
+Below are our responses to some of the statements of the paper.
+ PrediXcan/TWAS associations do not imply causality</description>
+    </item>
+    
+    <item>
+      <title>Transcriptome prediction models are robust across populations</title>
+      <link>/post/2017/11/01/transcriptome-prediction-models-are-robust-across-populations/</link>
+      <pubDate>Wed, 01 Nov 2017 17:19:09 -0500</pubDate>
+      
+      <guid>/post/2017/11/01/transcriptome-prediction-models-are-robust-across-populations/</guid>
+      <description>Most GWAS and eQTL studies have been performed in European samples. So how well do models trained in Europeans translate to other populations? Segal et al have shown that predictions of gene expression levels are robust across populations (link)
+The following figure shows the p-value of the correlation between predicted and observed expression levels in European and African samples from the 1000 Genomes set (GEUVADIS RNA-seq) using model trained in GTEx with majority European individuals.</description>
+    </item>
+    
+    <item>
+      <title>We are releasing all PrediXcan associations based on Neale Lab&#39;s UKB rapid GWAS results</title>
+      <link>/post/2017/10/15/we-are-releasing-all-predixcan-associations-based-on-neale-labs-ukb-rapid-gwas-results/</link>
+      <pubDate>Sun, 15 Oct 2017 15:38:31 -0400</pubDate>
+      
+      <guid>/post/2017/10/15/we-are-releasing-all-predixcan-associations-based-on-neale-labs-ukb-rapid-gwas-results/</guid>
+      <description>Update (11/1/2017)
+  Gene level results &amp;ldquo;meta analyzed&amp;rdquo; across tissues now available.
+  Shinyapp to directly query by gene and phenotype is here but can be slow. Stay tuned for faster version coming soon.
+   As many of you may know, Neale Lab made a big splash in the GWAS community by releasing the summary results of 2400+ phenotypes from the UK Biobank. Following their lead on open science and open data sharing, we are releasing the bulk runs of PrediXcan association based on Neale Lab&amp;rsquo;s UKB results and 44 tissues models from GTEx V6p release.</description>
+    </item>
+    
+    <item>
+      <title>ImLab was awarded NIH Cloud Credit</title>
+      <link>/post/2017/10/09/imlab-was-awarded-nih-cloud-credit/</link>
+      <pubDate>Mon, 09 Oct 2017 10:20:18 -0500</pubDate>
+      
+      <guid>/post/2017/10/09/imlab-was-awarded-nih-cloud-credit/</guid>
+      <description>We are delighted to be awarded NIH Cloud Credit that will help us fund our cloud-based web applications and databases and broadly share our tools and resources.
+Thank you, Jiamao, for pushing this through :thumbsup::smiley:
+Information about Cloud Credits here</description>
+    </item>
+    
+    <item>
+      <title>U4C Challenge Winners</title>
+      <link>/post/2017/09/28/u4c-challenge-winners/</link>
+      <pubDate>Thu, 28 Sep 2017 10:19:12 -0500</pubDate>
+      
+      <guid>/post/2017/09/28/u4c-challenge-winners/</guid>
+      <description>Two out of 4 winners used PrediXcan :thumbsup::thumbsup:
+Winners of &amp;ldquo;Up For A Challenge (U4C): Stimulating innovation in breast cancer genetic epidemiology&amp;rdquo; papers published on line link here.
+Here is our contribution in collaboration with Guimin Gao, Brandon Pierce, Funmi Olopade, and Dezheng Huo link to paper here</description>
+    </item>
+    
+    <item>
+      <title>S-PrediXcan (MetaXcan) in drug repositioning</title>
+      <link>/post/2017/08/14/s-predixcan-metaxcan-in-drug-repositioning/</link>
+      <pubDate>Mon, 14 Aug 2017 00:00:00 -0500</pubDate>
+      
+      <guid>/post/2017/08/14/s-predixcan-metaxcan-in-drug-repositioning/</guid>
+      <description>So et al use S-PrediXcan to find psychiatric drug repositioning candidates.</description>
+    </item>
+    
+    <item>
+      <title>lab summer photo</title>
+      <link>/post/2017/08/04/lab-summer-photo/</link>
+      <pubDate>Fri, 04 Aug 2017 13:24:42 -0500</pubDate>
+      
+      <guid>/post/2017/08/04/lab-summer-photo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lab Photo Summer 2017</title>
+      <link>/post/2017/07/27/lab-photo-summer-2017/</link>
+      <pubDate>Thu, 27 Jul 2017 17:39:31 -0500</pubDate>
+      
+      <guid>/post/2017/07/27/lab-photo-summer-2017/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dinner with Nancy at the GTEx meeting</title>
+      <link>/post/2017/06/27/dinner-with-nancy-at-the-gtex-meeting/</link>
+      <pubDate>Tue, 27 Jun 2017 17:05:51 -0500</pubDate>
+      
+      <guid>/post/2017/06/27/dinner-with-nancy-at-the-gtex-meeting/</guid>
+      <description>After the last formal GTEx analysis working group&amp;rsquo;s internal meeting at Rockville, MD, the Im Lab went for dinner with Nancy Cox, Barbara Stranger, and Eric Gamazon. From left to right: Rodrigo, Milton, Jiamao, Barbara, Nancy, Eric, Haky, Scott, and Alvaro. Great French dishes with Asian influence.</description>
+    </item>
+    
+    <item>
+      <title>Hello R Markdown</title>
+      <link>/post/2015/07/23/hello-r-markdown/</link>
+      <pubDate>Thu, 23 Jul 2015 21:13:14 -0500</pubDate>
+      
+      <guid>/post/2015/07/23/hello-r-markdown/</guid>
+      <description>R Markdown This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
+You can embed an R code chunk like this:
+summary(cars) ## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.</description>
+    </item>
+    
+    <item>
+      <title>Comment Policy</title>
+      <link>/post/2000/01/01/comment-policy/</link>
+      <pubDate>Sat, 01 Jan 2000 00:00:00 -0600</pubDate>
+      
+      <guid>/post/2000/01/01/comment-policy/</guid>
+      <description>Keep it civil Avoid:
+ name-calling ad hominem attacks Responding to a post’s tone instead of its actual content. knee-jerk contradiction  Comments that we find to be hateful, inflammatory, or harassing may be removed. If you don’t have something nice to say about another user, don&amp;rsquo;t say it. Treat others the way you’d like to be treated.
+Always strive to add value to every interaction and discussion you participate in There are a lot of discussions that happen every day on Disqus.</description>
+    </item>
+    
+    <item>
+      <title>About Hugo Prose</title>
+      <link>/post/1/01/01/about-hugo-prose/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/1/01/01/about-hugo-prose/</guid>
+      <description>Hugo Prose is a minimalist theme derived from the XMin theme, and inspired by Wowchemy (previously known as the Academic theme), Distill, and tufte.css. This theme itself is completely plain-text and lightweight, and does not use any icons, images, or emojis.1 By default, the theme only uses two JavaScript libraries, MathJax and highlight.js, and they are loaded only when necessary. The rest of JavaScript is written from scratch and also relatively short.</description>
+    </item>
+    
+  </channel>
+</rss>

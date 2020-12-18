@@ -24,4 +24,4 @@ url_video = ""
 
 +++
 
-Check [Google Scholar List](https://scholar.google.com/citations?user=1QD4sIcAAAAJ&hl=en) while we prepare publication page
+Check [Google Scholar List](https://scholar.google.com/citations?hl=en&user=1QD4sIcAAAAJ&view_op=list_works&sortby=pubdate) while we prepare publication page

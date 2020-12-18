@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> PrediXcan | IM-Lab</title>
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="PrediXcan"/>
+<meta name="twitter:description" content="PrediXcan, a regulatory mechanism driven gene discovery tool Although investments in genomic studies of complex diseases made possible the discovery of thousands of variants robustly associated with these traits, the translation of these discoveries into actionable targets has been hampered by the lack of a mechanistic understanding on how genome variation relates to phenotype. Moreover, it has been widely shown that a substantial portion of the genetic control of complex traits is exerted through the regulation of gene expression traits, but effective methods to fully harness this mechanism were not available."/>
+
+
+  </head>
+
+  <body>
+
+    <nav class="menu">
+    <ul>
+      <li class="left">
+        <a href="/"><span>IM-Lab</span></a>
+      </li>
+      
+      <li>
+        <a href="/">Home</a>
+      </li>
+      
+      <li>
+        <a href="/card/research/">Research</a>
+      </li>
+      
+      <li>
+        <a href="/sitemap/">Sitemap</a>
+      </li>
+      
+      <li id="menu-search">
+        <a href="/#">Search</a>
+      </li>
+      
+    </ul>
+    </nav>
+
+
+<div class="container single">
+<main>
+
+<div class="article-meta">
+<h1><span class="title">PrediXcan</span></h1>
+
+
+<p class="terms">
+  
+  
+  
+  
+  
+</p>
+</div>
+
+<div class="article">
+<h3 id="predixcan-a-regulatory-mechanism-driven-gene-discovery-tool">PrediXcan, a regulatory mechanism driven gene discovery tool</h3>
+<p>Although investments in genomic studies of complex diseases made possible the discovery of thousands of variants robustly associated with these traits, the translation of these discoveries into actionable targets has been hampered by the lack of a mechanistic understanding on how genome variation relates to phenotype. Moreover, it has been widely shown that a substantial portion of the genetic control of complex traits is exerted through the regulation of gene expression traits, but effective methods to fully harness this mechanism were not available. To address these challenges, we developed a gene-based test —PrediXcan— that directly tests this regulatory mechanism and substantially improves power relative to single variant tests and other gene-based tests. PrediXcan is inherently mechanistic and provides directionality, highlighting its potential utility in identifying novel targets for therapy. PrediXcan was the first of the class of methods known currently as TWAS (transcriptome-wide association studies). More details can be found <a href="https://uchicago.box.com/shared/static/ilqi3c12j5z8gu6puiiemumai0vgl6h2.pdf">in this paper</a>. The following figure shows a schematic description of the method.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="https://uchicago.box.com/shared/static/d3ab2xn2ivrj3yfo9tkkeo3qrfew4k4k.png" alt=""></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>PrediXcan tests the mediating effect of a target gene on disease risk.</em> The left panel shows the components of the expression of a gene. PrediXcan tests the association between the genetically regulated component and the complex trait and is not affected by the reverse effects of the disease on the expression. The mechanistic model behind PrediXcan is shown on the right panel. The genetic profile of an individual determines a baseline gene expression level (genetically determined expression), which is further modified by environment and other factors. For deleterious causal genes this final level determines the liability to disease which can lead to disease if it surpasses certain threshold.</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</main>
+
+<section class="appendix">
+
+
+
+
+
+
+
+<div>
+  <div class="side side-left"><h3>Reuse</h3></div>
+  Text and figures are licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution CC BY 4.0</a>. The source code is licensed under MIT.
+</div>
+
+
+
+<div>
+  <div class="side side-left"><h3>Suggest changes</h3></div>
+  
+  
+  
+    
+    
+  
+  If you find any mistakes (including typos) or want to suggest changes,
+  please feel free to <a href="https://github.com/hakyimlab/web-homepageproject/predixcan.md" id="edit-link">edit
+  the source file of this page</a> on Github and create a pull request.
+</div>
+
+
+
+
+</section>
+
+
+
+<nav class="post-nav">
+  <span class="nav-next">&larr; <a href="/project/s-predixcan/" title="Next post (older)">S-PrediXcan</a></span>
+  &hercon;
+  <span class="nav-prev"></span>
+</nav>
+
+
+
+
+<section class="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  var disqus_config = function () {
+  
+  };
+  (function() {
+    var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var disqus_js = '//hakyimlab.disqus.com/embed.js';
+    var d = document, s = d.createElement('script');
+    s.src = disqus_js; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    var t = d.getElementById('disqus_thread');
+    var b = false, l = function(scroll) {
+      if (b) return;
+      (d.head || d.body).appendChild(s); b = true;
+      if (scroll) t.scrollIntoView();
+    }
+    s.onerror = function(e) {
+      if (sessionStorage.getItem('failure-note')) return;
+      t.innerText = 'Sorry, but you cannot make comments because Disqus failed to load for some reason. It is known to be blocked in China. If you are sure it is not blocked in your region, please refresh the page. 中国大陆地区读者需要翻墙才能发表评论。';
+      t.style.border = '1px dashed';
+      t.style.padding = '.5em';
+      t.style.background = 'lightyellow';
+      sessionStorage.setItem('failure-note', true);
+    };
+    
+    if (location.hash.match(/^#comment-[0-9]+$/)) return l(true);
+    var c = function() {
+      if (b) return;
+      var rect = t.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom >= 0) l();
+    };
+    window.addEventListener('load', c);
+    d.addEventListener('scroll', c);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+</div>
+
+
+  <footer>
+  <script async src="//yihui.org/js/center-img.js"></script>
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-8SL8WKCMYZ', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+
+  <div class="footer">
+  
+  <ul class="copyright">
+    <li>© 2017 Hae Kyung Im</li>
+  </ul>
+  
+  <ul>
+    
+    <li>
+      <a href="/404.html">Contact</a>
+    </li>
+    
+    <li class="optional">
+      <a href="/categories/">Categories</a>
+    </li>
+    
+    <li class="optional">
+      <a href="/tags/">Tags</a>
+    </li>
+    
+    <li id="menu-edit">
+      <a href="#">Suggest an edit</a>
+    </li>
+    
+    <li>
+      <a href="#">Back to top</a>
+    </li>
+    
+  </ul>
+  </div>
+  
+  </footer>
+  <script async src="/js/features.js" data-page-features="[null,[&#34;&#43;sidenotes&#34;],null]"></script>
+  </body>
+</html>
+

@@ -10,3 +10,5 @@ image = ""
 caption = ""
 
 +++
+
+Here are some recent news.

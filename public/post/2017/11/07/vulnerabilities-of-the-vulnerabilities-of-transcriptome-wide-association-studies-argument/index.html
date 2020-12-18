@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> Vulnerabilities of the &#39;Vulnerabilities of transcriptome wide association studies&#39; argument | IM-Lab</title>
+    
+    
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/fonts.css" />
+    <link rel="stylesheet" href="/css/custom.css" />
+    <link href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" rel="stylesheet">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Vulnerabilities of the &#39;Vulnerabilities of transcriptome wide association studies&#39; argument"/>
+<meta name="twitter:description" content="PrediXcan and other transcriptome wide association study (TWAS) methods discover and prioritize genes based on a functional mechanism &ndash;regulation of gene expression. We agree that we have to temper over-enthusiasm, but Wainberg et al&rsquo;s paper could represent a backlash to the enthusiasm that the community has for this approach, which we believe is well placed.
+Below are our responses to some of the statements of the paper.
+ PrediXcan/TWAS associations do not imply causality"/>
+
+
+  </head>
+
+  <body>
+
+    <nav class="menu">
+    <ul>
+      <li class="left">
+        <a href="/"><span>IM-Lab</span></a>
+      </li>
+      
+      <li>
+        <a href="/">Home</a>
+      </li>
+      
+      <li>
+        <a href="/project/">Research</a>
+      </li>
+      
+      <li>
+        <a href="/resource/">Resource</a>
+      </li>
+      
+      <li>
+        <a href="/sitemap/">Sitemap</a>
+      </li>
+      
+      <li id="menu-search">
+        <a href="/#">Search</a>
+      </li>
+      
+    </ul>
+    </nav>
+
+
+<div class="container single">
+<main>
+
+<div class="article-meta">
+<h1><span class="title">Vulnerabilities of the &#39;Vulnerabilities of transcriptome wide association studies&#39; argument</span></h1>
+
+<h3 class="date">2017-11-07</h3>
+<p class="terms">
+  
+  
+  
+  
+  
+</p>
+</div>
+
+<div class="article">
+<p>PrediXcan and other transcriptome wide association study (TWAS) methods discover and prioritize genes based on a functional mechanism &ndash;regulation of gene expression. We agree that we have to temper over-enthusiasm, but Wainberg et al&rsquo;s paper could represent a backlash to the enthusiasm that the community has for this approach, which we believe is well placed.</p>
+<p>Below are our responses to some of the statements of the paper.</p>
+<blockquote>
+<p>PrediXcan/TWAS associations do not imply causality</p>
+</blockquote>
+<p>Yes, we have explicitly stated that we do not claim causality but agree that the message needs to be emphasized. However, the over-interpretation of TWAS results as causal (which itself seems overstated by Wainberg et al), is precisely because of the exciting aspect of TWAS as association testing ‘through a lens’ of a particular functional mechanism that we believe is very important, namely, regulation of gene expression.</p>
+<blockquote>
+<p>TWAS is vulnerable to find multiple associated genes because of co-regulation</p>
+</blockquote>
+<p>Yes, when a GWAS lead SNP is associated with the expression of several local co-regulated genes, TWAS will yield multiple associated genes. No one would argue that a TWAS result implicating multiple local genes should be interpreted as meaning that all of those genes are likely to be contributing to the trait. But assuming that a single gene is always at the root of a GWAS or TWAS signal also seems unnecessarily restrictive. Molecular biology and model organism genetics would suggest that allelic heterogeneity should be the norm. Although admittedly we don’t see huge evidence for it in complex trait GWAS, we do see it in eQTL data and arguably this is a reason why TWAS discovers new genes.</p>
+<p>A different source of false positive associations (not considered by Wainberg et al) is LD contamination. This phenomenon occurs, for example, when a variant alters expression of a gene but a different variant is causing changes in the phenotype but both variants are in LD. Unlike the coregulation confounding, which can only be teased out via wet lab experiments, LD contamination may be quantified and corrected. As for GWAS loci, fine mapping and conditional analysis may be used to addressed this issue.</p>
+<blockquote>
+<p>“TWAS exhibits instability when tissue/expression panel is changed”</p>
+</blockquote>
+<p>The expectation that an association found in one tissue should also be found in another one seems to be the problem. A better way to describe these results is that when a gene exhibits tissue-specific genetic regulation, we cannot be surprised to see tissue-specific phenotype associations. This is, we would argue, a feature not a bug.</p>
+<p>When the regulatory mechanism is highly context specific, it is possible and likely that none of the reference transcriptome dataset has captured it. This is not a limitation of the approach, but rather of the data available for investigation. We cannot build predictive models without training data, and genes expressed in a single cell type that is poorly represented in available tissues will not be well interrogated with the method, which has been widely acknowledged in the original publications as a limitation of the method.</p>
+<blockquote>
+<p>“False positive rate is high but unquantifiable”</p>
+</blockquote>
+<p>Would Wainberg et al. consider traditional GWAS to have a high false positive rate due to the large number of associations attributable to LD?</p>
+<blockquote>
+<p>TWAS is simply a weighted burden test</p>
+</blockquote>
+<p>We agree that it is a weighted burden test analytically, but of course the weights have meaning, and that is the effect of the variants on gene expression. Therefore, this weighted burden test is exactly what it purports to be: an association test of a trait with genetically regulated expression.</p>
+<p>This post is the results of discussions among (in alphabetic order)
+Nancy Cox,
+Eric Gamazon,
+Laura Huckins,
+Hae Kyung Im,
+Douglas  Ruderfer,
+Pamela Sklar, and
+Eli Stahl.</p>
+
+</div>
+</main>
+
+<section class="appendix">
+
+
+
+
+
+
+
+<div>
+  <div class="side side-left"><h3>Reuse</h3></div>
+  Text and figures are licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution CC BY 4.0</a>. The source code is licensed under MIT.
+</div>
+
+
+
+<div>
+  <div class="side side-left"><h3>Suggest changes</h3></div>
+  
+  
+  
+    
+    
+  
+  If you find any mistakes (including typos) or want to suggest changes,
+  please feel free to <a href="https://github.com/hakyimlab/web-homepagepost/2017/vulnerabilities.md" id="edit-link">edit
+  the source file of this page</a> on Github and create a pull request.
+</div>
+
+
+
+
+</section>
+
+
+
+<nav class="post-nav">
+  <span class="nav-next">&larr; <a href="/post/2017/11/01/transcriptome-prediction-models-are-robust-across-populations/" title="Next post (older)">Transcriptome prediction models are robust across populations</a></span>
+  &hercon;
+  <span class="nav-prev"><a href="/post/2017/11/07/limitations-of-predixcan-association-results/" title="Previous post (newer)">Limitations of PrediXcan association results</a> &rarr;</span>
+</nav>
+
+
+
+
+<section class="comments">
+  <div id="disqus_thread"></div>
+  <script>
+  var disqus_config = function () {
+  
+  };
+  (function() {
+    var inIFrame = function() {
+      var iframe = true;
+      try { iframe = window.self !== window.top; } catch (e) {}
+      return iframe;
+    };
+    if (inIFrame()) return;
+    var disqus_js = '//hakyimlab.disqus.com/embed.js';
+    var d = document, s = d.createElement('script');
+    s.src = disqus_js; s.async = true;
+    s.setAttribute('data-timestamp', +new Date());
+    var t = d.getElementById('disqus_thread');
+    var b = false, l = function(scroll) {
+      if (b) return;
+      (d.head || d.body).appendChild(s); b = true;
+      if (scroll) t.scrollIntoView();
+    }
+    s.onerror = function(e) {
+      if (sessionStorage.getItem('failure-note')) return;
+      t.innerText = 'Sorry, but you cannot make comments because Disqus failed to load for some reason. It is known to be blocked in China. If you are sure it is not blocked in your region, please refresh the page. 中国大陆地区读者需要翻墙才能发表评论。';
+      t.style.border = '1px dashed';
+      t.style.padding = '.5em';
+      t.style.background = 'lightyellow';
+      sessionStorage.setItem('failure-note', true);
+    };
+    
+    if (location.hash.match(/^#comment-[0-9]+$/)) return l(true);
+    var c = function() {
+      if (b) return;
+      var rect = t.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom >= 0) l();
+    };
+    window.addEventListener('load', c);
+    d.addEventListener('scroll', c);
+  })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</section>
+
+
+</div>
+
+
+  <footer>
+  <script async src="//yihui.org/js/center-img.js"></script>
+
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'G-8SL8WKCMYZ', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+
+
+
+  <div class="footer">
+  
+  <ul class="copyright">
+    <li>© 2017 Hae Kyung Im</li>
+  </ul>
+  
+  <ul>
+    
+    <li>
+      <a href="/404.html">Contact</a>
+    </li>
+    
+    <li class="optional">
+      <a href="/categories/">Categories</a>
+    </li>
+    
+    <li class="optional">
+      <a href="/tags/">Tags</a>
+    </li>
+    
+    <li id="menu-edit">
+      <a href="#">Suggest an edit</a>
+    </li>
+    
+    <li>
+      <a href="#">Back to top</a>
+    </li>
+    
+  </ul>
+  </div>
+  
+  </footer>
+  <script async src="/js/features.js" data-page-features="[null,[&#34;&#43;sidenotes&#34;],null]"></script>
+  </body>
+</html>
+
