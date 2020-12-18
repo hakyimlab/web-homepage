@@ -42,7 +42,7 @@ menu:
 params:
   homePosts: 6
   mainSections: ["post", "job"]
-  editLink: "https://github.com/hakyimlab/web-homepage/"
+  editLink: "https://github.com/hakyimlab/web-homepage/edit/master/content/"
   authorDelimiter: " / "
   pageFeatures: [+sidenotes]
   features: [-number_sections]
