@@ -7,3 +7,6 @@ main.blg
 *.synctex.gz
 main.pdf
 .DS_Store
+*.DS_Store
+.Rhistory
+
