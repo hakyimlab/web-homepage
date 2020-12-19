@@ -2,7 +2,7 @@
 menu:
   header:
     weight: 40
-title: Team
+title: Our Team
 features: [-number_sections]
 ---
 
