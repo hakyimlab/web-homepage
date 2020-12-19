@@ -2,11 +2,9 @@
 menu:
   header:
     weight: 40
-title: People
+title: Team
 features: [-number_sections]
 ---
-
-# The Team
 
 ![](https://storage.googleapis.com/imlab-public/web-pictures/2020/imlab-zoom-2020-Sept-Oct-Collage.png)
 
