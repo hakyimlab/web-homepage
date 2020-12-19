@@ -1,5 +1,5 @@
 ---
-title: 'Other Research'
+title: 'Other Published Research'
 date: ''
 categories: []
 tags: [research]
