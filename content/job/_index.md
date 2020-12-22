@@ -2,7 +2,7 @@
 menu:
   header:
     weight: 40
-title: Jobs
+title: Join Us
 ---
 
 # Job opportunities
