@@ -37,7 +37,7 @@ tags:
 - appendix
 - citation
 - numbered section
-title: About Hugo Prose
+title: How to use Hugo Prose theme
 ---
 
 **Hugo Prose** is a minimalist theme derived from the [**XMin**
