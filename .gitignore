@@ -10,3 +10,4 @@ main.pdf
 *.DS_Store
 .Rhistory
 
+.Rproj.user
