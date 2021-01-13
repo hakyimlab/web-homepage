@@ -13,4 +13,6 @@ weight = 20
 
 +++
 
-![](https://storage.googleapis.com/imlab-public/web-pictures/2020/imlab-zoom-2020-Sept-Oct-Collage.png)
+Alex Pearson shared with us his research on deep learning applied to medical outcomes
+
+![](https://uchicago.box.com/shared/static/v9qplz13ru1httnprcuvf3js9yyxar0n.png)
