@@ -40,8 +40,6 @@ features: [-number_sections]
 
 - Josh Jiang (Zhuoxun) - [Bio](https://www.linkedin.com/in/zhuoxun-jiang-63499767/)
 
-- Bayle Smith-Salzberg - [Bio](https://www.linkedin.com/in/bayle-smith-salzberg-59b033154/)
-
 - Owen Melia - [Bio](https://github.com/meliao)
 
 - Alvaro Barbeira, MS - [Bio](https://github.com/heroico)
