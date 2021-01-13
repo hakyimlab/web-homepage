@@ -1,5 +1,5 @@
 ---
-title: ''
+title: 'Contact'
 date: ''
 weight: 80
 ---
