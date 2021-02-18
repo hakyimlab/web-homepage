@@ -13,6 +13,4 @@ weight = 20
 
 +++
 
-Alex Pearson shared with us his research on deep learning applied to medical outcomes
-
-![](https://uchicago.box.com/shared/static/v9qplz13ru1httnprcuvf3js9yyxar0n.png)
+![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F72d1a355-240f-4251-a1d9-ae11809724d8%2FUntitled.png?table=block&id=63e2302a-4044-46c3-b4e9-5aeca67763bb&spaceId=99bb2b52-17a4-4844-a8a5-2243ee5a44b8&width=1880&userId=&cache=v2)
