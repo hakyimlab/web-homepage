@@ -30,7 +30,7 @@ We partner with large consortia and biomedical researchers to find the most pres
 - Comfortable with large data sets, distributed computing, and databases
 - Experience in cloud computing, HPC workflows
 - Experience with SQL (Postgres, bigquery, etc)
-- Reproducible research tools (workflowr, github)
+- Reproducible research tools (snakemake, nextflow, github)
 
 ## WHAT WE OFFER
 
