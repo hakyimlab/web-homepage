@@ -5,7 +5,7 @@ body {
   line-height: 1.5em;
   overflow-x: hidden;
 }
-body, .side, .menu { background: #fafafa; }
+body, .side, .menu { background: #767676;} /* EDIT HKI general background color */
 main, .menu ul, .footer, .single section, .post-nav {
   max-width: 800px;
   margin: 0 auto 0;
@@ -32,21 +32,23 @@ main {
 .article-list, .single main, .single .appendix, .fullwidth, .embed-left, .embed-right {
   margin-top: 2em;
   padding: 1em;
-  box-shadow: 0 0 8px #ccc;
-  background: #fff;
+  /*box-shadow: 0 0 8px #969696;*/
+  background: #D6D6CE; /* EDIT HKI article background color */
 }
 .post-card { margin-top: 1em; }
 
 /* header and footer areas */
 .menu { box-shadow: 0px 10px 10px -5px rgba(0,0,0,0.1); }
-.sticky-top {
+.menu {
+  background: #800000; /*  EDIT HKI header background color 155F83 is UChicago's blue 800000 is UChicago maroon */
+}.sticky-top {
   position: sticky;
   top: 0;
   z-index: 2;
 }
 .menu li, .terms li, .footer li { display: inline-block; }
 .article-meta { background: #f8f8f8; }
-footer { background: darkslategray; }
+footer { background: #800000; } /* EDIT HKI footer background color*/
 .menu ul {
   padding: 1em 0 1em;
   display: flex;
@@ -57,9 +59,9 @@ footer { background: darkslategray; }
   border-radius: 5px;
 }
 .menu a, .footer a { margin: 1px; }
-.menu a, .pagination a, .article-meta a { color: darkslategray; }
+.menu a, .pagination a, .article-meta a { color: #D6D6CE; } /* EDIT HKI navigation menu font color */
 .menu a:hover, .menu .active, .summary::first-letter, .footer a:hover, .terms a:hover, .bg-number {
-  background: lightslategray;
+  background: #B1746F;
   color: #fff;
 }
 .menu, .article-meta, .post-nav { text-align: center; }
@@ -268,7 +270,7 @@ blockquote {
 }
 .nav-prev { text-align: right; }
 .nav-next { text-align: left; }
-.footer, .footer a { color: #fff; }
+.footer, .footer a { color: #D6D6CE; } /* EDIT HKI footer font color*/
 .more { font-style: italic; }
 .hidden { display: none; }
 .draft {
