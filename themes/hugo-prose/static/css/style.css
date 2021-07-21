@@ -61,7 +61,7 @@ footer { background: #800000; } /* EDIT HKI footer background color*/
 .menu a, .footer a { margin: 1px; }
 .menu a, .pagination a, .article-meta a { color: #D6D6CE; } /* EDIT HKI navigation menu font color */
 .menu a:hover, .menu .active, .summary::first-letter, .footer a:hover, .terms a:hover, .bg-number {
-  background: #B1746F;
+  background: #B1746F;  /* EDIT HKI selected menu option color + first letter color */
   color: #fff;
 }
 .menu, .article-meta, .post-nav { text-align: center; }
