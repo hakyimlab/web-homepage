@@ -6,6 +6,7 @@ https://hakyimlab.org
 
 Hugo will turn the folders under contents into menu options (except for card and post). Under the folder/menu, `_index.md`'s header controls the title and the order. 
 
+```
 ---
 menu:
   header:
@@ -13,3 +14,4 @@ menu:
 title: Our Team
 features: [-number_sections]
 ---
+```
