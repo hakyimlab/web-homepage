@@ -5,7 +5,7 @@ body {
   line-height: 1.5em;
   overflow-x: hidden;
 }
-body, .side, .menu { background: #767676;} /* EDIT HKI general background color */
+body, .side, .menu { background: #dddddd;} /* EDIT HKI general background color */
 main, .menu ul, .footer, .single section, .post-nav {
   max-width: 800px;
   margin: 0 auto 0;
@@ -33,7 +33,7 @@ main {
   margin-top: 2em;
   padding: 1em;
   /*box-shadow: 0 0 8px #969696;*/
-  background: #D6D6CE; /* EDIT HKI article background color */
+  background: #eeeeee; /* EDIT HKI article background color */
 }
 .post-card { margin-top: 1em; }
 
