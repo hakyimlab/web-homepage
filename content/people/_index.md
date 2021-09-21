@@ -14,23 +14,23 @@ features: [-number_sections]
 
 - Festus Nyasimi, (MS Bioinformatics) - [Bio](https://github.com/Fnyasimi)
 
-- Natasha Santhanam (Recent graduate) - [Bio](https://github.com/natashasanthanam)
-
-- Sheila Rajagopal (Fellow)
+- Natasha Santhanam (post Bac) - [Bio](https://github.com/natashasanthanam)
 
 ## Part time members, interns, externs
 
 - Ian Waters, (PhD, Medical Student) - [Bio](https://github.com/watersia)
 
-- David Gonzalez-Velez, (Undergrad) - [Bio](https://github.com/DGV98)
-
 - Sabrina Mi, (Undergrad) - [Bio](https://github.com/sabrina-mi)
-
-- Julius Kim, (Undergrad) - [Bio](https://github.com/theMechanic23/homepage)
 
 ## Alumni
 
+- Sheila Rajagopal - Physician Scientist Early Investigator, NIH - [Link](https://ccr.cancer.gov/staff-directory/padma-sheila-rajagopal)
+
+- Julius Kim, (Undergrad) - [Bio](https://github.com/theMechanic23/homepage)
+
 - Wanhao Chi, (PhD) - [Bio](https://github.com/wchi1)
+
+- David Gonzalez-Velez, (Undergrad) - [Bio](https://github.com/DGV98)
 
 - Owen Melia - [Bio](https://github.com/meliao)
 
