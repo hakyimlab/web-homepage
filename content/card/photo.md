@@ -13,6 +13,6 @@ weight = 20
 
 +++
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F72d1a355-240f-4251-a1d9-ae11809724d8%2FUntitled.png?table=block&id=63e2302a-4044-46c3-b4e9-5aeca67763bb&spaceId=99bb2b52-17a4-4844-a8a5-2243ee5a44b8&width=1880&userId=&cache=v2)
+![](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/1cce4e41-19d4-43aa-a357-f8b2aca6de66/image_%281%29.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20220315%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20220315T143317Z&X-Amz-Expires=86400&X-Amz-Signature=f3706f3d786e1041773e493d9f4bea14e251e9c2e6be194ff9e2314c163b59b4&X-Amz-SignedHeaders=host&response-content-disposition=filename%20%3D%22image%2520%281%29.png%22&x-id=GetObject)
 
-Guimin Gao is a collaborator who likes to join our lab meetings :smile:   
+Our in person team! Others in our lab but not shown in the photo are Beau Burnette and Sabrina Mi.
