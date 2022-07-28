@@ -2,6 +2,7 @@
 title = "GTEx V7 Prediction Model Release Announcement"
 date = 2018-01-08
 draft = false
+slug = 'v7-v6-analysis'
 
 # Tags and categories
 # For example, use `tags = []` for no tags, or the form `tags = ["A Tag", "Another Tag"]` for one or more tags.
